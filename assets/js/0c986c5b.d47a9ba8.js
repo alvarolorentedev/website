@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkalvarolorente_dev=self.webpackChunkalvarolorente_dev||[]).push([[1475],{7248:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/travis","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

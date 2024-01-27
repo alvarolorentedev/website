@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkalvarolorente_dev=self.webpackChunkalvarolorente_dev||[]).push([[7160],{4480:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/kotlin","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);
