@@ -8,33 +8,16 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Paweł Kosiec, Full-stack Cloud Developer",
+  title: "Alvaro Lorente, Fractional CTO & OSS Founder",
   tagline:
-    "Software engineer interested in personal growth and tech trends. Cloud-native and open-source enthusiast.",
-  url: "https://kosiec.dev",
+    "Engineering leader interested in personal growth and tech trends. Cloud-native and open-source enthusiast.",
+  url: "https://alvarolorente.dev",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-
-  // GitHub pages deployment config
-  organizationName: "pkosiec",
+  organizationName: "alvarolorentedev",
   projectName: "website",
-
-  customFields: {
-    newsletter: {
-      action:
-        "https://dev.us14.list-manage.com/subscribe/post?u=4ed0fd1909674fddee53ac3e7&amp;id=dfdcae99f5&amp;f_id=004887e0f0",
-      method: "post",
-      emailFieldName: "EMAIL",
-      firstNameFieldName: "FNAME",
-      submitButtonName: "subscribe",
-      tosURL: "https://mailchimp.com/legal/terms/",
-      privacyPolicyURL: "https://www.intuit.com/privacy/statement/",
-      serviceName: "Mailchimp",
-    },
-  },
-
   i18n: {
     defaultLocale: "en",
     locales: ["en"],
@@ -60,10 +43,10 @@ const config = {
         docs: false,
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/pkosiec/website/tree/main/",
+          editUrl: "https://github.com/alvarolorentedev/website/tree/main/",
           feedOptions: {
             type: "all",
-            copyright: `Copyright © ${new Date().getFullYear()} Paweł Kosiec`,
+            copyright: `Copyright © ${new Date().getFullYear()} Alvaro Lorente`,
           },
         },
         theme: {
@@ -81,12 +64,12 @@ const config = {
         {
           name: "description",
           content:
-            "I am software developer interested in technology and gadgets. Cloud-native and open-source enthusiast.",
+            "Engineering leader interested in personal growth and tech trends. Cloud-native and open-source enthusiast.",
         },
         {
           name: "keywords",
           content:
-            "fullstack,frontend,backend,developer,engineer,go,golang,javascript,graphql,grpc,rest,react,reactjs,kubernetes,devops,cloud,cloud-native,cka,ckad,open-source,gophers,silesia",
+            "leadership,developer,engineer,founder,fullstack,cloud,cloud-native,open-source",
         },
         {
           name: "twitter:card",
@@ -98,16 +81,16 @@ const config = {
       },
       navbar: {
         hideOnScroll: false,
-        title: "Paweł Kosiec",
+        title: "Alvaro Lorente",
         logo: {
-          alt: "Paweł Kosiec Logo",
+          alt: "Alvaro Lorente Logo",
           src: "img/logo.svg",
           srcDark: "img/logo-white.svg",
         },
         items: [
-          { to: "/blog", label: "Blog", position: "left" },
-          { to: "/projects", label: "Projects", position: "left" },
           { to: "/talks", label: "Talks", position: "left" },
+          { to: "/projects", label: "Projects", position: "left" },
+          { to: "/blog", label: "Blog", position: "left" },
         ],
       },
       footer: {
@@ -118,15 +101,15 @@ const config = {
             items: [
               {
                 label: "Email me",
-                href: "mailto:pawel@kosiec.dev",
+                href: "mailto:contact@alvarolorente.dev",
               },
               {
                 label: "LinkedIn",
-                href: "https://www.linkedin.com/in/pkosiec",
+                href: "https://www.linkedin.com/in/alvarolorentedev",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/pkosiec",
+                href: "https://twitter.com/alvarolorentedev",
               },
             ],
           },
@@ -165,12 +148,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © 2012-${new Date().getFullYear()} Paweł Kosiec.`,
-      },
-      algolia: {
-        appId: "5DLGGOZ8KA",
-        apiKey: "67ab853aa6285e51112a649d3cb51928",
-        indexName: "kosiec",
+        copyright: `Copyright © 2012-${new Date().getFullYear()} Alvaro Lorente.`,
       },
       prism: {
         theme: lightCodeTheme,

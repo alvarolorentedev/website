@@ -6,40 +6,36 @@ import { Project, ProjectData } from "../components/projects/Project";
 const assetsDir = "./assets/projects";
 const projects: ProjectData[] = [
   {
-    title: "Botkube",
+    title: "Socialtion",
     description:
-      "Monitor and act on your Kubernetes cluster from your favorite chat platforms.",
-    url: "https://botkube.io/",
-    image: require(`${assetsDir}/botkube.png`),
-    role: "Maintainer",
+      "Create & schedule your social media from Notions",
+    url: "https://socialtion.com/",
+    image: require(`${assetsDir}/socialtion.png`),
+    role: "Founder",
   },
   {
-    title: "Capact",
-    description: "A unified way to manage applications and infrastructure.",
-    url: "https://capact.io",
-    image: require(`${assetsDir}/capact.png`),
-    role: "Maintainer",
+    title: "Podcastion",
+    description:
+      "Host your podcast in Notion",
+    url: "https://podcastion.com/",
+    image: require(`${assetsDir}/podcastion.png`),
+    role: "Founder",
   },
   {
-    title: "Mongo Seeding",
-    description: "Ultimate solution for populating MongoDB database.",
-    url: "https://github.com/pkosiec/mongo-seeding",
-    image: require(`${assetsDir}/mongo-seeding.png`),
-    role: "Author",
+    title: "Barklarm",
+    description:
+      "Display the status of your projects build & monitoring natively to your OS",
+    url: "https://barklarm.com/",
+    image: require(`${assetsDir}/barklarm.png`),
+    role: "Founder",
   },
   {
-    title: "Terminer",
-    description: "Upgrade your terminal experience with a single command.",
-    url: "https://github.com/pkosiec/terminer",
-    image: require(`${assetsDir}/terminer.png`),
-    role: "Author",
-  },
-  {
-    title: "Gophers Silesia",
-    description: "Go & Cloud Native Meetup organized in Katowice, Poland",
-    url: "https://www.meetup.com/GophersSilesia",
-    image: require(`${assetsDir}/gophers-silesia.png`),
-    role: "Organizer",
+    title: "Tarant",
+    description:
+      "The Universal Actor Model",
+    url: "https://tarant.dev/",
+    image: require(`${assetsDir}/tarant.png`),
+    role: "co-Founder",
   },
 ];
 

@@ -1,17 +1,15 @@
 {
-  "name": "kosiec.dev",
+  "name": "alvarolorente.dev",
   "version": "0.1.0",
   "private": true,
   "author": {
-    "name": "Paweł Kosiec",
-    "url": "https://kosiec.dev",
-    "email": "pawel@kosiec.dev"
+    "name": "Alvaro Lorente",
+    "url": "https://alvarolorente.dev",
+    "email": "pawel@alvarolorente.dev"
   },
   "scripts": {
-    "postinstall": "npm run setup-hooks",
-    "setup-hooks": "git config core.hooksPath ./scripts/git-hooks",
     "docusaurus": "docusaurus",
-    "start": "docusaurus start",
+    "start": "docusaurus start --port 4000",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",

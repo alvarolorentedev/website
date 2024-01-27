@@ -1,10 +1,10 @@
 <p align="center">
- <img src="https://raw.githubusercontent.com/pkosiec/website/main/static/img/logo.png" width="75">
+ <img src="https://raw.githubusercontent.com/alvarolorentedev/website/main/static/img/logo.png" width="75">
 </p>
 
-# Paweł Kosiec - Personal Website
+# Alvaro Lorente - Personal Website
 
-This repository contains source code of the Paweł Kosiec's personal website. To see it live, navigate to the [kosiec.dev](https://kosiec.dev) address.
+This repository contains source code of the Alvaro Lorente's personal website. To see it live, navigate to the [alvarolorente.dev](https://alvarolorente.dev) address.
 
 ## Development
 
