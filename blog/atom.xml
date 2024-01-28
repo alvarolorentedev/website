@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://alvarolorente.dev/blog</id>
-    <title>Alvaro Lorente, Fractional CTO &amp; OSS Founder Blog</title>
+    <title>Alvaro Lorente, Fractional CTO &amp; Founder Blog</title>
     <updated>2023-06-30T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://alvarolorente.dev/blog"/>
-    <subtitle>Alvaro Lorente, Fractional CTO &amp; OSS Founder Blog</subtitle>
+    <subtitle>Alvaro Lorente, Fractional CTO &amp; Founder Blog</subtitle>
     <icon>https://alvarolorente.dev/img/favicon.ico</icon>
     <rights>Copyright © 2024 Alvaro Lorente</rights>
     <entry>
