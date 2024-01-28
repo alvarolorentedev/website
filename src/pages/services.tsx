@@ -10,6 +10,7 @@ const projects: ServiceData[] = [
     description:
       "Assessing your strategy and assisting you in its evolution to achieve your goals. We will collaborate on iterating it together.",
     image: require(`${assetsDir}/consult.png`),
+    url:"https://cal.com/kanekotic/30min",
     role: "Consultant",
   },
   {
@@ -17,6 +18,7 @@ const projects: ServiceData[] = [
     description:
       "We will work together to conduct an orthogonal audit of your organization. We will assess your agile processes, architecture and more.",
     image: require(`${assetsDir}/consult.png`),
+    url:"https://cal.com/kanekotic/30min",
     role: "Consultant",
   },
   {
@@ -24,6 +26,7 @@ const projects: ServiceData[] = [
     description:
       "Helping you improve and scale your capabilities on defining and handling the enginering strategy for your company or team.",
     image: require(`${assetsDir}/coach-mentor.png`),
+    url:"https://cal.com/kanekotic/30min",
     role: "Mentor & Coach",
   },
 ];
