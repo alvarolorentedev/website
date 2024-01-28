@@ -8,9 +8,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Alvaro Lorente, Fractional CTO & OSS Founder",
+  title: "Alvaro Lorente, Fractional CTO & Founder",
   tagline:
-    "Engineering leader interested in personal growth and tech trends. Cloud-native and open-source enthusiast.",
+    "Engineering leadership independant consultant. Passionate about supporting others make the correct strategic decision.",
   url: "https://alvarolorente.dev",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -64,7 +64,7 @@ const config = {
         {
           name: "description",
           content:
-            "Engineering leader interested in personal growth and tech trends. Cloud-native and open-source enthusiast.",
+            "Engineering leadership independant consultant. Passionate about supporting others make the correct strategic decision.",
         },
         {
           name: "keywords",
@@ -88,8 +88,9 @@ const config = {
           srcDark: "img/logo-white.svg",
         },
         items: [
-          { to: "/talks", label: "Talks", position: "left" },
+          { to: "/services", label: "Services", position: "left" },
           { to: "/projects", label: "Projects", position: "left" },
+          { to: "/talks", label: "Talks", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
         ],
       },
@@ -148,7 +149,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © 2012-${new Date().getFullYear()} Alvaro Lorente.`,
+        copyright: `Copyright © 2023-${new Date().getFullYear()} Alvaro Lorente.`,
       },
       prism: {
         theme: lightCodeTheme,
