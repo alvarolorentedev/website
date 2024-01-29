@@ -11,7 +11,7 @@ export const ContactMe: FunctionComponent<ContactMeProps> = ({
       <div className="row">
         <div className="col">
           <h2>Send me an Email</h2>
-          <form action="https://formsubmit.co/support@alvarolorente.dev" method="POST" className={styles.form}>
+          <form action="https://formsubmit.co/3c8246267233c5a0a531977be346fe98" method="POST" className={styles.form}>
             <input type="text" name="name" placeholder="Your name" required />
             <input  type="email" name="email" placeholder="Your email" required />
             <button className="button button--primary" type="submit">Send</button>
