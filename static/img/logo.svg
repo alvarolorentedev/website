@@ -1,23 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: SketchAPI 2022.3.11.0 https://api.sketch.io -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" xmlnsSketchjs="https://sketch.io/dtd/" sketchjsMetadata="eyJuYW1lIjoiRHJhd2luZy0xLnNrZXRjaHBhZCIsInN1cmZhY2UiOnsibWV0aG9kIjoiZmlsbCIsImJsZW5kIjoibm9ybWFsIiwiZW5hYmxlZCI6dHJ1ZSwib3BhY2l0eSI6MSwidHlwZSI6ImNvbG9yIiwiY29sb3IiOiIjZmZmZmZmIn0sImNsaXBQYXRoIjp7ImVuYWJsZWQiOnRydWV9LCJkZXNjcmlwdGlvbiI6Im1hZGUgd2l0aCBodHRwOi8vbG9nb21ha3IuY29tIiwibWV0YWRhdGEiOnsiZ3JpZE92ZXJsYXlJZCI6ImdyaWRPdmVybGF5In0sImV4cG9ydERQSSI6NzIsImV4cG9ydEZvcm1hdCI6InBuZyIsImV4cG9ydFF1YWxpdHkiOjAuOTUsInVuaXRzIjoicHgiLCJ3aWR0aCI6MzYzLCJoZWlnaHQiOjM2MywicGFnZXMiOlt7IndpZHRoIjozNjMsImhlaWdodCI6MzYzfV0sInV1aWQiOiIxNWFlZjJlNS00Y2YyLTQzZmItYjgyNC0zMGU3Yjc4NTFiOGIifQ==" width="363" height="363" viewBox="0 0 363 363">
-<defs>
-	<pattern id="dna_4146799760" patternUnits="userSpaceOnUse" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAOklEQVQ4T2O8fv36AQYGBhCmCmC8fv16g6amZgNVTGNgYBg1kPKQHA3D0TAkIwRGkw0ZgYamZQSGIQApY1AaL/I1PgAAAABJRU5ErkJggg==" x="0" y="0" width="20" height="20">
-	</pattern>
-</defs>
-<path style="fill: url(#dna_4146799760); mix-blend-mode: source-over; fill-opacity: 1; vector-effect: non-scaling-stroke;" sketchjstool="rectangle" d="M0 0 L363 0 363 363 0 363 z"/>
-<g style="mix-blend-mode: source-over;" sketchjstool="clipart" transform="matrix(5.346992840737128,0,0,5.346992840737128,10,10)">
-	<path d="M64 32v32H32C14.327 64 0 49.673 0 32 0 14.327 14.327 0 32 0c17.673 0 32 14.327 32 32zM32.5 60C47.688 60 60 47.688 60 32.5S47.688 5 32.5 5 5 17.312 5 32.5 17.312 60 32.5 60z" sketchjsuid="1" style="fill: #00ab90; fill-rule: evenodd; fill-opacity: 1;"/>
-</g>
-<g style="mix-blend-mode: source-over;" sketchjstool="clipart" transform="matrix(2.400700535570837,0,0,2.4007005355708375,60.996507176131395,72.91027870274917)">
-	<g sketchjsuid="1" style="fill: #000000; fill-opacity: 1;">
-		<path d="M50,89.549c-27.339,0-49.582-15.939-49.582-35.532c0-6.179,2.179-12.199,6.312-17.467V10.452l32.354,8.892   c7.126-1.141,14.706-1.141,21.831,0l32.355-8.893l-0.008,26.146c4.137,5.287,6.317,11.291,6.317,17.419   C99.58,73.609,77.339,89.549,50,89.549z M11.73,17.011v21.322l-0.576,0.694c-3.752,4.526-5.736,9.71-5.736,14.989   c0,16.836,19.999,30.532,44.582,30.532c24.581,0,44.58-13.696,44.58-30.532c0-5.229-1.986-10.397-5.745-14.947l-0.572-0.693   l0.006-21.365l-27.09,7.445l-0.545-0.092c-6.92-1.169-14.347-1.169-21.269,0l-0.545,0.092L11.73,17.011z" sketchjsuid="2"/>
-	</g>
-	<g sketchjsuid="3" style="fill: #000000; fill-opacity: 1;">
-		<path d="M30.859,47.741c-0.786-0.139-1.598-0.238-2.436-0.291C21.308,47,14.235,49.991,7.4,56.337l3.402,3.664   c5.771-5.358,11.575-7.903,17.25-7.564c7.934,0.478,13.152,6.525,13.204,6.586l3.831-3.212   C44.845,55.521,39.526,49.27,30.859,47.741z" sketchjsuid="4" style="fill: #00ab90;"/>
-	</g>
-	<g sketchjsuid="5" style="fill: #000000; fill-opacity: 1;">
-		<path d="M69.257,47.741c-8.668,1.528-13.986,7.78-14.229,8.069l3.836,3.207c0.046-0.055,5.269-6.104,13.2-6.581   c5.674-0.339,11.478,2.206,17.249,7.563l3.401-3.664C85.881,49.991,78.808,47,71.693,47.45   C70.855,47.503,70.042,47.603,69.257,47.741z" sketchjsuid="6" style="fill: #00ab90;"/>
-	</g>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+ "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="500.000000pt" height="500.000000pt" viewBox="0 0 500.000000 500.000000"
+ preserveAspectRatio="xMidYMid meet">
+
+<g transform="translate(0.000000,500.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M2510 4570 c-10 -6 -17 -32 -20 -72 l-5 -63 -124 -7 c-461 -25 -914
+-236 -1246 -579 -216 -224 -361 -461 -454 -745 -66 -202 -83 -308 -88 -554 -5
+-208 -1 -257 33 -451 6 -34 4 -38 -43 -72 -60 -44 -102 -117 -113 -195 -36
+-269 248 -801 522 -975 96 -61 161 -81 273 -81 84 -1 114 4 186 27 l86 28 109
+-54 c271 -137 500 -194 814 -204 389 -12 730 76 1060 275 313 189 575 476 735
+807 387 798 185 1756 -490 2323 -300 252 -661 407 -1037 445 l-118 11 0 61 c0
+34 -5 66 -12 73 -14 14 -47 15 -68 2z m-30 -304 c0 -107 -51 -562 -101 -906
+-57 -394 -168 -956 -210 -1062 -13 -31 -14 -31 -239 -48 -371 -29 -1085 -113
+-1177 -139 -32 -9 -32 -9 -42 40 -39 183 -40 523 -1 704 65 304 196 578 386
+806 91 109 246 254 354 331 276 196 643 322 953 327 l77 1 0 -54z m385 19
+c622 -125 1142 -581 1353 -1186 111 -317 130 -662 56 -998 -125 -562 -532
+-1051 -1061 -1274 -240 -101 -437 -140 -708 -141 -247 -1 -407 26 -631 105
+-71 25 -236 100 -252 114 -2 2 26 34 63 72 195 200 386 606 545 1160 12 42 28
+77 38 82 24 13 461 36 472 25 5 -5 20 -56 35 -114 98 -393 200 -677 250 -696
+22 -9 65 4 65 19 0 7 -15 49 -34 93 -48 114 -110 310 -162 511 -36 138 -43
+177 -33 189 8 10 35 14 96 14 66 0 85 3 90 15 9 26 -5 30 -103 30 -70 0 -97 4
+-108 15 -30 31 -131 591 -175 980 -37 322 -71 780 -71 959 l0 63 78 -7 c42 -3
+131 -17 197 -30z m-309 -917 c39 -337 79 -596 156 -995 6 -35 9 -65 6 -68 -8
+-8 -427 -29 -435 -22 -3 4 4 53 16 110 66 297 135 662 173 913 25 163 47 279
+52 274 5 -5 19 -100 32 -212z m-420 -1192 c-12 -62 -117 -389 -163 -506 -113
+-288 -248 -527 -369 -658 l-59 -63 -70 47 c-256 172 -477 427 -614 708 -49
+100 -121 296 -121 329 0 30 235 68 800 127 162 16 331 34 375 39 44 5 113 9
+154 10 l73 1 -6 -34z m-1473 -286 c59 -184 155 -366 290 -550 89 -122 287
+-318 399 -395 48 -33 87 -63 87 -66 1 -4 -25 -17 -56 -30 -82 -34 -187 -33
+-263 3 -170 79 -340 276 -465 542 -99 209 -132 362 -101 469 15 50 57 117 74
+117 4 0 20 -41 35 -90z"/>
+<path d="M3125 4064 c-12 -13 -15 -28 -10 -68 12 -107 35 -523 46 -816 18
+-483 -2 -1508 -35 -1835 -16 -152 -9 -175 47 -175 45 0 63 19 148 157 243 394
+429 626 612 764 108 81 159 110 252 140 104 34 108 54 10 53 -229 -2 -544
+-275 -845 -732 -51 -78 -98 -142 -103 -142 -6 0 -8 36 -4 97 34 511 33 1607
+-2 2128 -23 338 -33 424 -54 437 -20 12 -44 9 -62 -8z"/>
 </g>
 </svg>
