@@ -110,6 +110,10 @@ const config = {
                 href: "https://www.linkedin.com/in/alvarolorentedev",
               },
               {
+                label: "Github",
+                href: "https://www.github.com/alvarolorentedev",
+              },
+              {
                 label: "Twitter",
                 href: "https://twitter.com/alvarolorentedev",
               },
@@ -123,12 +127,20 @@ const config = {
                 to: "/",
               },
               {
+                label: "Services",
+                to: "/services",
+              },
+              {
                 label: "Projects",
                 to: "/projects",
               },
               {
                 label: "Talks",
                 to: "/talks",
+              },
+              {
+                label: "Blog",
+                to: "/blog",
               },
             ],
           },
