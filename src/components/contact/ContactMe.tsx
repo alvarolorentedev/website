@@ -22,7 +22,7 @@ export const ContactMe: FunctionComponent<ContactMeProps> = ({
             <h2>Or Book a Call</h2>
           </div>
           <div className="row">
-            <a className="button button--primary" href="https://cal.com/kanekotic/30min">Book a 30 minutes call</a>
+            <a className="button button--primary" href="https://cal.com/alvarolorente/30min">Book a 30 minutes call</a>
           </div>
 
           <div className="row margin-top--lg">
