@@ -1,6 +1,6 @@
 ---
-draft: false
 title: 'Delivery Acceleration: Enabling Features'
+draft: false
 description: How do we roll out features? What are some practices that can save us
   from the big bang release
 authors: kanekotic
@@ -9,12 +9,11 @@ tags:
 - devops
 - programming
 - softwaredevelopment
-published: 2022-10-17T00:00:00.000+02:00
 canonical_url: https://www.kanekotic.com/blog/2022/10/10/delivery-acceleration-enabling-features
 cover_image: https://www.kanekotic.com/img/toggles.jpeg
 series: Accelerate Continious Integration & Delivery Practices
-
 ---
+
 Now that we know where our code lives, we need to make sure our users get access to the features. For this, we need to get our code to the environment we want to deploy to, and control the rollout (if you are not a big bang release fan).
 
 ## Blue/Green Deployment: Getting to prod with 0 downtime

@@ -1,16 +1,16 @@
 ---
-authors: kanekotic
 title: Replace Docker Desktop with Podman in OSX
+authors: kanekotic
 tags:
-  - devops
-  - docker
-  - softwaredevelopment
+- devops
+- docker
+- softwaredevelopment
 description: a how to tutorial migrate from docker desktop to podman in OSX
 draft: false
-published: 2023-07-01T08:34:37.867Z
 cover_image: https://raw.githubusercontent.com/kanekotic/kanekotic-page/main/static/img/docker-desktop.png
 series: OSX How To...
 ---
+
 ## Why would I do this?
 
 D﻿ocker-desktop is a paid product, their licensing mode is by user, and it provides value not for the software side but for their cloud offering (registry, etc). For this, if the intent of you're a company is to use containers locally to facilitate software development,  the cost tends to be high.

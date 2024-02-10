@@ -1,7 +1,7 @@
 ---
+title: TDD is not called TDT for a reason
 authors: kanekotic
 draft: false
-title: TDD is not called TDT for a reason
 description: 'When people elaborate on TDD they seem to stay focused on the first
   letter but miss the focus of the other two letters. '
 tags:
@@ -9,12 +9,11 @@ tags:
 - testing
 - architecture
 - programming
-published: 2022-11-28T04:00:00+01:00
 canonical_url: https://www.kanekotic.com/blog/2022/11/24/tdd-is-not-called-tdt-for-a-reason
 cover_image: https://www.kanekotic.com/img/tdd.png
 series: ''
-
 ---
+
 I have observed quite a few articles lately that elaborate on issues with TDD. Nevertheless, they focused on the first letter but miss the focus of the other two letters.
 
 ## Not A Testing Strategy

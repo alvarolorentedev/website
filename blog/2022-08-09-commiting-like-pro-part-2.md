@@ -8,11 +8,11 @@ tags:
 - programming
 - productivity
 draft: false
-published: 2022-08-09T00:00:00.000+02:00
 series: commiting Like a Pro in NodeJs
 canonical_url: https://www.kanekotic.com/blog/2022/08/09/commiting-like-pro-part-2
 cover_image: https://commitizen-tools.github.io/commitizen/images/demo.gif
 ---
+
 ## Why are messages important?
 
 Commit messages are part of the collaboration we do day to day inside a team, it works as a record of what has happened.

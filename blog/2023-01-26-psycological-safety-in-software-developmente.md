@@ -1,19 +1,18 @@
 ---
+title: Psychological safety in software development
 authors: kanekotic
 draft: false
-title: Psychological safety in software development
 description: 'What are some success factors of high-performing teams and organizations?
   One undoubtedly is the ability to share and exchange without fear or shame '
 tags:
 - programming
 - productivity
 - motivation
-published: 2023-01-27T01:00:00+01:00
 canonical_url: https://www.kanekotic.com/blog/2023-01-26-psycological-safety-in-software-developmente
 cover_image: https://raw.githubusercontent.com/kanekotic/kanekotic-page/main/static/img/unnamed-1.jpg
 series: 'What makes high-performing teams '
-
 ---
+
 # TL:DR;
 
 psychological safety is essential for the success of software development teams. By fostering open communication and encouraging a culture of learning and innovation, teams can work more efficiently, effectively, and creatively. By promoting psychological safety, managers and leaders can help their team members to reach their full potential and take the team to the next level.

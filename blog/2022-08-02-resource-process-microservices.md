@@ -8,9 +8,9 @@ tags:
 - programming
 - architecture
 draft: true
-published: 2030-08-02T00:00:00.000+02:00
 series: microservices a double-edged sword
 ---
+
 During the last decade micro-services have been taking traction in the development world. Nevertheless moving from a monolithic view to a more self-served set of pieces is not an easy mental migration.
 I have seen in my experience two different approaches with two very different outcomes. One is based on resources and the other one is based on process.
 The resource approach is based on the idea of Object Orientation. Meaning everything should be abstracted as an object that can be manipulated overtime by the consumers of that resource. In this approach the Data is on the drivers seat.

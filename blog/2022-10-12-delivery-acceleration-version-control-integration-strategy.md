@@ -1,7 +1,7 @@
 ---
+title: 'Delivery Acceleration: Version Control Integration Strategy'
 authors: kanekotic
 draft: false
-title: 'Delivery Acceleration: Version Control Integration Strategy'
 description: How do you integrate code in the team matters, it will directly affect
   the rest of your architecture and practices like we have seen in previous chapters
 tags:
@@ -9,12 +9,11 @@ tags:
 - devops
 - programming
 - softwaredevelopment
-published: 2022-10-31T01:00:00+01:00
 canonical_url: https://www.kanekotic.com/blog/2022/10/12/delivery-acceleration-version-control-integration-strategy
 cover_image: https://www.kanekotic.com/img/trunk.png
 series: Accelerate Continious Integration & Delivery Practices
-
 ---
+
 I have already written some [other post](https://www.kanekotic.com/blog/2022/08/08/stop-prs) on this topic. I will go straight to the point on comparing Git Flow (a [legacy strategy](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) that most companies use) and Trunk-Based Development.
 
 ## Gitflow: The Bad & The Ugly

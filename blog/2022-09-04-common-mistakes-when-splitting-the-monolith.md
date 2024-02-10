@@ -1,6 +1,6 @@
 ---
-draft: false
 title: Common mistakes when splitting the monolith
+draft: false
 description: A set of the most common mistakes when splitting your monolith into microservices
 authors: kanekotic
 tags:
@@ -8,11 +8,11 @@ tags:
 - microservices
 - programming
 - architecture
-published: 2022-09-04T12:32:34.000+02:00
 series: The journey from the monolith to microservices
 canonical_url: https://www.kanekotic.com/blog/2022/09/04/common-mistakes-when-splitting-the-monolith
 cover_image: https://user-images.githubusercontent.com/3071208/188307797-7c30c8cb-bff7-4755-822b-7cf469cba372.JPG
 ---
+
 ## The Monolith
 
 We have all at this point encounter the big service that jumpstarted the business. It's always good to find it or know it existed. It shows that there was an intent to not resolve every architectural problem before we even knew we had a business.
