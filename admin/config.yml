@@ -3,7 +3,7 @@ backend:
   repo: alvarolorentedev/website
   branch: main
   base_url: https://snow-sheer-wishbone.glitch.me
-media_folder: "static/img"
+media_folder: "static/img/blog"
 public_folder: "https://raw.githubusercontent.com/alvarolorentedev/website/main/static/img/"
 collections:
   - name: "blog" # Used in routes, e.g., /admin/collections/blog
