@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkalvarolorente_dev=self.webpackChunkalvarolorente_dev||[]).push([[6644],{4655:e=>{e.exports=JSON.parse('{"permalink":"/blog/tags/versioning","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

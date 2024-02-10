@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkalvarolorente_dev=self.webpackChunkalvarolorente_dev||[]).push([[5199],{801:e=>{e.exports=JSON.parse('{"label":"versioning","permalink":"/blog/tags/versioning","allTagsPath":"/blog/tags","count":2}')}}]);
