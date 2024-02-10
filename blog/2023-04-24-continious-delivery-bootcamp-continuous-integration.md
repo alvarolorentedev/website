@@ -9,7 +9,7 @@ tags:
 description: Learn how to get things fast into production with good quality
 draft: false
 cover_image: https://raw.githubusercontent.com/kanekotic/kanekotic-page/main/static/img/blog/continious-integration.png
-canonical_url: https://www.kanekotic.com/blog/2023/04/24/continious-delivery-bootcamp-continuous-integration
+canonical_url: https://www.alvarolorente.dev/blog/2023/04/24/continious-delivery-bootcamp-continuous-integration
 series: Continuous Delivery Bootcamp
 ---
 

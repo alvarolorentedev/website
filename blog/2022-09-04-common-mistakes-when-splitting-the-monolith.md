@@ -9,7 +9,7 @@ tags:
 - programming
 - architecture
 series: The journey from the monolith to microservices
-canonical_url: https://www.kanekotic.com/blog/2022/09/04/common-mistakes-when-splitting-the-monolith
+canonical_url: https://www.alvarolorente.dev/blog/2022/09/04/common-mistakes-when-splitting-the-monolith
 cover_image: https://user-images.githubusercontent.com/3071208/188307797-7c30c8cb-bff7-4755-822b-7cf469cba372.JPG
 ---
 
@@ -26,7 +26,7 @@ Nevertheless, it tends to outgrow itself and become more a pain than a solution.
 
 Due to these pains, microservices were created. To give team/domain independence to create focused solutions on a business that has already been validated.
 
-![](https://www.kanekotic.com/img/blog/monolith.JPG)
+![](https://www.alvarolorente.dev/img/blog/monolith.JPG)
 
 ## The Microservices
 

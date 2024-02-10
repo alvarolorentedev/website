@@ -9,7 +9,7 @@ tags:
 - productivity
 draft: false
 series: ''
-canonical_url: https://www.kanekotic.com/blog/2022/08/24/power-automate-automating-social-media
+canonical_url: https://www.alvarolorente.dev/blog/2022/08/24/power-automate-automating-social-media
 cover_image: https://github.com/kanekotic/diagrams/blob/main/automate.drawio.png?raw=true
 ---
 

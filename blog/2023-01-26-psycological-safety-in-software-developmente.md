@@ -8,7 +8,7 @@ tags:
 - programming
 - productivity
 - motivation
-canonical_url: https://www.kanekotic.com/blog/2023-01-26-psycological-safety-in-software-developmente
+canonical_url: https://www.alvarolorente.dev/blog/2023-01-26-psycological-safety-in-software-developmente
 cover_image: https://raw.githubusercontent.com/kanekotic/kanekotic-page/main/static/img/blog/unnamed-1.jpg
 series: 'What makes high-performing teams '
 ---

@@ -9,12 +9,12 @@ tags:
 - programming
 - architecture
 series: The journey from the monolith to microservices
-canonical_url: https://www.kanekotic.com/blog/2022/09/05/patterns-to-avoiding-microlithic-microservices
-cover_image: https://www.kanekotic.com/img/blog/microliths.jpg
+canonical_url: https://www.alvarolorente.dev/blog/2022/09/05/patterns-to-avoiding-microlithic-microservices
+cover_image: https://www.alvarolorente.dev/img/blog/microliths.jpg
 ---
 
 On the previous installment of this series, we discussed the pitfalls that could happen when we split a monolith into microservices. In specific, we talked about creating what are called microliths.  
-![](https://www.kanekotic.com/img/blog/microliths.jpg)
+![](https://www.alvarolorente.dev/img/blog/microliths.jpg)
 
 Given that you have followed the recommendations on designing your domains correctly. Today we are going to elaborate on patterns to remove that synchronous communication in between 'microservices'. This will help our services to become more resilient.
 
@@ -24,7 +24,7 @@ Given that you have followed the recommendations on designing your domains corre
 
 The most simple solution we can go for is called **circuit breakers**. As it implies, is just a piece of code that upon multiple request failed to a downstream service will fail silently and allow service to resume their normal behavior.
 
-![](https://www.kanekotic.com/img/blog/circuitbreakerdesignpattern.png)
+![](https://www.alvarolorente.dev/img/blog/circuitbreakerdesignpattern.png)
 
 What are we solving and what are we letting unsolved:
 
@@ -39,7 +39,7 @@ What are we solving and what are we letting unsolved:
 The next level in solving our microlithic issue is to decouple our services using Pub/Sub to exchange models in between services.  
 Our service will consume and store the necessary information to run the process locally, and will broadcast the outcome models. This will mean there will always be a strong consistency in the outbox, and eventual consistency on the service database (if it exists).
 
-![](https://www.kanekotic.com/img/blog/reactivemicroliths.jpg)
+![](https://www.alvarolorente.dev/img/blog/reactivemicroliths.jpg)
 
 What are we solving and what are we letting unsolved:
 
@@ -54,7 +54,7 @@ What are we solving and what are we letting unsolved:
 The last level is **event sourcing**. The idea is to use the events that generated a specific state and not use the calculated state that a service can provide us.
 
 This allows a higher resilience due to the immutability of the data. In this case, calculation issues of the past can be solved, as we can reprocess the entire set of events that took us to a certain state.  
-![](https://www.kanekotic.com/img/blog/microsystems.jpg)
+![](https://www.alvarolorente.dev/img/blog/microsystems.jpg)
 
 ## Conclusion and follow-ups
 
