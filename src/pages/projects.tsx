@@ -8,7 +8,7 @@ const projects: ProjectData[] = [
   {
     title: "Socialtion",
     description:
-      "Create & schedule your social media from Notions",
+      "Create & schedule your social media from Notion",
     url: "https://socialtion.com/",
     image: require(`${assetsDir}/socialtion.png`),
     role: "Founder",
