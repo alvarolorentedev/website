@@ -1,17 +1,17 @@
 ---
+title: 'Leaders Build Trust, Managers Take Control: The Path to Empowering Teams'
 authors: Alvaro Lorente
-title: "Leaders Build Trust, Managers Take Control: The Path to Empowering Teams"
 tags:
-  - productivity
-  - motivation
-  - career
-  - business
+- productivity
+- motivation
+- career
+- business
 description: Ae leaders and managers important for organizational success?
 draft: true
-published: 2024-02-12T03:00:00.000Z
 cover_image: https://raw.githubusercontent.com/alvarolorentedev/website/main/static/img/blog/leader-manager.jpeg
 series: Engineering Strategy 101
 ---
+
 > TL;DR;
 > 
 > In essence, leadership and management are two sides of the same coin, each playing a critical role in guiding teams and individuals towards achieving their potential and realizing organizational objectives. By building trust and taking control in measure, you empower your teams to innovate, perform, and thrive in an ever-evolving landscape.
