@@ -11,7 +11,7 @@ tags:
 - productivity
 series: Accelerate Continious Integration & Delivery Practices
 canonical_url: https://www.kanekotic.com/blog/2022/09/24/devilery-acceleration-intro
-cover_image: https://www.kanekotic.com/img/key_metrics.png
+cover_image: https://www.kanekotic.com/img/blog/key_metrics.png
 ---
 
 This is a series I am really looking forward to writing. I have been doing this presentation for the last 3 years in multiple places.
@@ -24,7 +24,7 @@ The answer is no, most of the thing you will see on this series comes from pract
 
 A few years ago, I read the book Accelerate that is derived of the analysis of the state of DevOps report that happens in a regular basis.
 
-![](https://www.kanekotic.com/img/accelerate.jpg)
+![](https://www.kanekotic.com/img/blog/accelerate.jpg)
 
 The book does not speak only about technology but also speaks about communication, organization, etc. And how this affects effectiveness in teams & companies. I recommend reading the entire book.
 
@@ -32,7 +32,7 @@ The book does not speak only about technology but also speaks about communicatio
 
 Nevertheless, most of the people resume this book (erroneously) in the next table.
 
-![](https://www.kanekotic.com/img/key_metrics.png)
+![](https://www.kanekotic.com/img/blog/key_metrics.png)
 
 It does a comparison on a what are called the 4 key metrics, and provide a classification of performance (teams & companies, since 2017 this classification has evolved).
 
@@ -56,7 +56,7 @@ The intent of this series is to share the Extreme programming practices that we 
 
 As this twitter thread shows, this is not one size fits all, the challenges of a team are not the challenges of another one.  There is no silver bullet or common root cause to the issue, and each team should use this metrics to track improvements in an unbiased way. For this, the 4 key metrics do not mean anything at company level and should not be used to compare teams.
 
-![](https://www.kanekotic.com/img/metrics_caution.png)
+![](https://www.kanekotic.com/img/blog/metrics_caution.png)
 
 ## Next
 

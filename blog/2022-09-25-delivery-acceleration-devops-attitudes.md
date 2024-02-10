@@ -11,7 +11,7 @@ tags:
 - programming
 series: Accelerate Continious Integration & Delivery Practices
 canonical_url: https://www.kanekotic.com/blog/2022/09/25/delivery-acceleration-devops-attitudes
-cover_image: https://www.kanekotic.com/img/run_it.jpg
+cover_image: https://www.kanekotic.com/img/blog/run_it.jpg
 ---
 
 When we start our journey towards continuous integration & delivery, the first thing to take in count is the mentality. There are a few of them that will make or break our intent. Let's see the most important and also some practices.
@@ -20,7 +20,7 @@ When we start our journey towards continuous integration & delivery, the first t
 
 ### You build it, you run it
 
-![](https://www.kanekotic.com/img/run_it.jpg)
+![](https://www.kanekotic.com/img/blog/run_it.jpg)
 
 > create a DevOps culture, not a Devs vs Ops
 
@@ -42,7 +42,7 @@ This affect the next DORA 4 metrics:
 
 ### Embrace Ownership in Failure Culture
 
-![](https://www.kanekotic.com/img/1_w7sfzhdxzldtdwt7wfiabg.png)
+![](https://www.kanekotic.com/img/blog/1_w7sfzhdxzldtdwt7wfiabg.png)
 
 > the problem is not breaking things, is the inability to recover from it
 
@@ -64,7 +64,7 @@ This affect the next DORA 4 metrics:
 
 ### Be a Boy Scout
 
-![](https://www.kanekotic.com/img/scout.jpeg)
+![](https://www.kanekotic.com/img/blog/scout.jpeg)
 
 > Don’t continue the same path if you think something can be done better
 
@@ -79,7 +79,7 @@ This affect the next DORA 4 metrics:
 
 ### Learn & Adapt
 
-![](https://www.kanekotic.com/img/learn-64058_960_720-3730821950.jpeg)
+![](https://www.kanekotic.com/img/blog/learn-64058_960_720-3730821950.jpeg)
 
 Not everything is solved in the same way, don't follow:
 
@@ -98,7 +98,7 @@ This affect the next DORA 4 metrics:
 
 ### Firefighter Role
 
-![](https://www.kanekotic.com/img/firefighter.jpeg)
+![](https://www.kanekotic.com/img/blog/firefighter.jpeg)
 
 The firefighter role is a rotating role inside the team. They are responsible for being the first responder to incidents and helping solve them.  
 At the same time, to make sure this person does not suffer from cognitive load due to context switching, this person is not involved on the normal pair rotation and development tasks.  
@@ -113,7 +113,7 @@ This affect the next DORA 4 metrics:
 
 ### On Call Rotation
 
-![](https://www.kanekotic.com/img/on-call.jpeg)
+![](https://www.kanekotic.com/img/blog/on-call.jpeg)
 
 As the development team is also in charge of running the service, some of them will require after working hour support. On call is just this, the disposition of team members to take care of their services around the clock.  
 This tends to sound bad, but there are ways to not make this suck. I can't express it better than [Chris Ford](https://twitter.com/ctford) has already done in this [page](https://ctford.github.io/oncall-charter/).

@@ -10,7 +10,7 @@ tags:
 - programming
 draft: false
 series: microservices a double-edged sword
-cover_image: https://www.kanekotic.com/img/captura-de-pantalla-2022-12-19-a-las-17-16-39.png
+cover_image: https://www.kanekotic.com/img/blog/captura-de-pantalla-2022-12-19-a-las-17-16-39.png
 canonical_url: https://www.kanekotic.com/blog/2022/12/19/api-singleton
 ---
 

@@ -10,7 +10,7 @@ tags:
 - devops
 - productivity
 canonical_url: https://www.kanekotic.com/blog/2022/10/11/delivery-acceleration-testing-validation
-cover_image: https://www.kanekotic.com/img/testing.jpg
+cover_image: https://www.kanekotic.com/img/blog/testing.jpg
 series: Accelerate Continious Integration & Delivery Practices
 ---
 
@@ -27,7 +27,7 @@ This ratio has always been shown as a pyramid with:
 * **Integration test**: validates interactions with multiple parts of your system or other systems.
 * **Integrated test**: They test the system as a whole.
 
-![](https://www.kanekotic.com/img/pyramid.jpeg)
+![](https://www.kanekotic.com/img/blog/pyramid.jpeg)
 
 Tests are divided in these layers because there is a cost in time and complexity.
 

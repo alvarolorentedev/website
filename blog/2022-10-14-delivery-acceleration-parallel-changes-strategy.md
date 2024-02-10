@@ -10,7 +10,7 @@ tags:
 - devops
 - productivity
 canonical_url: https://www.kanekotic.com/blog/2022/10/14/delivery-acceleration-parallel-changes-strategy
-cover_image: https://www.kanekotic.com/img/expand_contract.jpeg
+cover_image: https://www.kanekotic.com/img/blog/expand_contract.jpeg
 series: Accelerate Continious Integration & Delivery Practices
 ---
 
@@ -21,7 +21,7 @@ As we develop a product over time, changes need to be made as we need to accommo
 A common practice is to have different versions for the multiple clients. While simple, it also requires significant effort to maintain as whenever an issue or bug is spotted, multiple places are affected, meaning there are more possibility of side effects.  
 It also makes it more difficult to make a case for clients to migrate from one to the other due to the contract changes.
 
-![](https://www.kanekotic.com/img/version.png)
+![](https://www.kanekotic.com/img/blog/version.png)
 
 This affect mostly negatively the next DORA 4 metrics:
 
@@ -35,7 +35,7 @@ We can achieve this in any code base by implementing a strategy for parallel cha
 * **Expand**: We add the new 'field' to the existing contract, and add the code to support this strategy on the existing code.
 * **Contract**: We monitor the usage of the old 'field' to understand when it is possible to deprecate, at that point we remove the old code.
 
-![](https://www.kanekotic.com/img/expand_contract.jpeg)
+![](https://www.kanekotic.com/img/blog/expand_contract.jpeg)
 
 With this, we have a clean source code that we can evolve indefinitely as required by the business.
 

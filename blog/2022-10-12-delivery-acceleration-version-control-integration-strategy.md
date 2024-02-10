@@ -10,7 +10,7 @@ tags:
 - programming
 - softwaredevelopment
 canonical_url: https://www.kanekotic.com/blog/2022/10/12/delivery-acceleration-version-control-integration-strategy
-cover_image: https://www.kanekotic.com/img/trunk.png
+cover_image: https://www.kanekotic.com/img/blog/trunk.png
 series: Accelerate Continious Integration & Delivery Practices
 ---
 
@@ -21,7 +21,7 @@ I have already written some [other post](https://www.kanekotic.com/blog/2022/08/
 Why do I call it the bad and the ugly? Because it does not allow you to achieve Continuous Deployment.  
 The idea is that every developer works isolated on their branch, validate on their branch and ask through a merge request to add their code to the X stage branch.
 
-![](https://www.kanekotic.com/img/gitflow-diagram-768x973.png)  
+![](https://www.kanekotic.com/img/blog/gitflow-diagram-768x973.png)  
 There are multiple issues with this:
 
 * Code does not exist isolated, we don't deploy isolated code, so the isolated test is not valid as it will require retesting.
@@ -46,7 +46,7 @@ Is there a simpler and better way to collaborate on code way?
 
 What happens if we all commit to the same branch.
 
-![](https://www.kanekotic.com/img/trunk.png)
+![](https://www.kanekotic.com/img/blog/trunk.png)
 
 Most of the expressed issues are solved, in this scenario by:
 

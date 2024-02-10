@@ -11,7 +11,7 @@ tags:
 - architecture
 series: The journey from the monolith to microservices
 canonical_url: https://www.kanekotic.com/blog/2022/09/09/event-storming-to-split-the-monolith-into-microservices
-cover_image: https://www.kanekotic.com/img/event-storming.png
+cover_image: https://www.kanekotic.com/img/blog/event-storming.png
 ---
 
 On our previous installments, we discussed the smells that can happen when splitting microservices, and the strategies that exist to make them as independent as possible. But how do we define boundaries? How do we define the process that our microservice is in charge off?
@@ -33,7 +33,7 @@ let's do an example of how a company sets up our internet connection
 Event storming requires people to share a common view and brainstorm and discuss on it. This process takes to count time as a dimension. And has multiple types of stickies that can be used.  
 You can see an example board on the next image:
 
-![](https://www.kanekotic.com/img/event-storming.png)
+![](https://www.kanekotic.com/img/blog/event-storming.png)
 
 Regarding the Stickies, their color represent a specific meaning\[1\]:
 
@@ -49,7 +49,7 @@ Regarding the Stickies, their color represent a specific meaning\[1\]:
 
 Events are the most important information of our board. They represent facts regarding the process and helps encapsulate the knowledge of the 'experts'.  
 As we mention before, time is a significant dimension. A process always happens in a period of time. Starting by organizing this 'things' that happen in a timeline is a good way to start.  
-![](https://www.kanekotic.com/img/event-storming-map-events-drawio.png)
+![](https://www.kanekotic.com/img/blog/event-storming-map-events-drawio.png)
 
 In our example, you can see on the previous image we go from checking coverage, to creating a user, to creating a contract and connecting our user to the network.
 
@@ -57,7 +57,7 @@ In our example, you can see on the previous image we go from checking coverage, 
 
 The intent of this step is to identify the existing systems and their interdependency. When we discuss systems, they can be internal or external.
 
-![](https://www.kanekotic.com/img/event-storming-map-systems-drawio.png)
+![](https://www.kanekotic.com/img/blog/event-storming-map-systems-drawio.png)
 
 In our example, all starts with the website, but soon enough it becomes apparent most of the process is taken care by the monolith.
 
@@ -67,7 +67,7 @@ This step is optional in the case you have a greenfield. Nevertheless, I highly 
 
 These are real people who are part of the process, they tend to be the starting point of a chain of events, or even on a manual process we are trying to automate the executors of the individual step.
 
-![](https://www.kanekotic.com/img/event-storming-map-actors-drawio.png)  
+![](https://www.kanekotic.com/img/blog/event-storming-map-actors-drawio.png)  
 In our case, the user is the one starting the process, but there needs to be a technician doing the last steps manually.
 
 #### Connect the dots with **Commands**
@@ -76,14 +76,14 @@ Now we are left with events that are done by someone and take effect in parts of
 
 Commands allow exactly this, is a specific action or decision that will push our system into a certain direction.
 
-![](https://www.kanekotic.com/img/event-storming-map-commands-drawio.png)
+![](https://www.kanekotic.com/img/blog/event-storming-map-commands-drawio.png)
 
 Commands can be positive or negative actions, causing bifurcation and showing different cases that our system needs to cope with.
 
 #### Define **Bounded Context**
 
 now we are left to define where each of the sub-process that conform our system starts and ends. This is done by grouping the stickies with an enclosing and giving a noun + verb to it, as it's a sub-process and it evokes action.  
-![](https://www.kanekotic.com/img/event-storming-bounded-contexts-drawio.png)
+![](https://www.kanekotic.com/img/blog/event-storming-bounded-contexts-drawio.png)
 
 Now you have a set of split actions that can become their microservices and provide part of the process independently.
 
@@ -102,11 +102,11 @@ Now, with the bounded context, we can start defining the capabilities of our ser
 Knowing our current architecture, it's good to think where we want to go.   
 This is not only a technical challenge, but an organizational challenge due to [Conway's law](https://en.wikipedia.org/wiki/Conway%27s_law). If we would like to be successful in splitting a monolith our communication, meaning the teams structure involved, need to resemble this target state.
 
-![](https://www.kanekotic.com/img/event-storming-goal-architecture-drawio.png)
+![](https://www.kanekotic.com/img/blog/event-storming-goal-architecture-drawio.png)
 
 #### Define a **plan** on how to split the Monolith (Optional)
 
 A change so big as the one shown on the previous image can be overwhelming for an organization and create a paralysis and doubts. It's always good to split the problem in steps to understand progress and be always on a better state. This will improve morale.  
-![](https://www.kanekotic.com/img/event-storming-plan-architecture-drawio.png)
+![](https://www.kanekotic.com/img/blog/event-storming-plan-architecture-drawio.png)
 
 ###### \[1\] [https://www.capitalone.com/tech/software-engineering/event-storming-for-microservice-architecture/](https://www.capitalone.com/tech/software-engineering/event-storming-for-microservice-architecture/ "https://www.capitalone.com/tech/software-engineering/event-storming-for-microservice-architecture/")

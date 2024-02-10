@@ -26,7 +26,7 @@ Nevertheless, it tends to outgrow itself and become more a pain than a solution.
 
 Due to these pains, microservices were created. To give team/domain independence to create focused solutions on a business that has already been validated.
 
-![](https://www.kanekotic.com/img/monolith.JPG)
+![](https://www.kanekotic.com/img/blog/monolith.JPG)
 
 ## The Microservices
 
