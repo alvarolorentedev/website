@@ -6,7 +6,7 @@ tags:
 - motivation
 - career
 - business
-description: Ae leaders and managers important for organizational success?
+description: Are leaders and managers important for organizational success?
 draft: true
 cover_image: https://raw.githubusercontent.com/alvarolorentedev/website/main/static/img/blog/leader-manager.jpeg
 series: Engineering Strategy 101
