@@ -1,13 +1,14 @@
 ---
-title: 'Leaders Build Trust, Managers Take Control: The Path to Empowering Teams'
 authors: kanekotic
+title: "Leaders Build Trust, Managers Take Control: The Path to Empowering Teams"
 tags:
-- productivity
-- motivation
-- career
-- business
+  - productivity
+  - motivation
+  - career
+  - business
 description: Are leaders and managers important for organizational success?
 draft: true
+published: 2024-02-11T00:00:00.000Z
 cover_image: https://raw.githubusercontent.com/alvarolorentedev/website/main/static/img/blog/leader-manager.jpeg
 canonical_url: https://scalinghorizons.substack.com/p/leaders-build-trust-managers-take
 series: Engineering Strategy 101
