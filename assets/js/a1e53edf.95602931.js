@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkalvarolorente_dev=self.webpackChunkalvarolorente_dev||[]).push([[5254],{7769:e=>{e.exports=JSON.parse('{"label":"productivity","permalink":"/blog/tags/productivity","allTagsPath":"/blog/tags","count":17}')}}]);
