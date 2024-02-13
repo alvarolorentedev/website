@@ -1,0 +1,12 @@
+name: test move action
+on: workflow_dispatch
+
+jobs:
+  release: 
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: alvarolorentedev/docusaurus-scheduler@main
+        with:
+            base-folder: blog-scheduler
+            destination-folder: blog
