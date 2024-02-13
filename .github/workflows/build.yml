@@ -22,8 +22,10 @@ jobs:
             ${{ runner.os }}-cache-
       - name: Install dependencies ✨
         run: npm ci
-      - name: Run Scheduler ✨
-        run: npm run scheduler      
+      - uses: alvarolorentedev/docusaurus-scheduler@main
+        with:
+            base-folder: blog-scheduler
+            destination-folder: blog
       - uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
