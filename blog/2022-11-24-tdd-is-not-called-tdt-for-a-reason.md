@@ -1,6 +1,6 @@
 ---
 title: TDD is not called TDT for a reason
-authors: kanekotic
+authors: alvarolorentedev
 draft: false
 description: 'When people elaborate on TDD they seem to stay focused on the first
   letter but miss the focus of the other two letters. '

@@ -1,6 +1,6 @@
 ---
 title: Functional Programming With Kotlin Bootcamp - Initialize the Project
-authors: kanekotic
+authors: alvarolorentedev
 tags:
 - programming
 - development
@@ -8,7 +8,7 @@ tags:
 - functional
 description: Learn how to do functional programming with kotlin
 draft: false
-cover_image: https://raw.githubusercontent.com/kanekotic/kanekotic-page/main/static/img/blog/fp-with-kotlin-gradle.png
+cover_image: https://raw.githubusercontent.com/alvarolorentedev/website/main/static/img/blog/fp-with-kotlin-gradle.png
 canonical_url: https://www.alvarolorente.dev/blog/2023/04/24/functional-programming-with-kotlin-bootcamp-initialize-the-project
 series: Functional Programming With Kotlin
 ---

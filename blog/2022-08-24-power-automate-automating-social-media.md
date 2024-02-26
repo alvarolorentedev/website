@@ -1,7 +1,7 @@
 ---
 title: 'Automate Anything: Power Automate + Trello + IFTTT'
 description: how to automate tedius tasks with low code platforms
-authors: kanekotic
+authors: alvarolorentedev
 tags:
 - lowcode
 - serverless
@@ -10,7 +10,7 @@ tags:
 draft: false
 series: ''
 canonical_url: https://www.alvarolorente.dev/blog/2022/08/24/power-automate-automating-social-media
-cover_image: https://github.com/kanekotic/diagrams/blob/main/automate.drawio.png?raw=true
+cover_image: https://github.com/alvarolorentedev/diagrams/blob/main/automate.drawio.png?raw=true
 ---
 
 ## Video
@@ -25,7 +25,7 @@ I am currently starting some new open-source projects and I feel it is tedious t
 * Announce a new release.
 
 [Power Automate](https://powerautomate.microsoft.com/en-us/) & [IFTTT](https://ifttt.com/) integrations allow just this, by a process of action and reaction.  
-![](https://github.com/kanekotic/diagrams/blob/main/automate.drawio.png?raw=true)
+![](https://github.com/alvarolorentedev/diagrams/blob/main/automate.drawio.png?raw=true)
 
 These systems provide:
 

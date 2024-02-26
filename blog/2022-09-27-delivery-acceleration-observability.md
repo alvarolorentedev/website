@@ -3,7 +3,7 @@ title: 'Delivery Acceleration: Observability'
 draft: false
 description: When runing services in production the most important thing is to understand
   the health of it
-authors: kanekotic
+authors: alvarolorentedev
 tags:
 - softwaredevelopment
 - programming

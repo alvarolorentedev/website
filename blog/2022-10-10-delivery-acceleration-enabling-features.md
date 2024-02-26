@@ -3,7 +3,7 @@ title: 'Delivery Acceleration: Enabling Features'
 draft: false
 description: How do we roll out features? What are some practices that can save us
   from the big bang release
-authors: kanekotic
+authors: alvarolorentedev
 tags:
 - productivity
 - devops

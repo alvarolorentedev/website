@@ -3,7 +3,7 @@ title: 'Delivery Acceleration: Testing & Validation'
 draft: false
 description: is testing enough to make sure our code works?
 authors:
-- kanekotic
+- alvarolorentedev
 tags:
 - softwaredevelopment
 - programming

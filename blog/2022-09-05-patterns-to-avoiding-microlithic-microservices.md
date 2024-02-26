@@ -2,7 +2,7 @@
 title: Patterns to avoiding microlithic microservices
 draft: false
 description: how can we decouple services to avoid some common pitfalls
-authors: kanekotic
+authors: alvarolorentedev
 tags:
 - api
 - microservices

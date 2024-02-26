@@ -1,6 +1,6 @@
 ---
 title: 'Continious Delivery Bootcamp: Intro'
-authors: kanekotic
+authors: alvarolorentedev
 tags:
 - programming
 - productivity
@@ -8,7 +8,7 @@ tags:
 - development
 description: Learn how to get things fast into production with good quality
 draft: false
-cover_image: https://raw.githubusercontent.com/kanekotic/kanekotic-page/main/static/img/blog/continious.png
+cover_image: https://raw.githubusercontent.com/alvarolorentedev/website/main/static/img/blog/continious.png
 canonical_url: https://www.alvarolorente.dev/blog/2023/04/13/continious-delivery-bootcamp-intro
 series: Continuous Delivery Bootcamp
 ---

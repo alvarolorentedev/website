@@ -3,7 +3,7 @@ title: 'Delivery Acceleration: Deployment Environments'
 draft: false
 description: Where should we run our services? are there hidden consts on certain
   practices?
-authors: kanekotic
+authors: alvarolorentedev
 tags:
 - softwaredevelopment
 - programming

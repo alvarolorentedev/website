@@ -1,6 +1,6 @@
 ---
 title: 'Leaders Build Trust, Managers Take Control: The Path to Empowering Teams'
-authors: kanekotic
+authors: alvarolorentedev
 tags:
 - productivity
 - motivation

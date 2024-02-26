@@ -1,6 +1,6 @@
 ---
 title: 'Delivery Acceleration: Parallel Changes Strategy'
-authors: kanekotic
+authors: alvarolorentedev
 draft: false
 description: Code evolve and changes. Making sure we don't break things in a continuous
   deployment environment.

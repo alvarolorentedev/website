@@ -3,7 +3,7 @@ title: 'The future of teams: Crossfuctional & T-Shaped'
 draft: false
 description: Team structure matters, how can we enable teams to be more productive
   & independent
-authors: kanekotic
+authors: alvarolorentedev
 tags:
 - softwaredevelopment
 - architecture

@@ -2,7 +2,7 @@
 title: 'Double-edge Microservices: APIs the New Singleton'
 description: In the current world of development we solve all with APIs, is it becoming
   an overused practice?
-authors: kanekotic
+authors: alvarolorentedev
 tags:
 - webdev
 - api

@@ -3,7 +3,7 @@ title: 'Delivery Acceleration: Intro'
 draft: false
 description: Why do teams perform differently and what are the tools & practices some
   team use to differentiate themselves
-authors: kanekotic
+authors: alvarolorentedev
 tags:
 - programming
 - softwaredevelopment

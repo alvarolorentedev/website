@@ -1,7 +1,7 @@
 ---
 title: 'Double-edge Microservices: Resource VS Process'
 description: Is there a good way and a bad way of splitting microservices
-authors: kanekotic
+authors: alvarolorentedev
 tags:
 - webdev
 - api

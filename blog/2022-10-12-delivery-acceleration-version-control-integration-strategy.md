@@ -1,6 +1,6 @@
 ---
 title: 'Delivery Acceleration: Version Control Integration Strategy'
-authors: kanekotic
+authors: alvarolorentedev
 draft: false
 description: How do you integrate code in the team matters, it will directly affect
   the rest of your architecture and practices like we have seen in previous chapters

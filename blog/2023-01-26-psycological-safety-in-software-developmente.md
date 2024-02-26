@@ -1,6 +1,6 @@
 ---
 title: Psychological safety in software development
-authors: kanekotic
+authors: alvarolorentedev
 draft: false
 description: 'What are some success factors of high-performing teams and organizations?
   One undoubtedly is the ability to share and exchange without fear or shame '
@@ -9,7 +9,7 @@ tags:
 - productivity
 - motivation
 canonical_url: https://www.alvarolorente.dev/blog/2023-01-26-psycological-safety-in-software-developmente
-cover_image: https://raw.githubusercontent.com/kanekotic/kanekotic-page/main/static/img/blog/unnamed-1.jpg
+cover_image: https://raw.githubusercontent.com/alvarolorentedev/website/main/static/img/blog/unnamed-1.jpg
 series: 'What makes high-performing teams '
 ---
 
