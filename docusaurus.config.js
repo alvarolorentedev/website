@@ -91,6 +91,7 @@ const config = {
           { to: "/services", label: "Services", position: "left" },
           { to: "/projects", label: "Projects", position: "left" },
           { to: "/talks", label: "Talks", position: "left" },
+          { to: "https://leadshorizons.com/", label: "Newsletter", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
           { to: "/contact", label: "Contact", position: "right" },
         ],
@@ -115,7 +116,7 @@ const config = {
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/alvarolorentedev",
+                href: "https://twitter.com/alvarolorentede",
               },
             ],
           },
@@ -141,6 +142,10 @@ const config = {
               {
                 label: "Blog",
                 to: "/blog",
+              },
+              { 
+                label: "Newsletter",
+                href: "https://leadshorizons.com/",  
               },
             ],
           },
