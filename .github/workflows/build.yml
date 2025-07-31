@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@master
       - name: Install dependencies ✨
-        run: npm ci
+        run: npm ci --force
       - uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
