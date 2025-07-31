@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkalvarolorente_dev=self.webpackChunkalvarolorente_dev||[]).push([[5320],{9544:e=>{e.exports=JSON.parse('{"label":"kotlin","permalink":"/blog/tags/kotlin","allTagsPath":"/blog/tags","count":2}')}}]);
