@@ -150,23 +150,6 @@ const config = {
               },
             ],
           },
-          {
-            title: "Blog feed",
-            items: [
-              {
-                label: "RSS",
-                to: "/blog/rss.xml",
-              },
-              {
-                label: "Atom",
-                to: "/blog/atom.xml",
-              },
-              {
-                label: "JSON",
-                to: "/blog/feed.json",
-              },
-            ],
-          },
         ],
         copyright: `Copyright © 2023-${new Date().getFullYear()} Alvaro Lorente.`,
       },
