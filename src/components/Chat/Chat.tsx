@@ -1,5 +1,5 @@
 
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { DeepChat } from "deep-chat-react";
 
 const AGENT_ENDPOINT = "https://rx4bv42rlvneqydnbjvqckjl.agents.do-ai.run/api/v1/chat/completions";
@@ -13,6 +13,13 @@ const Chat: React.FC = () => {
         borderRadius: '10px',
         width: '100%',
         height: 'calc(100vh - 50vh)'
+      }}
+      browserStorage={{
+        key: "deepchat-messages",
+        maxMessages: 15,
+      }}
+      introMessage={{
+        text: "Welcome to the chat with the virtual Alvaro Lorente! How can I assist you today?"
       }}
       messageStyles={{
         default: {
