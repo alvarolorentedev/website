@@ -93,6 +93,7 @@ const config = {
           { to: "/talks", label: "Talks", position: "left" },
           { to: "https://leadshorizons.com/", label: "Newsletter", position: "left" },
           { to: "/blog", label: "Blog", position: "left" },
+          { to: "/chat", label: "Virtual Me", position: "right" },
           { to: "/contact", label: "Contact", position: "right" },
         ],
       },
