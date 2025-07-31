@@ -23,6 +23,4 @@ This chapter we will do an example on how to build and validate our project in g
 
 <iframe width="100%" height="444" src="https://www.youtube.com/embed/QMwXxezykHc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{% embed https://youtu.be/QMwXxezykHc %}
-
 [﻿Watch the video on Youtube](https://youtu.be/QMwXxezykHc)

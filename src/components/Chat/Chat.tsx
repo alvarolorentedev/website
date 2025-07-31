@@ -9,9 +9,10 @@ const Chat: React.FC = () => {
   return (
     <DeepChat
       style={{
-        width: '90vw', 
-        height: '70vh', 
-        borderRadius: '10px'
+        display: 'block',
+        borderRadius: '10px',
+        width: '100%',
+        height: 'calc(100vh - 50vh)'
       }}
       messageStyles={{
         default: {

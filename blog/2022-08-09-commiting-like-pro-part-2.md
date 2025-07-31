@@ -190,12 +190,12 @@ The file creates a process of questions for:
 All these questions are asked interactively and not by the brain power of doing manual work.
 
 And you can then add some nice npm scripts in your `package.json` file pointing to the local version of Commitizen:
-
+```json
       ...
       "scripts": {
         "commit": "cz"
       }
-
+```
 This will be more convenient for your users because then if they want to do a commit, all they need to do is run `npm run commit` and they will get the prompts needed to start a commit!
 
 > **NOTE:** If you are using `precommit` hooks thanks to something like [`husky`](https://www.npmjs.com/package/husky), you will need to name your script something other than `"commit"` (e.g. `"cm": "cz"`). The reason is because npm scripts has a "feature" where it automatically runs scripts with the name _prexxx_ where _xxx_ is the name of another script. In essence, npm and husky will run `"precommit"` scripts twice if you name the script `"commit"`, and the workaround is to prevent the npm-triggered _precommit_ script.

@@ -23,6 +23,4 @@ This chapter we will do an iteration writing test, doing test driven development
 
 <iframe width="100%" height="444" src="https://www.youtube.com/embed/MG-Uqve41BQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-{% embed https://youtu.be/MG-Uqve41BQ %}
-
 [﻿Watch the video on Youtube](https://youtu.be/MG-Uqve41BQ)
