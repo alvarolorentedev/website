@@ -14,10 +14,6 @@ jobs:
       - uses: actions/setup-node@master
       - name: Install dependencies ✨
         run: npm ci
-      - uses: alvarolorentedev/notion-cms@main
-        with:
-          notion-api-key: ${{ secrets.NOTION_API_KEY }}
-          notion-database-id: ${{ secrets.NOTION_DATABASE_ID }}
       - uses: EndBug/add-and-commit@v9
         with:
           default_author: github_actions
