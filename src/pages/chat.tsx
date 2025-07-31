@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import ChatCompoment from "../components/Chat/Chat";
+import BrowserOnly from "@docusaurus/BrowserOnly";
 
 
 const title = "Virtual Me";
@@ -12,7 +12,12 @@ export default function Chat(): JSX.Element {
       <main className="container container--fluid margin-vert--lg">
         <h1>{title}</h1>
         <p>{description}</p>
-        <ChatCompoment />
+        <BrowserOnly>
+          {() => {
+            const ChatComponent = require('../components/Chat/Chat').default;
+            return <ChatComponent />;
+          }}
+        </BrowserOnly>
       </main>
     </Layout>
   );
