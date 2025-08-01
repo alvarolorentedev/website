@@ -4,7 +4,7 @@ import { DeepChat } from "deep-chat-react";
 
 const AGENT_ENDPOINT = "https://rx4bv42rlvneqydnbjvqckjl.agents.do-ai.run/api/v1/chat/completions";
 const AGENT_ACCESS_KEY = "HRb_ZwE-E48xXDr0QOtzl-CHWVczO4st";
-const MAX_MESSAGES = 12;
+const MAX_MESSAGES = 15;
 
 const Chat: React.FC = () => {
   const deepChatRef = useRef<any>(null);
@@ -20,7 +20,7 @@ const Chat: React.FC = () => {
       if (Array.isArray(messages) && messages.length >= MAX_MESSAGES) {
         deepChatRef.current.disableSubmitButton(true);
         deepChatRef.current.textInput.disabled=true;
-        deepChatRef.current.textInput.placeholder.text="Message limit reached";
+        deepChatRef.current.textInput.placeholder.text="Message Limit Reached. Please contact the real Alvaro Lorente for further assistance.";
       } else {
         deepChatRef.current.disableSubmitButton(false);
       }
