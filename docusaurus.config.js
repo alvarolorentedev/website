@@ -92,8 +92,8 @@ const config = {
           { to: "/projects", label: "Projects", position: "left" },
           { to: "/talks", label: "Talks", position: "left" },
           { to: "https://leadshorizons.com/", label: "Newsletter", position: "left" },
-          { to: "/blog", label: "Blog", position: "left" },
           { to: "/chat", label: "Virtual Me", position: "right" },
+          { to: "/blog", label: "Blog", position: "right" },
           { to: "/contact", label: "Contact", position: "right" },
         ],
       },
@@ -157,25 +157,7 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-    }),
-    headTags: [
-      {
-        tagName: 'script',
-        attributes: {
-            src: 'https://rx4bv42rlvneqydnbjvqckjl.agents.do-ai.run/static/chatbot/widget.js', // Replace with your script URL
-            async: 'true',
-            defer: 'true',
-            "data-agent-id":"167021e8-6d47-11f0-bf8f-4e013e2ddde4",
-            "data-chatbot-id":"MQKchI3GhLWELvCTNWL0tvsmjLygVvL7",
-            "data-name":"Virtual Alvaro Lorente",
-            "data-primary-color":"#000000",
-            "data-secondary-color":"#E5E8ED",
-            "data-button-background-color":"#000000ff",
-            "data-starting-message":"Hello! How can I help you today?",
-            "data-logo":"https://www.alvarolorente.dev/img/logo-white.svg"
-        },
-      },
-    ],
+    })
 };
 
 module.exports = config;
