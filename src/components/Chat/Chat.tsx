@@ -1,13 +1,39 @@
 
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useRef, useEffect } from "react";
 import { DeepChat } from "deep-chat-react";
 
 const AGENT_ENDPOINT = "https://rx4bv42rlvneqydnbjvqckjl.agents.do-ai.run/api/v1/chat/completions";
 const AGENT_ACCESS_KEY = "HRb_ZwE-E48xXDr0QOtzl-CHWVczO4st";
+const MAX_MESSAGES = 12;
 
 const Chat: React.FC = () => {
+  const deepChatRef = useRef<any>(null);
+  const checkMessagesToDisable = () => {
+    if (deepChatRef.current) {
+      let messages = [];
+      try {
+        const stored = window.localStorage.getItem("deepchat-messages");
+        if (stored) {
+          messages = JSON.parse(stored);
+        }
+      } catch (e) {}
+      if (Array.isArray(messages) && messages.length >= MAX_MESSAGES) {
+        deepChatRef.current.disableSubmitButton(true);
+        deepChatRef.current.textInput.disabled=true;
+        deepChatRef.current.textInput.placeholder.text="Message limit reached";
+      } else {
+        deepChatRef.current.disableSubmitButton(false);
+      }
+    }
+  };
+  useEffect(() => {
+    checkMessagesToDisable();
+  }, [deepChatRef]);
+
+
   return (
     <DeepChat
+      ref={deepChatRef}
       style={{
         display: 'block',
         borderRadius: '10px',
@@ -21,6 +47,7 @@ const Chat: React.FC = () => {
       introMessage={{
         text: "Welcome to the chat with the virtual Alvaro Lorente! How can I assist you today?"
       }}
+      onInput={checkMessagesToDisable}
       messageStyles={{
         default: {
           shared: {
