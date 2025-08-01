@@ -3,7 +3,7 @@ import React, { useRef, useEffect } from "react";
 import { DeepChat } from "deep-chat-react";
 
 const AGENT_ENDPOINT = "https://rx4bv42rlvneqydnbjvqckjl.agents.do-ai.run/api/v1/chat/completions";
-const AGENT_ACCESS_KEY = "HRb_ZwE-E48xXDr0QOtzl-CHWVczO4st";
+const AGENT_ACCESS_KEY = "RUhYeDE0WWhEMnlWRXFCdjZ4SEEyakhFYlFRM1E1a1Y=";
 const MAX_MESSAGES = 15;
 
 const Chat: React.FC = () => {
@@ -113,7 +113,7 @@ const Chat: React.FC = () => {
       connect={{
         url: AGENT_ENDPOINT,
         headers: {
-          "Authorization": `Bearer ${AGENT_ACCESS_KEY}`,
+          "Authorization": `Bearer ${ window.atob(AGENT_ACCESS_KEY)}`,
           "Content-Type": "application/json"
         },
         additionalBodyProps: {
@@ -135,7 +135,6 @@ const Chat: React.FC = () => {
             return details;
         }}
         responseInterceptor={(response: any) => {
-        console.log(response);
         return {text: response.choices[0].message.content}
         }}
       demo
