@@ -1,0 +1,64 @@
+name: Substack Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    env:
+      SUBSTACK_FEED_URL: https://yournewsletter.substack.com/feed
+      SUBSTACK_INPUT_DIR: .tmp/substack-sync
+      SUBSTACK_OUTPUT_DIR: blog
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Prepare sync workspace
+        run: rm -rf "$SUBSTACK_INPUT_DIR" && mkdir -p "$SUBSTACK_INPUT_DIR"
+
+      - name: Generate markdown stubs from RSS
+        id: rss_to_markdown
+        continue-on-error: true
+        uses: keiranlovett/rss-feed-to-markdown@main
+        with:
+          feed_url: ${{ env.SUBSTACK_FEED_URL }}
+          template_file: scripts/template.md
+          output_dir: ${{ env.SUBSTACK_INPUT_DIR }}
+
+      - name: Post-process generated files
+        if: steps.rss_to_markdown.outcome == 'success'
+        run: npm run substack:postprocess
+
+      - name: Clean temporary files
+        if: always()
+        run: rm -rf "$SUBSTACK_INPUT_DIR"
+
+      - name: Commit synced posts
+        run: |
+          if [ -z "$(git status --porcelain -- blog)" ]; then
+            echo "No blog changes to commit."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add blog
+          git commit -m "chore: sync substack posts"
+          git push origin main
