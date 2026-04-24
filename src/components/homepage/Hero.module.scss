@@ -6,12 +6,12 @@
   position: relative;
   overflow: hidden;
   background:
-    radial-gradient(circle at top left, rgba(0, 168, 150, 0.22), transparent 34%),
-    radial-gradient(circle at 85% 20%, rgba(255, 148, 64, 0.22), transparent 26%),
-    linear-gradient(135deg, #0d1422 0%, #18253d 56%, #0f1727 100%);
-  color: #fff;
+    radial-gradient(circle at top left, rgba(11, 95, 255, 0.12), transparent 34%),
+    radial-gradient(circle at 85% 20%, rgba(255, 186, 92, 0.18), transparent 26%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(246, 241, 230, 0.94) 56%, rgba(238, 247, 255, 0.94) 100%);
+  color: #122038;
   margin-bottom: 4rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(18, 32, 56, 0.08);
 
   @include small-size {
     padding: 3.25rem 1.5rem 3rem;
@@ -27,7 +27,7 @@
   text-transform: uppercase;
   letter-spacing: 0.12em;
   font-size: 0.76rem;
-  color: rgba(255, 255, 255, 0.76);
+  color: rgba(18, 32, 56, 0.7);
 }
 
 .title {
@@ -45,7 +45,7 @@
   max-width: 42rem;
   margin: 0 0 1.4rem;
   font-size: 1.02rem;
-  color: rgba(255, 255, 255, 0.82);
+  color: rgba(18, 32, 56, 0.76);
 
   @include small-size {
     font-size: 0.96rem;
@@ -77,15 +77,40 @@
 
   li {
     padding: 0.85rem 0.95rem;
-    border: 1px solid rgba(255, 255, 255, 0.14);
+    border: 1px solid rgba(18, 32, 56, 0.1);
     border-radius: 1rem;
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.58);
     backdrop-filter: blur(8px);
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.84);
+    color: rgba(18, 32, 56, 0.78);
   }
 
   @include small-size {
     grid-template-columns: 1fr;
+  }
+}
+
+[data-theme="dark"] {
+  .heroBanner {
+    background:
+      radial-gradient(circle at top left, rgba(0, 168, 150, 0.22), transparent 34%),
+      radial-gradient(circle at 85% 20%, rgba(255, 148, 64, 0.22), transparent 26%),
+      linear-gradient(135deg, #0d1422 0%, #18253d 56%, #0f1727 100%);
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .kicker {
+    color: rgba(255, 255, 255, 0.76);
+  }
+
+  .subtitle {
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  .proofPoints li {
+    border-color: rgba(255, 255, 255, 0.14);
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.84);
   }
 }
