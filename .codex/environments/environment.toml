@@ -3,7 +3,7 @@ version = 1
 name = "website"
 
 [setup]
-script = ""
+script = "npm i && npm start"
 
 [[actions]]
 name = "Run"

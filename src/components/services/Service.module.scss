@@ -13,6 +13,12 @@
 .image {
   background: linear-gradient(180deg, #e8f2ff 0%, #f5f8fc 100%);
   position: relative;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
 .role {

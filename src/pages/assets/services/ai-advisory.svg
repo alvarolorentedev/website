@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">AI and LLM product advisory</title>
+  <desc id="desc">A neural network illustration with connected nodes and a glowing core.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1239"/>
+      <stop offset="100%" stop-color="#6a2cff"/>
+    </linearGradient>
+    <radialGradient id="core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#84f7ff"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="700" rx="48" fill="url(#bg)"/>
+  <circle cx="180" cy="170" r="88" fill="#ffffff" opacity="0.07"/>
+  <circle cx="1010" cy="530" r="158" fill="#ffffff" opacity="0.07"/>
+  <rect x="150" y="122" width="900" height="456" rx="40" fill="#ffffff" opacity="0.08"/>
+  <circle cx="600" cy="350" r="86" fill="url(#core)"/>
+  <circle cx="390" cy="250" r="34" fill="#ffffff" opacity="0.95"/>
+  <circle cx="810" cy="250" r="34" fill="#ffffff" opacity="0.95"/>
+  <circle cx="370" cy="470" r="34" fill="#84f7ff"/>
+  <circle cx="830" cy="470" r="34" fill="#84f7ff"/>
+  <circle cx="600" cy="190" r="34" fill="#ffffff" opacity="0.82"/>
+  <circle cx="600" cy="530" r="34" fill="#ffffff" opacity="0.82"/>
+  <path d="M600 264 V224" stroke="#84f7ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M600 436 V476" stroke="#84f7ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M464 270 L534 308" stroke="#84f7ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M736 270 L666 308" stroke="#84f7ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M454 452 L532 392" stroke="#84f7ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M746 452 L668 392" stroke="#84f7ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M600 350 L600 280" stroke="#1a1239" stroke-width="14" stroke-linecap="round"/>
+  <path d="M600 350 L600 420" stroke="#1a1239" stroke-width="14" stroke-linecap="round"/>
+  <path d="M600 350 L534 308" stroke="#1a1239" stroke-width="14" stroke-linecap="round"/>
+  <path d="M600 350 L666 308" stroke="#1a1239" stroke-width="14" stroke-linecap="round"/>
+  <path d="M600 350 L532 392" stroke="#1a1239" stroke-width="14" stroke-linecap="round"/>
+  <path d="M600 350 L668 392" stroke="#1a1239" stroke-width="14" stroke-linecap="round"/>
+  <path d="M600 350 m-26 0 a26 26 0 1 0 52 0 a26 26 0 1 0 -52 0" fill="#6a2cff" opacity="0.85"/>
+</svg>

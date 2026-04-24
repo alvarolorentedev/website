@@ -1,6 +1,5 @@
 import clsx from "clsx";
 import React, { FunctionComponent } from "react";
-import Image from "@theme/IdealImage";
 
 import DiscoverIcon from "./assets/icon-discover.svg";
 import styles from "./Service.module.scss";
@@ -10,7 +9,15 @@ export interface ServiceData {
   description: string;
   role?: string;
   url: string;
-  image: string;
+  image: any;
+}
+
+function getImageSrc(image: any): string {
+  if (typeof image === "string") {
+    return image;
+  }
+
+  return image?.src ?? image?.default ?? image;
 }
 
 export const Service: FunctionComponent<ServiceData> = ({
@@ -20,11 +27,13 @@ export const Service: FunctionComponent<ServiceData> = ({
   role,
   image,
 }) => {
+  const imageSrc = getImageSrc(image);
+
   return (
     <div className={clsx("col col--6", styles.cardContainer)}>
       <div className={clsx("card", styles.card)}>
         <div className={clsx("card__image", styles.image)}>
-          <Image img={image} alt={description} title={title} />
+          <img src={imageSrc} alt={title} title={title} loading="lazy" />
           {role && (
             <span className={clsx("badge badge--secondary", styles.role)}>
               Role: {role}

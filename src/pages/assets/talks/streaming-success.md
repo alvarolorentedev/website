@@ -1,3 +1,7 @@
-High-performing teams do not improve DORA outcomes by optimizing a single stage of delivery in isolation. They improve by making the whole system work better together.
+High-performing teams improve DORA outcomes by making the whole delivery system work better together instead of optimizing one stage in isolation.
 
-This talk connects engineering practices across coding, collaboration, testing, deployment, and production feedback loops, showing how those decisions compound into stronger delivery performance. The focus is practical: how teams can reduce friction, strengthen the value stream, and improve outcomes without turning metrics into vanity targets.
+This talk connects coding, collaboration, testing, deployment, and production feedback loops, showing how those practices compound into stronger delivery performance.
+
+The focus is practical: how teams can reduce friction, strengthen the value stream, and improve outcomes without turning metrics into vanity targets.
+
+Delivered at Chartboost, ClimatePartner, and multiple meetups.

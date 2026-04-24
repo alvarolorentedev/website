@@ -6,36 +6,53 @@ import { Project, ProjectData } from "../components/projects/Project";
 const assetsDir = "./assets/projects";
 const projects: ProjectData[] = [
   {
-    title: "Socialtion",
+    title: "OctoLaunch",
     description:
-      "A publishing workflow that turns Notion into a practical social media operating system.",
-    url: "https://socialtion.com/",
-    image: require(`${assetsDir}/socialtion.png`),
-    role: "Founder",
+      "A DevOps companion for correlating CI/CD events, deployments, incidents, and production signals.",
+    url: "https://octolaunch.com/",
+    image: require(`${assetsDir}/octolaunch-logo.svg`),
   },
   {
-    title: "Podcastion",
+    title: "StrengthsOS",
     description:
-      "An opinionated product for managing podcast publishing and operations from Notion.",
-    url: "https://podcastion.com/",
-    image: require(`${assetsDir}/podcastion.png`),
-    role: "Founder",
+      "A capability workflow for engineering leaders to define role expectations, assess gaps, and plan growth.",
+    url: "https://strengthsos.com/",
+    image: require(`${assetsDir}/strengthsos-logo-navbar.png`),
+  },
+  {
+    title: "OpenCode Mobile",
+    description:
+      "A mobile companion for OpenCode that lets you inspect tasks, approve changes, and keep agent work moving.",
+    url: "http://getopencode.app/",
+    image: require(`${assetsDir}/opencode-logo.svg`),
+  },
+  {
+    title: "Owlumi",
+    description:
+      "A calm storytelling companion for families that co-creates bedtime stories with a friendly owl mascot.",
+    url: "http://playowlumi.com/",
+    image: require(`${assetsDir}/owlumi-icon.png`),
+  },
+  {
+    title: "Billly",
+    description:
+      "A WhatsApp-based expense manager that splits household bills automatically and sends payment links.",
+    url: "https://billly.xyz/",
+    image: require(`${assetsDir}/billly-logo-text.png`),
   },
   {
     title: "Barklarm",
     description:
-      "A desktop utility that surfaces build and monitoring signals directly in the operating system.",
-    url: "https://barklarm.com/",
-    image: require(`${assetsDir}/barklarm.png`),
-    role: "Founder",
+      "A desktop app that centralizes build and monitoring alarms natively in the operating system.",
+    url: "https://www.barklarm.com/",
+    image: require(`${assetsDir}/barklarm-logo.svg`),
   },
   {
-    title: "Tarant",
+    title: "Flagbear",
     description:
-      "A systems-oriented project exploring a universal actor model for distributed software.",
-    url: "https://tarant.dev/",
-    image: require(`${assetsDir}/tarant.png`),
-    role: "Co-founder",
+      "A serviceless feature flag system for enabling and disabling features without a third-party platform.",
+    url: "https://www.flagbear.dev/",
+    image: require(`${assetsDir}/flagbear-logo.svg`),
   },
 ];
 

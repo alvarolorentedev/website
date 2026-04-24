@@ -4,36 +4,60 @@ import Layout from "@theme/Layout";
 import { Service, ServiceData } from "../components/services/Service";
 
 const assetsDir = "./assets/services";
-const projects: ServiceData[] = [
+const services: ServiceData[] = [
   {
     title: "Fractional CTO advisory",
     description:
-      "Ongoing strategic support for founders and engineering leaders who need senior technical direction, clearer priorities, and better decision-making rhythms.",
-    image: require(`${assetsDir}/consult.png`),
+      "Ongoing senior technical leadership for founders and executive teams who need clearer priorities, stronger decision-making rhythms, and practical support shaping engineering strategy.",
+    image: require(`${assetsDir}/fractional-cto.svg`),
     url: "https://cal.com/alvarolorente/30min",
     role: "Advisor",
   },
   {
-    title: "Engineering and architecture audit",
+    title: "AI and LLM product advisory",
     description:
-      "A structured review of architecture, delivery flow, team interfaces, and engineering practices to identify the highest-leverage fixes.",
-    image: require(`${assetsDir}/consult.png`),
+      "Support teams building AI-enabled products, internal agents, and automation workflows with product evaluation, technical roadmap guidance, and implementation direction.",
+    image: require(`${assetsDir}/ai-advisory.svg`),
     url: "https://cal.com/alvarolorente/30min",
-    role: "Consultant",
+    role: "AI",
   },
   {
-    title: "Leadership mentoring for engineering managers",
+    title: "Engineering strategy and operating model",
     description:
-      "Targeted coaching for leaders who want to improve technical strategy, organizational influence, and the way they guide teams through change.",
-    image: require(`${assetsDir}/coach-mentor.png`),
+      "Define the team structure, decision rights, and delivery cadence that help organizations scale from startup pace to a more predictable engineering operating model.",
+    image: require(`${assetsDir}/engineering-strategy.svg`),
     url: "https://cal.com/alvarolorente/30min",
-    role: "Mentor & Coach",
+    role: "Strategy",
+  },
+  {
+    title: "Leadership mentoring and workshops",
+    description:
+      "Coaching for engineering managers and technical leaders who want to strengthen servant leadership, grow team ownership, and share better technical practices.",
+    image: require(`${assetsDir}/mentoring-workshops.svg`),
+    url: "https://cal.com/alvarolorente/30min",
+    role: "Mentor",
+  },
+  {
+    title: "Delivery excellence and DevOps",
+    description:
+      "Improve flow, reliability, and security with stronger CI/CD, observability, operational habits, and delivery metrics such as DORA in high-change environments.",
+    image: require(`${assetsDir}/devops-delivery.svg`),
+    url: "https://cal.com/alvarolorente/30min",
+    role: "Delivery",
+  },
+  {
+    title: "Architecture modernization",
+    description:
+      "Simplify complex systems, reduce technical friction, and guide re-architecture decisions across modular monoliths, microservices, DDD, and platform boundaries.",
+    image: require(`${assetsDir}/architecture-modernization.svg`),
+    url: "https://cal.com/alvarolorente/30min",
+    role: "Architect",
   },
 ];
 
 const title = "Services";
 const description =
-  "Fractional CTO advisory, engineering audits, and leadership support for software companies that need sharper technical direction.";
+  "Services shaped by 15+ years in engineering leadership, architecture, platform engineering, delivery, and AI-enabled product work.";
 
 export default function Projects(): JSX.Element {
   return (
@@ -43,8 +67,8 @@ export default function Projects(): JSX.Element {
         <p>{description}</p>
 
         <div className="row">
-          {projects.map((project) => (
-            <Service key={project.title} {...project} />
+          {services.map((service) => (
+            <Service key={service.title} {...service} />
           ))}
         </div>
       </main>

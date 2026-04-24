@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Leadership mentoring and workshops</title>
+  <desc id="desc">A coaching illustration with two people, a dialog bubble, and an upward path.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#10283b"/>
+      <stop offset="100%" stop-color="#15aabf"/>
+    </linearGradient>
+    <linearGradient id="step" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8cecff"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="48" fill="url(#bg)"/>
+  <circle cx="980" cy="170" r="104" fill="#ffffff" opacity="0.07"/>
+  <circle cx="200" cy="540" r="160" fill="#ffffff" opacity="0.07"/>
+  <rect x="136" y="122" width="928" height="456" rx="40" fill="#ffffff" opacity="0.08"/>
+  <path d="M250 470 L380 360 L492 390 L652 274 L850 240" fill="none" stroke="url(#step)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M836 224 l44 16 -14 42" fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="250" cy="470" r="34" fill="#ffffff" opacity="0.95"/>
+  <circle cx="380" cy="360" r="34" fill="#8cecff"/>
+  <circle cx="492" cy="390" r="34" fill="#ffffff" opacity="0.95"/>
+  <circle cx="652" cy="274" r="34" fill="#8cecff"/>
+  <circle cx="850" cy="240" r="34" fill="#ffffff" opacity="0.95"/>
+  <rect x="740" y="400" width="260" height="130" rx="28" fill="#ffffff" opacity="0.9"/>
+  <path d="M786 456 h170" stroke="#10283b" stroke-width="12" stroke-linecap="round"/>
+  <path d="M786 488 h126" stroke="#10283b" stroke-width="12" stroke-linecap="round"/>
+  <path d="M820 530 l26 18 32 -32" fill="none" stroke="#15aabf" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="332" cy="226" r="84" fill="#ffffff" opacity="0.85"/>
+  <circle cx="332" cy="204" r="24" fill="#10283b"/>
+  <path d="M288 296 c10 -40 26 -56 44 -56 s34 16 44 56" fill="#10283b"/>
+</svg>

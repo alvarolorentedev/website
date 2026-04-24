@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Architecture modernization</title>
+  <desc id="desc">A layered architecture illustration with blocks, connectors, and a structural frame.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#171a2f"/>
+      <stop offset="100%" stop-color="#464dd6"/>
+    </linearGradient>
+    <linearGradient id="block" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff1d9"/>
+      <stop offset="100%" stop-color="#ffd27a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="48" fill="url(#bg)"/>
+  <circle cx="980" cy="150" r="118" fill="#ffffff" opacity="0.07"/>
+  <circle cx="210" cy="520" r="170" fill="#ffffff" opacity="0.07"/>
+  <rect x="140" y="120" width="920" height="460" rx="42" fill="#ffffff" opacity="0.08"/>
+  <rect x="244" y="188" width="712" height="78" rx="24" fill="#ffffff" opacity="0.92"/>
+  <rect x="244" y="300" width="318" height="160" rx="30" fill="url(#block)"/>
+  <rect x="588" y="300" width="368" height="160" rx="30" fill="#ffffff" opacity="0.88"/>
+  <rect x="244" y="492" width="712" height="58" rx="20" fill="#aeb5ff" opacity="0.68"/>
+  <path d="M402 266 v34" stroke="#171a2f" stroke-width="12" stroke-linecap="round"/>
+  <path d="M772 266 v34" stroke="#171a2f" stroke-width="12" stroke-linecap="round"/>
+  <path d="M404 300 c0 0 0 36 0 36" stroke="#fff" stroke-width="10" opacity="0.6" stroke-linecap="round"/>
+  <path d="M588 380 h368" stroke="#464dd6" stroke-width="12" stroke-linecap="round"/>
+  <path d="M588 340 h368" stroke="#464dd6" stroke-width="12" stroke-linecap="round" stroke-dasharray="22 18"/>
+  <rect x="286" y="344" width="140" height="20" rx="10" fill="#171a2f" opacity="0.8"/>
+  <rect x="286" y="382" width="188" height="20" rx="10" fill="#171a2f" opacity="0.62"/>
+  <rect x="626" y="344" width="220" height="20" rx="10" fill="#171a2f" opacity="0.8"/>
+  <rect x="626" y="382" width="148" height="20" rx="10" fill="#171a2f" opacity="0.62"/>
+</svg>

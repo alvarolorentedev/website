@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title desc">
+  <title id="title">Engineering strategy and operating model</title>
+  <desc id="desc">An org chart style illustration showing teams connected to a central strategy node.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#13294b"/>
+      <stop offset="100%" stop-color="#0f7c90"/>
+    </linearGradient>
+    <linearGradient id="node" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#5fe1ff"/>
+      <stop offset="100%" stop-color="#bdf3ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="48" fill="url(#bg)"/>
+  <circle cx="200" cy="160" r="90" fill="#ffffff" opacity="0.06"/>
+  <circle cx="1000" cy="560" r="150" fill="#ffffff" opacity="0.06"/>
+  <rect x="160" y="116" width="880" height="464" rx="38" fill="#ffffff" opacity="0.08"/>
+  <rect x="500" y="220" width="200" height="120" rx="30" fill="url(#node)"/>
+  <rect x="238" y="430" width="180" height="92" rx="24" fill="#ffffff" opacity="0.9"/>
+  <rect x="500" y="430" width="200" height="92" rx="24" fill="#ffffff" opacity="0.75"/>
+  <rect x="782" y="430" width="180" height="92" rx="24" fill="#ffffff" opacity="0.9"/>
+  <path d="M600 340 v52" stroke="#ffffff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M328 430 v-38 H600" stroke="#5fe1ff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <path d="M600 392 v38" stroke="#5fe1ff" stroke-width="12" stroke-linecap="round"/>
+  <path d="M872 430 v-38 H600" stroke="#5fe1ff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <circle cx="600" cy="250" r="34" fill="#13294b"/>
+  <circle cx="328" cy="476" r="18" fill="#0f7c90"/>
+  <circle cx="600" cy="476" r="18" fill="#0f7c90"/>
+  <circle cx="872" cy="476" r="18" fill="#0f7c90"/>
+  <path d="M590 250 h20" stroke="#5fe1ff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M600 240 v20" stroke="#5fe1ff" stroke-width="10" stroke-linecap="round"/>
+  <rect x="262" y="460" width="132" height="14" rx="7" fill="#13294b" opacity="0.8"/>
+  <rect x="536" y="460" width="128" height="14" rx="7" fill="#13294b" opacity="0.8"/>
+  <rect x="814" y="460" width="116" height="14" rx="7" fill="#13294b" opacity="0.8"/>
+</svg>
