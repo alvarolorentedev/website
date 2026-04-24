@@ -376,7 +376,25 @@ function injectTruncate(markdown) {
   return result.join("\n\n").trim();
 }
 
-function formatFrontMatter({ title, description, canonicalUrl, coverImage }) {
+function extractTags(entry) {
+  const rawCategories = asArray(entry?.category)
+    .map((category) => getText(category).replace(/\s+/g, " ").trim())
+    .filter(Boolean);
+
+  const normalized = rawCategories
+    .map((tag) => tag.toLowerCase())
+    .map((tag) => tag.replace(/["']/g, ""))
+    .map((tag) => tag.replace(/\s+/g, "-"))
+    .map((tag) => tag.replace(/[^a-z0-9-]/g, ""))
+    .map((tag) => tag.replace(/-{2,}/g, "-"))
+    .map((tag) => tag.replace(/^-+|-+$/g, ""))
+    .filter(Boolean);
+
+  const uniqueTags = Array.from(new Set(normalized));
+  return uniqueTags.length > 0 ? uniqueTags : ["substack"];
+}
+
+function formatFrontMatter({ title, description, canonicalUrl, coverImage, tags }) {
   const escapeValue = (value) =>
     String(value || "")
       .replace(/\\/g, "\\\\")
@@ -388,7 +406,7 @@ function formatFrontMatter({ title, description, canonicalUrl, coverImage }) {
     `description: '${escapeValue(description)}'`,
     "authors: alvarolorentedev",
     "tags:",
-    "- substack",
+    ...tags.map((tag) => `- ${tag}`),
     "draft: false",
     "series: ''",
     `canonical_url: ${canonicalUrl || ""}`,
@@ -443,6 +461,7 @@ async function main() {
     );
     const coverImage =
       extractCoverImage(sourceHtml) || String(parsed.attributes.cover_image || "").trim();
+    const tags = extractTags(feedEntry);
     const markdownBody = injectTruncate(
       sourceHtml ? normalizeMarkdown(turndown.turndown(sourceHtml)) : fallbackMarkdown,
     );
@@ -451,6 +470,7 @@ async function main() {
       description,
       canonicalUrl: link,
       coverImage,
+      tags,
     });
     const output = `${frontMatterBlock}\n\n${markdownBody}\n`;
 
