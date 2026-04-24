@@ -12,7 +12,7 @@ jobs:
   sync:
     runs-on: ubuntu-latest
     env:
-      SUBSTACK_FEED_URL: https://yournewsletter.substack.com/feed
+      SUBSTACK_FEED_URL: https://theengineeringtax.com/feed
       SUBSTACK_INPUT_DIR: .tmp/substack-sync
       SUBSTACK_OUTPUT_DIR: blog
     steps:
@@ -29,7 +29,7 @@ jobs:
 
       - name: Pin npm version
         run: npm install -g npm@10.9.8
-        
+
       - name: Install dependencies
         run: npm ci
 
