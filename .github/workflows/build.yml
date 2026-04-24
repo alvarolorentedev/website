@@ -28,7 +28,7 @@ jobs:
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
       - name: Sycing Article to dev.to
-        uses: ful1e5/TheActionDev@3.0.1
+        uses: ful1e5/TheActionDev@v3
         timeout-minutes: 10
         continue-on-error: true
         with:
