@@ -6,33 +6,34 @@ import { Service, ServiceData } from "../components/services/Service";
 const assetsDir = "./assets/services";
 const projects: ServiceData[] = [
   {
-    title: "Engineering Strategy Support",
+    title: "Fractional CTO advisory",
     description:
-      "Assessing your strategy and assisting you in its evolution to achieve your goals. We will collaborate on iterating it together.",
+      "Ongoing strategic support for founders and engineering leaders who need senior technical direction, clearer priorities, and better decision-making rhythms.",
     image: require(`${assetsDir}/consult.png`),
-    url:"https://cal.com/alvarolorente/30min",
+    url: "https://cal.com/alvarolorente/30min",
+    role: "Advisor",
+  },
+  {
+    title: "Engineering and architecture audit",
+    description:
+      "A structured review of architecture, delivery flow, team interfaces, and engineering practices to identify the highest-leverage fixes.",
+    image: require(`${assetsDir}/consult.png`),
+    url: "https://cal.com/alvarolorente/30min",
     role: "Consultant",
   },
   {
-    title: "Engineering Audit",
+    title: "Leadership mentoring for engineering managers",
     description:
-      "We will work together to conduct an orthogonal audit of your organization. We will assess your agile processes, architecture and more.",
-    image: require(`${assetsDir}/consult.png`),
-    url:"https://cal.com/alvarolorente/30min",
-    role: "Consultant",
-  },
-  {
-    title: "Engineering Strategy Personal Growth",
-    description:
-      "Helping you improve and scale your capabilities on defining and handling the enginering strategy for your company or team.",
+      "Targeted coaching for leaders who want to improve technical strategy, organizational influence, and the way they guide teams through change.",
     image: require(`${assetsDir}/coach-mentor.png`),
-    url:"https://cal.com/alvarolorente/30min",
+    url: "https://cal.com/alvarolorente/30min",
     role: "Mentor & Coach",
   },
 ];
 
 const title = "Services";
-const description = "I provide different services that adapts the best to your organization needs.";
+const description =
+  "Fractional CTO advisory, engineering audits, and leadership support for software companies that need sharper technical direction.";
 
 export default function Projects(): JSX.Element {
   return (

@@ -8,14 +8,18 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Alvaro Lorente, Fractional CTO & Founder",
+  title: "Alvaro Lorente | Fractional CTO, Engineering Strategy & Architecture",
   tagline:
-    "Engineering leadership independant consultant. Passionate about supporting others make the correct strategic decision.",
+    "Fractional CTO helping software companies sharpen engineering strategy, architecture, and delivery systems.",
   url: "https://alvarolorente.dev",
   baseUrl: "/",
   onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "warn",
+    },
+  },
   organizationName: "alvarolorentedev",
   projectName: "website",
   i18n: {
@@ -64,12 +68,12 @@ const config = {
         {
           name: "description",
           content:
-            "Engineering leadership independant consultant. Passionate about supporting others make the correct strategic decision.",
+            "Alvaro Lorente is a fractional CTO based in Spain helping software companies improve engineering strategy, architecture, delivery, and leadership.",
         },
         {
           name: "keywords",
           content:
-            "leadership,developer,engineer,founder,fullstack,cloud,cloud-native,open-source",
+            "fractional cto, engineering strategy, software architecture, engineering leadership, platform engineering, technical advisory, software delivery",
         },
         {
           name: "twitter:card",
@@ -91,7 +95,11 @@ const config = {
           { to: "/services", label: "Services", position: "left" },
           { to: "/projects", label: "Projects", position: "left" },
           { to: "/talks", label: "Talks", position: "left" },
-          { to: "https://leadshorizons.com/", label: "Newsletter", position: "left" },
+          {
+            to: "https://theengineeringtax.com/",
+            label: "Newsletter",
+            position: "left",
+          },
           { to: "/chat", label: "Virtual Me", position: "right" },
           { to: "/blog", label: "Blog", position: "right" },
           { to: "/contact", label: "Contact", position: "right" },
@@ -112,11 +120,11 @@ const config = {
                 href: "https://www.linkedin.com/in/alvarolorentedev",
               },
               {
-                label: "Github",
+                label: "GitHub",
                 href: "https://www.github.com/alvarolorentedev",
               },
               {
-                label: "Twitter",
+                label: "X",
                 href: "https://twitter.com/alvarolorentede",
               },
             ],
@@ -144,9 +152,9 @@ const config = {
                 label: "Blog",
                 to: "/blog",
               },
-              { 
+              {
                 label: "Newsletter",
-                href: "https://leadshorizons.com/",  
+                href: "https://theengineeringtax.com/",
               },
             ],
           },
@@ -157,7 +165,7 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-    })
+    }),
 };
 
 module.exports = config;

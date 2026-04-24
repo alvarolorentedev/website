@@ -4,6 +4,19 @@
   padding: 2rem 0 4rem;
 }
 
+.eyebrow {
+  margin: 0 0 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  color: var(--site-accent-strong);
+}
+
+.lead {
+  max-width: 40rem;
+  color: var(--site-text-soft);
+}
+
 .socialLinks {
   @include small-size {
     & > div:nth-child(odd) {
@@ -24,8 +37,10 @@
 
 .btn {
   width: 100%;
-  border-color: var(--ifm-color-emphasis-200);
+  border-color: var(--site-border);
   padding: 1rem 0;
+  background: var(--site-surface);
+  border-radius: 1rem;
 
   &--active,
   &:active,

@@ -2,36 +2,48 @@ import React, { FunctionComponent } from "react";
 import clsx from "clsx";
 import styles from "./ContactMe.module.scss";
 
-export interface ContactMeProps {
-}
+export interface ContactMeProps {}
 
-export const ContactMe: FunctionComponent<ContactMeProps> = ({
-}) => {
+export const ContactMe: FunctionComponent<ContactMeProps> = () => {
   return (
-      <div className="row">
-        <div className="col">
-          <h2>Send me an Email</h2>
-          <form action="https://formsubmit.co/3c8246267233c5a0a531977be346fe98" method="POST" className={styles.form}>
-            <input type="text" name="name" placeholder="Your name" required />
-            <input  type="email" name="email" placeholder="Your email" required />
-            <button className="button button--primary" type="submit">Send</button>
-          </form>
-        </div>
-        <div className="col">
-          <div className="row">
-            <h2>Or Book a Call</h2>
-          </div>
-          <div className="row">
-            <a className="button button--primary" href="https://cal.com/alvarolorente/30min">Book a 30 minutes call</a>
-          </div>
-
-          <div className="row margin-top--lg">
-            <h2>or drop me a message</h2>
-          </div>
-          <div className="row">
-            <a className="" href="https://www.linkedin.com/in/alvarolorentedev/">Say Hi! 👋️ on LinkedIn</a>
-          </div>
-        </div>
+    <div className={clsx("row", styles.wrapper)}>
+      <div className={clsx("col col--6", styles.panel)}>
+        <h2>Send me an email</h2>
+        <p className={styles.copy}>
+          If you are exploring fractional CTO support, architecture advisory, or
+          a speaking opportunity, email is the simplest place to start.
+        </p>
+        <form
+          action="https://formsubmit.co/3c8246267233c5a0a531977be346fe98"
+          method="POST"
+          className={styles.form}
+        >
+          <input type="text" name="name" placeholder="Your name" required />
+          <input type="email" name="email" placeholder="Your email" required />
+          <button className="button button--primary" type="submit">
+            Send
+          </button>
+        </form>
       </div>
+      <div className={clsx("col col--6", styles.panel)}>
+        <h2>Prefer a direct conversation?</h2>
+        <p className={styles.copy}>
+          Book a short call if you want to talk through your context quickly.
+        </p>
+        <div className={styles.actions}>
+          <a className="button button--primary" href="https://cal.com/alvarolorente/30min">
+            Book a 30 minute call
+          </a>
+        </div>
+
+        <h2 className={styles.secondaryHeading}>Or say hi on LinkedIn</h2>
+        <p className={styles.copy}>
+          LinkedIn is a good option for lightweight intros and follow-up.
+        </p>
+        <a href="https://www.linkedin.com/in/alvarolorentedev/">
+          Say hi on LinkedIn
+        </a>
+      </div>
+    </div>
   );
 };

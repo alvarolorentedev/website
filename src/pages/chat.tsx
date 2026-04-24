@@ -4,7 +4,8 @@ import BrowserOnly from "@docusaurus/BrowserOnly";
 
 
 const title = "Virtual Me";
-const description = "Talk to a virtual Alvaro Lorente, so you can know me better.";
+const description =
+  "Chat with a virtual version of Alvaro to learn more about his background, work, and approach.";
 
 export default function Chat(): JSX.Element {
   return (
@@ -22,4 +23,3 @@ export default function Chat(): JSX.Element {
     </Layout>
   );
 };
-

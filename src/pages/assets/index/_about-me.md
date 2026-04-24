@@ -1,5 +1,7 @@
-I am an engineering leader polyglot in cloud software development. Based in Spain.
+I am a fractional CTO, founder, and engineering leadership advisor based in Spain.
 
-I help other leaders define their engineering strategies & architecture. Making sure they are scalable, adaptable to change and laser focus on fast value streams.
+I help software companies make better engineering decisions across architecture, delivery, organization design, and technical strategy. The goal is not more process for its own sake. The goal is to create systems that stay adaptable, support faster value delivery, and remain understandable as the company grows.
 
-<a class="button button--outline button--primary" href="https://cal.com/alvarolorente/30min">Book a 30 minutes call</a>
+My background spans product engineering, cloud software, technical leadership, and building businesses around developer tooling. That mix lets me work comfortably from board-level priorities down to the architectural and delivery details that usually decide whether a strategy actually lands.
+
+<a class="button button--outline button--primary" href="https://cal.com/alvarolorente/30min">Book a 30 minute call</a>

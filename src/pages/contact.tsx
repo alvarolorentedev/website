@@ -4,7 +4,8 @@ import { ContactMe } from "../components/contact/ContactMe";
 
 
 const title = "Contact Me";
-const description = "Get in touch in the way you preffer.";
+const description =
+  "Get in touch to discuss fractional CTO support, engineering strategy, architecture, or speaking.";
 
 export default function Talks(): JSX.Element {
   return (

@@ -29,7 +29,12 @@ export const SocialLinks: FunctionComponent<SocialLinksProps> = ({ data }) => {
 
   return (
     <div className={styles.socialContainer}>
-      <h2>Social media</h2>
+      <p className={styles.eyebrow}>Connect</p>
+      <h2>Follow the work or start a conversation</h2>
+      <p className={styles.lead}>
+        I share ideas on engineering leadership, architecture, delivery, and
+        product-minded technical strategy.
+      </p>
       <div className={clsx("row", styles.socialLinks)}>
         {socialLinksComponents}
       </div>

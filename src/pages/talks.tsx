@@ -8,14 +8,9 @@ import IsUnitTestingDead from "./assets/talks/unit-testing-dead.md";
 
 const talks: TalkMetadata[] = [
   {
-    title: "Streaming Success: Optimizing DORA Metrics through Comprehensive Software Development Practices",
+    title: "Streaming Success: Optimizing DORA Metrics Through Better Development Practices",
     description: <StreamingSuccess />,
     events: [
-      {
-        name: "Conferencia Agile Spain",
-        location: "Barcelona, Spain",
-        date: new Date(2023, 11),
-      },
       {
         name: "Conferencia Agile Spain",
         location: "Barcelona, Spain",
@@ -24,7 +19,7 @@ const talks: TalkMetadata[] = [
     ]
   },
   {
-    title: "is unit testing dead?",
+    title: "Is Unit Testing Dead?",
     description: <IsUnitTestingDead />,
     events: [
       {
@@ -42,7 +37,8 @@ const talks: TalkMetadata[] = [
 ];
 
 const title = "Talks";
-const description = "Featured talks I presented on various events.";
+const description =
+  "Selected talks on engineering leadership, software delivery, testing, and architecture.";
 
 export default function Talks(): JSX.Element {
   return (

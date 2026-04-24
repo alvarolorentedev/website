@@ -8,7 +8,7 @@ const projects: ProjectData[] = [
   {
     title: "Socialtion",
     description:
-      "Create & schedule your social media from Notion",
+      "A publishing workflow that turns Notion into a practical social media operating system.",
     url: "https://socialtion.com/",
     image: require(`${assetsDir}/socialtion.png`),
     role: "Founder",
@@ -16,7 +16,7 @@ const projects: ProjectData[] = [
   {
     title: "Podcastion",
     description:
-      "Host your podcast in Notion",
+      "An opinionated product for managing podcast publishing and operations from Notion.",
     url: "https://podcastion.com/",
     image: require(`${assetsDir}/podcastion.png`),
     role: "Founder",
@@ -24,7 +24,7 @@ const projects: ProjectData[] = [
   {
     title: "Barklarm",
     description:
-      "Display the status of your projects build & monitoring natively to your OS",
+      "A desktop utility that surfaces build and monitoring signals directly in the operating system.",
     url: "https://barklarm.com/",
     image: require(`${assetsDir}/barklarm.png`),
     role: "Founder",
@@ -32,15 +32,16 @@ const projects: ProjectData[] = [
   {
     title: "Tarant",
     description:
-      "The Universal Actor Model",
+      "A systems-oriented project exploring a universal actor model for distributed software.",
     url: "https://tarant.dev/",
     image: require(`${assetsDir}/tarant.png`),
-    role: "co-Founder",
+    role: "Co-founder",
   },
 ];
 
 const title = "Projects";
-const description = "Featured projects I was/am involved in.";
+const description =
+  "Selected products and technical ventures I have built or helped shape.";
 
 export default function Projects(): JSX.Element {
   return (
