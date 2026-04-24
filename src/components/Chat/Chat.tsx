@@ -7,17 +7,7 @@ const SITE_ORIGIN = "https://alvarolorente.dev";
 const MAX_MESSAGES = 15;
 
 const getResponseText = (response: any): string => {
-  if (typeof response === "string") return response;
-  if (typeof response?.text === "string") return response.text;
-  if (typeof response?.response === "string") return response.response;
-  if (typeof response?.answer === "string") return response.answer;
-  if (typeof response?.result === "string") return response.result;
-  if (typeof response?.message === "string") return response.message;
-  if (typeof response?.message?.content === "string") return response.message.content;
-  if (typeof response?.choices?.[0]?.message?.content === "string") {
-    return response.choices[0].message.content;
-  }
-  if (typeof response?.data?.text === "string") return response.data.text;
+  if (typeof response?.reply === "string") return response.reply;
 
   return "I couldn't parse the response from Virtual Me.";
 };
