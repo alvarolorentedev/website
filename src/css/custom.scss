@@ -83,8 +83,18 @@ html[data-theme="dark"] {
 }
 
 .navbar {
-  backdrop-filter: blur(12px);
+  position: relative;
   border-bottom: 1px solid var(--site-border);
+}
+
+/* Keep the blur on a background layer so the navbar itself does not create
+   a stacking context that can trap mobile/sidebar controls behind page content. */
+.navbar::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(12px);
+  z-index: -1;
 }
 
 .main-wrapper {
