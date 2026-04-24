@@ -2,9 +2,25 @@
 import React, { useRef, useEffect } from "react";
 import { DeepChat } from "deep-chat-react";
 
-const AGENT_ENDPOINT = "https://rx4bv42rlvneqydnbjvqckjl.agents.do-ai.run/api/v1/chat/completions";
-const AGENT_ACCESS_KEY = "RUhYeDE0WWhEMnlWRXFCdjZ4SEEyakhFYlFRM1E1a1Y=";
+const AGENT_ENDPOINT = "https://virtualalvarolorentedev.me-e7e.workers.dev";
+const SITE_ORIGIN = "https://alvarolorente.dev";
 const MAX_MESSAGES = 15;
+
+const getResponseText = (response: any): string => {
+  if (typeof response === "string") return response;
+  if (typeof response?.text === "string") return response.text;
+  if (typeof response?.response === "string") return response.response;
+  if (typeof response?.answer === "string") return response.answer;
+  if (typeof response?.result === "string") return response.result;
+  if (typeof response?.message === "string") return response.message;
+  if (typeof response?.message?.content === "string") return response.message.content;
+  if (typeof response?.choices?.[0]?.message?.content === "string") {
+    return response.choices[0].message.content;
+  }
+  if (typeof response?.data?.text === "string") return response.data.text;
+
+  return "I couldn't parse the response from Virtual Me.";
+};
 
 const Chat: React.FC = () => {
   const deepChatRef = useRef<any>(null);
@@ -113,30 +129,26 @@ const Chat: React.FC = () => {
       connect={{
         url: AGENT_ENDPOINT,
         headers: {
-          "Authorization": `Bearer ${ window.atob(AGENT_ACCESS_KEY)}`,
-          "Content-Type": "application/json"
-        },
-        additionalBodyProps: {
-            "stream": false,
-            "include_functions_info": false,
-            "include_retrieval_info": false,
-            "include_guardrails_info": false
+          "Content-Type": "application/json",
+          Origin: SITE_ORIGIN,
         }
-        }}
-        requestInterceptor={(details: any) => {
-            if (details.body && Array.isArray(details.body.messages)) {
-                details.body.messages = details.body.messages.map((msg: any) => {
-                    if (msg.text) {
-                        return { ...msg, content: msg.text, text: undefined };
-                    }
-                    return msg;
-                });
-            }
-            return details;
-        }}
-        responseInterceptor={(response: any) => {
-        return {text: response.choices[0].message.content}
-        }}
+      }}
+      requestInterceptor={(details: any) => {
+        const messages = Array.isArray(details.body?.messages) ? details.body.messages : [];
+        const latestUserMessage = [...messages]
+          .reverse()
+          .find((message: any) => typeof message?.text === "string" && message.text.trim().length > 0);
+
+        return {
+          ...details,
+          body: {
+            message: latestUserMessage?.text ?? "",
+          },
+        };
+      }}
+      responseInterceptor={(response: any) => {
+        return { text: getResponseText(response) };
+      }}
       demo
     />
   );
