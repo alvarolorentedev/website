@@ -1,7 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 const matter = require("gray-matter");
-const fetch = require("node-fetch");
+
+// 🔥 HARD FIX: always use node-fetch v2 style
+const fetch = require("node-fetch"); // IMPORTANT: install node-fetch@2
 
 const HASHNODE_API = "https://gql.hashnode.com";
 const TOKEN = process.env.HASHNODE_TOKEN;
@@ -20,15 +22,14 @@ function slugify(text) {
     .replace(/^-+|-+$/g, "");
 }
 
-// 🚨 CRITICAL FIX
 function sanitizeContent(content) {
   return content
-    // remove MDX / Docusaurus junk
+    // remove MDX junk
     .replace(/<!--.*?-->/gs, "")
     .replace(/<iframe[\s\S]*?<\/iframe>/g, "")
     .replace(/^import\s+.*$/gm, "")
 
-    // remove weird HTML tags
+    // remove html
     .replace(/<[^>]+>/g, "")
 
     // fix images (keep markdown)
@@ -37,11 +38,10 @@ function sanitizeContent(content) {
     .trim();
 }
 
-// 🚨 CRITICAL FIX (this was your missing piece)
 function normalizeForGraphQL(content) {
   return content
-    .replace(/\\+"/g, '"')       // fix \" → "
-    .replace(/\\\\/g, "\\")      // fix \\ → \
+    .replace(/\\+"/g, '"') // fix escaped quotes
+    .replace(/\\\\/g, "\\") // fix slashes
     .replace(/[\u0000-\u001F]/g, "") // remove control chars
     .trim();
 }
@@ -57,14 +57,17 @@ async function graphqlRequest(query, variables) {
       "Content-Type": "application/json",
       Authorization: TOKEN,
     },
-    body: JSON.stringify({ query, variables }),
+    body: JSON.stringify({
+      query,
+      variables,
+    }),
   });
 
   return res.json();
 }
 
 // ----------------------
-// FETCH EXISTING POSTS (IDEMPOTENCY)
+// IDEMPOTENCY
 // ----------------------
 
 async function getExistingSlugs() {
@@ -87,7 +90,7 @@ async function getExistingSlugs() {
   });
 
   const edges = res?.data?.publication?.posts?.edges || [];
-  return new Set(edges.map((e) => e.node.slug));
+  return new Set(edges.map(e => e.node.slug));
 }
 
 // ----------------------
@@ -107,22 +110,28 @@ async function run() {
   for (const file of files) {
     const fullPath = path.join(BLOG_DIR, file);
     const raw = fs.readFileSync(fullPath, "utf-8");
+
     const { data, content } = matter(raw);
 
     const title = data.title || file;
     const slug = slugify(title);
 
     if (existing.has(slug)) {
-      console.log(`⏭️ Skipping (already exists): ${slug}`);
+      console.log(`⏭️ Skipping: ${slug}`);
       continue;
     }
 
     console.log(`➡️ Processing: ${file}`);
     console.log(`📝 Title: ${title}`);
 
-    // 🚨 sanitize + normalize
     let clean = sanitizeContent(content);
     clean = normalizeForGraphQL(clean);
+
+    // 🚨 safety guard
+    if (!clean || clean.length < 50) {
+      console.log("⚠️ Skipping (empty/invalid content)");
+      continue;
+    }
 
     const tags = (data.tags || []).slice(0, 4).map(tag => ({
       name: tag,
@@ -150,14 +159,18 @@ async function run() {
       },
     };
 
-    const res = await graphqlRequest(mutation, variables);
+    try {
+      const res = await graphqlRequest(mutation, variables);
 
-    console.log("📡 Response:", JSON.stringify(res, null, 2));
+      console.log("📡 Response:", JSON.stringify(res, null, 2));
 
-    if (res.errors) {
-      console.error("❌ Publish failed:", res.errors);
-    } else {
-      console.log(`✅ Published: ${slug}`);
+      if (res.errors) {
+        console.error("❌ Publish failed:", res.errors);
+      } else {
+        console.log(`✅ Published: ${slug}`);
+      }
+    } catch (err) {
+      console.error("💥 Request error:", err.message);
     }
   }
 
