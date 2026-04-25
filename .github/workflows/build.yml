@@ -34,8 +34,8 @@ jobs:
       - name: Hashnode publish
         uses: raunakgurud09/hashnode-publish@v2
         with:
-          host: "https://theengineeringtax.hashnode.dev"
-          file: 'blog/**/*.md'
+          host: https://theengineeringtax.hashnode.dev
+          file: blog/**/*.md
           hashnode_key: ${{ secrets.HASHNODE_TOKEN }}
       - name: Sycing Article to dev.to
         uses: ful1e5/TheActionDev@v3
