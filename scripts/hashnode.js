@@ -1,199 +1,167 @@
 const fs = require("fs");
-const fg = require("fast-glob");
+const path = require("path");
 const matter = require("gray-matter");
+const fetch = require("node-fetch");
 
-const fetch = global.fetch;
-
-const ENDPOINT = "https://gql.hashnode.com";
-
+const HASHNODE_API = "https://gql.hashnode.com";
 const TOKEN = process.env.HASHNODE_TOKEN;
 const PUBLICATION_ID = process.env.HASHNODE_PUBLICATION_ID;
-const HOST = process.env.HASHNODE_HOST;
 
-if (!TOKEN || !PUBLICATION_ID || !HOST) {
-  console.error("❌ Missing env vars: HASHNODE_TOKEN, HASHNODE_PUBLICATION_ID, HASHNODE_HOST");
-  process.exit(1);
+const BLOG_DIR = path.join(__dirname, "../blog");
+
+// ----------------------
+// HELPERS
+// ----------------------
+
+function slugify(text) {
+  return text
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
 }
 
-// 🧹 Clean Docusaurus → Hashnode incompatible content
+// 🚨 CRITICAL FIX
 function sanitizeContent(content) {
-  let cleaned = content;
+  return content
+    // remove MDX / Docusaurus junk
+    .replace(/<!--.*?-->/gs, "")
+    .replace(/<iframe[\s\S]*?<\/iframe>/g, "")
+    .replace(/^import\s+.*$/gm, "")
 
-  // remove truncate
-  cleaned = cleaned.replace(/<!--\s*truncate\s*-->/g, "");
+    // remove weird HTML tags
+    .replace(/<[^>]+>/g, "")
 
-  // remove images (THIS IS CRITICAL)
-  cleaned = cleaned.replace(/!\[.*?\]\(.*?\)/g, "");
+    // fix images (keep markdown)
+    .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, "![$1]($2)")
 
-  // remove iframes completely
-  cleaned = cleaned.replace(/<iframe[\s\S]*?<\/iframe>/g, "");
-
-  // remove html
-  cleaned = cleaned.replace(/<[^>]+>/g, "");
-
-  // fix escaped quotes
-  cleaned = cleaned.replace(/\\"/g, '"');
-
-  // normalize spacing
-  cleaned = cleaned.replace(/\n{3,}/g, "\n\n");
-
-  // 🚨 LIMIT SIZE (VERY IMPORTANT)
-  const MAX_LENGTH = 40000; // safe threshold
-  if (cleaned.length > MAX_LENGTH) {
-    console.log("⚠️ Trimming content (too long)");
-    cleaned = cleaned.slice(0, MAX_LENGTH);
-  }
-
-  return cleaned.trim();
+    .trim();
 }
 
-// 🧠 Normalize tags
-function formatTags(tags = []) {
-  return tags.map(t => ({
-    name: t,
-    slug: t
-      .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, "")
-      .replace(/\s+/g, "-")
-  }));
+// 🚨 CRITICAL FIX (this was your missing piece)
+function normalizeForGraphQL(content) {
+  return content
+    .replace(/\\+"/g, '"')       // fix \" → "
+    .replace(/\\\\/g, "\\")      // fix \\ → \
+    .replace(/[\u0000-\u001F]/g, "") // remove control chars
+    .trim();
 }
 
-// 🔍 Fetch existing posts (idempotency)
-async function fetchExistingPosts() {
-  console.log("🔍 Fetching existing posts...");
+// ----------------------
+// GRAPHQL
+// ----------------------
 
-  const res = await fetch(ENDPOINT, {
+async function graphqlRequest(query, variables) {
+  const res = await fetch(HASHNODE_API, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: TOKEN
+      Authorization: TOKEN,
     },
-    body: JSON.stringify({
-      query: `
-        query GetPosts($host: String!) {
-          publication(host: $host) {
-            posts(first: 50) {
-              edges {
-                node {
-                  title
-                  slug
-                }
-              }
-            }
-          }
-        }
-      `,
-      variables: { host: HOST }
-    })
+    body: JSON.stringify({ query, variables }),
   });
 
-  const json = await res.json();
-
-  if (json.errors) {
-    console.error("❌ Failed to fetch posts:", json.errors);
-    return new Set();
-  }
-
-  const posts = json.data.publication.posts.edges.map(e => e.node.title);
-
-  console.log(`📚 Found ${posts.length} existing posts`);
-
-  return new Set(posts);
+  return res.json();
 }
 
-// 🚀 Publish post
-async function publishPost(file, existingTitles) {
-  console.log(`\n➡️ Processing: ${file}`);
+// ----------------------
+// FETCH EXISTING POSTS (IDEMPOTENCY)
+// ----------------------
 
-  const raw = fs.readFileSync(file, "utf-8");
-  const { data, content } = matter(raw);
-
-  if (!data.title) {
-    console.log("⚠️ Skipping (no title)");
-    return;
-  }
-
-  if (existingTitles.has(data.title)) {
-    console.log("⏭️ Skipping (already exists)");
-    return;
-  }
-
-  const cleanContent = sanitizeContent(content);
-
-  if (!cleanContent || cleanContent.length < 50) {
-    console.log("⚠️ Skipping (content too short after sanitize)");
-    return;
-  }
-
-  console.log("📝 Title:", data.title);
-
-  const res = await fetch(ENDPOINT, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: TOKEN
-    },
-    body: JSON.stringify({
-      query: `
-        mutation PublishPost($input: PublishPostInput!) {
-          publishPost(input: $input) {
-            post {
-              id
+async function getExistingSlugs() {
+  const query = `
+    query GetPosts($publicationId: ObjectId!) {
+      publication(id: $publicationId) {
+        posts(first: 50) {
+          edges {
+            node {
               slug
             }
           }
         }
-      `,
-      variables: {
-        input: {
-          title: data.title,
-          contentMarkdown: cleanContent,
-          publicationId: PUBLICATION_ID,
-          tags: formatTags(data.tags),
-          coverImageOptions: data.cover_image
-            ? { coverImageURL: data.cover_image }
-            : undefined,
-          canonicalUrl: data.canonical_url || undefined
-        }
       }
-    })
+    }
+  `;
+
+  const res = await graphqlRequest(query, {
+    publicationId: PUBLICATION_ID,
   });
 
-  const json = await res.json();
-
-  console.log("📡 Response:", JSON.stringify(json, null, 2));
-
-  if (json.errors) {
-    console.error("❌ Publish failed:", json.errors);
-  } else {
-    console.log("✅ Published:", json.data.publishPost.post.slug);
-  }
+  const edges = res?.data?.publication?.posts?.edges || [];
+  return new Set(edges.map((e) => e.node.slug));
 }
 
-// 🧩 Main
-async function main() {
-  console.log("🚀 Starting Hashnode sync...\n");
+// ----------------------
+// MAIN
+// ----------------------
 
-  // 👉 adjust if needed
-  const files = await fg("blog/2022-*.md");
+async function run() {
+  console.log("🚀 Starting Hashnode sync...");
 
+  const files = fs.readdirSync(BLOG_DIR).filter(f => f.endsWith(".md"));
   console.log(`📂 Found ${files.length} files`);
 
-  if (files.length === 0) {
-    console.log("❌ No files found.");
-    return;
-  }
-
-  const existingTitles = await fetchExistingPosts();
+  console.log("🔍 Fetching existing posts...");
+  const existing = await getExistingSlugs();
+  console.log(`📚 Found ${existing.size} existing posts`);
 
   for (const file of files) {
-    await publishPost(file, existingTitles);
+    const fullPath = path.join(BLOG_DIR, file);
+    const raw = fs.readFileSync(fullPath, "utf-8");
+    const { data, content } = matter(raw);
+
+    const title = data.title || file;
+    const slug = slugify(title);
+
+    if (existing.has(slug)) {
+      console.log(`⏭️ Skipping (already exists): ${slug}`);
+      continue;
+    }
+
+    console.log(`➡️ Processing: ${file}`);
+    console.log(`📝 Title: ${title}`);
+
+    // 🚨 sanitize + normalize
+    let clean = sanitizeContent(content);
+    clean = normalizeForGraphQL(clean);
+
+    const tags = (data.tags || []).slice(0, 4).map(tag => ({
+      name: tag,
+      slug: slugify(tag),
+    }));
+
+    const mutation = `
+      mutation Publish($input: PublishPostInput!) {
+        publishPost(input: $input) {
+          post {
+            id
+            slug
+          }
+        }
+      }
+    `;
+
+    const variables = {
+      input: {
+        title,
+        slug,
+        contentMarkdown: clean,
+        publicationId: PUBLICATION_ID,
+        tags,
+      },
+    };
+
+    const res = await graphqlRequest(mutation, variables);
+
+    console.log("📡 Response:", JSON.stringify(res, null, 2));
+
+    if (res.errors) {
+      console.error("❌ Publish failed:", res.errors);
+    } else {
+      console.log(`✅ Published: ${slug}`);
+    }
   }
 
-  console.log("\n🎉 Sync complete");
+  console.log("🎉 Sync complete");
 }
 
-main().catch(err => {
-  console.error("🔥 Fatal error:", err);
-  process.exit(1);
-});
+run();
