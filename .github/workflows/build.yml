@@ -31,12 +31,6 @@ jobs:
           publish_dir: ./build
           user_name: github-actions[bot]
           user_email: 41898282+github-actions[bot]@users.noreply.github.com
-      - name: Hashnode publish
-        uses: raunakgurud09/hashnode-publish@v2
-        with:
-          host: https://theengineeringtax.hashnode.dev
-          file: ./blog
-          hashnode_key: ${{ secrets.HASHNODE_TOKEN }}
       - name: Sycing Article to dev.to
         uses: ful1e5/TheActionDev@v3
         timeout-minutes: 10

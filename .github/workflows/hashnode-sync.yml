@@ -1,0 +1,22 @@
+name: Publish to Hashnode
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "blog/**.md"
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install deps
+        run: npm install gray-matter fast-glob node-fetch
+
+      - name: Publish
+        run: node scripts/hashnode.js
+        env:
+          HASHNODE_TOKEN: ${{ secrets.HASHNODE_TOKEN }}
+          HASHNODE_PUBLICATION_ID: ${{ secrets.HASHNODE_PUBLICATION_ID }}
