@@ -39,4 +39,12 @@ jobs:
           api-key: ${{ secrets.DEVTO_TOKEN }}
           directory: ./blog
           ignore: 201**.md,2022-**.md,2023-**.md,2024-**.md,2025-**.md
-
+      - name: Publish to Hashnode
+        uses: prettyirrelevant/hashnode-posts-publisher@v0.1.3
+        timeout-minutes: 10
+        continue-on-error: true
+        with:
+          posts-directory: blog
+          supported-formats: md
+          access-token: ${{ secrets.HASHNODE_TOKEN }}
+          publication-id: ${{ secrets.HASHNODE_PUBLICATION_ID }}
