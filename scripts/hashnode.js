@@ -9,7 +9,7 @@ for (const file of files) {
   const raw = fs.readFileSync(file, "utf-8");
   const { data, content } = matter(raw);
 
-  await fetch("https://theengineeringtax.hashnode.dev", {
+  await fetch("https://gql.hashnode.com", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
