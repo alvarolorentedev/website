@@ -1,21 +1,21 @@
 const fs = require("fs");
-const path = require("path");
 const fg = require("fast-glob");
 const matter = require("gray-matter");
 
-// Node 18+ has fetch built-in in GitHub Actions
 const fetch = global.fetch;
 
 const ENDPOINT = "https://gql.hashnode.com";
 
 const TOKEN = process.env.HASHNODE_TOKEN;
 const PUBLICATION_ID = process.env.HASHNODE_PUBLICATION_ID;
+const HOST = process.env.HASHNODE_HOST;
 
-if (!TOKEN || !PUBLICATION_ID) {
-  console.error("❌ Missing HASHNODE_TOKEN or HASHNODE_PUBLICATION_ID");
+if (!TOKEN || !PUBLICATION_ID || !HOST) {
+  console.error("❌ Missing env vars: HASHNODE_TOKEN, HASHNODE_PUBLICATION_ID, HASHNODE_HOST");
   process.exit(1);
 }
 
+// 🔍 Get existing posts (for idempotency)
 async function fetchExistingPosts() {
   console.log("🔍 Fetching existing posts...");
 
@@ -27,8 +27,8 @@ async function fetchExistingPosts() {
     },
     body: JSON.stringify({
       query: `
-        query GetPosts($id: ID!) {
-          publication(id: $id) {
+        query GetPosts($host: String!) {
+          publication(host: $host) {
             posts(first: 50) {
               edges {
                 node {
@@ -40,14 +40,14 @@ async function fetchExistingPosts() {
           }
         }
       `,
-      variables: { id: PUBLICATION_ID }
+      variables: { host: HOST }
     })
   });
 
   const json = await res.json();
 
   if (json.errors) {
-    console.error("❌ Failed to fetch existing posts:", json.errors);
+    console.error("❌ Failed to fetch posts:", json.errors);
     return new Set();
   }
 
@@ -57,6 +57,18 @@ async function fetchExistingPosts() {
   return new Set(posts);
 }
 
+// 🧠 Normalize tags for Hashnode
+function formatTags(tags = []) {
+  return tags.map(t => ({
+    name: t,
+    slug: t
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, "")
+      .replace(/\s+/g, "-")
+  }));
+}
+
+// 🚀 Publish a single post
 async function publishPost(file, existingTitles) {
   console.log(`\n➡️ Processing: ${file}`);
 
@@ -97,10 +109,11 @@ async function publishPost(file, existingTitles) {
           title: data.title,
           contentMarkdown: content,
           publicationId: PUBLICATION_ID,
-          tags: (data.tags || []).map(t => ({ name: t })),
+          tags: formatTags(data.tags),
           coverImageOptions: data.cover_image
             ? { coverImageURL: data.cover_image }
-            : undefined
+            : undefined,
+          canonicalUrl: data.canonical_url || undefined
         }
       }
     })
@@ -117,16 +130,17 @@ async function publishPost(file, existingTitles) {
   }
 }
 
+// 🧩 Main
 async function main() {
-  console.log("🚀 Starting Hashnode sync...");
+  console.log("🚀 Starting Hashnode sync...\n");
 
-  // 👉 adjust this if you want only 2022
+  // 👉 CHANGE THIS if you only want 2022
   const files = await fg("blog/2022-*.md");
 
-  console.log(`📂 Found ${files.length} markdown files`);
+  console.log(`📂 Found ${files.length} files`);
 
   if (files.length === 0) {
-    console.log("❌ No files found. Check your path.");
+    console.log("❌ No files found. Check path.");
     return;
   }
 
@@ -136,7 +150,7 @@ async function main() {
     await publishPost(file, existingTitles);
   }
 
-  console.log("\n🎉 Done");
+  console.log("\n🎉 Sync complete");
 }
 
 main().catch(err => {
