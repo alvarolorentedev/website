@@ -38,5 +38,5 @@ jobs:
         with:
           api-key: ${{ secrets.DEVTO_TOKEN }}
           directory: ./blog
-          ignore: 201**.md, 2022-**.md
+          ignore: 201**.md,2022-**.md,2023-**.md,2024-**.md,2025-**.md
 
