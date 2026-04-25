@@ -15,7 +15,38 @@ if (!TOKEN || !PUBLICATION_ID || !HOST) {
   process.exit(1);
 }
 
-// 🔍 Get existing posts (for idempotency)
+// 🧹 Clean Docusaurus → Hashnode incompatible content
+function sanitizeContent(content) {
+  return content
+    // remove truncate markers
+    .replace(/<!--\s*truncate\s*-->/g, "")
+
+    // convert youtube iframes to links
+    .replace(
+      /<iframe.*?src="https:\/\/www\.youtube\.com\/embed\/(.*?)".*?<\/iframe>/g,
+      "https://www.youtube.com/watch?v=$1"
+    )
+
+    // remove ALL remaining HTML tags
+    .replace(/<[^>]+>/g, "")
+
+    // normalize spacing
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
+}
+
+// 🧠 Normalize tags
+function formatTags(tags = []) {
+  return tags.map(t => ({
+    name: t,
+    slug: t
+      .toLowerCase()
+      .replace(/[^a-z0-9\s-]/g, "")
+      .replace(/\s+/g, "-")
+  }));
+}
+
+// 🔍 Fetch existing posts (idempotency)
 async function fetchExistingPosts() {
   console.log("🔍 Fetching existing posts...");
 
@@ -52,23 +83,13 @@ async function fetchExistingPosts() {
   }
 
   const posts = json.data.publication.posts.edges.map(e => e.node.title);
+
   console.log(`📚 Found ${posts.length} existing posts`);
 
   return new Set(posts);
 }
 
-// 🧠 Normalize tags for Hashnode
-function formatTags(tags = []) {
-  return tags.map(t => ({
-    name: t,
-    slug: t
-      .toLowerCase()
-      .replace(/[^a-z0-9\s-]/g, "")
-      .replace(/\s+/g, "-")
-  }));
-}
-
-// 🚀 Publish a single post
+// 🚀 Publish post
 async function publishPost(file, existingTitles) {
   console.log(`\n➡️ Processing: ${file}`);
 
@@ -82,6 +103,13 @@ async function publishPost(file, existingTitles) {
 
   if (existingTitles.has(data.title)) {
     console.log("⏭️ Skipping (already exists)");
+    return;
+  }
+
+  const cleanContent = sanitizeContent(content);
+
+  if (!cleanContent || cleanContent.length < 50) {
+    console.log("⚠️ Skipping (content too short after sanitize)");
     return;
   }
 
@@ -107,7 +135,7 @@ async function publishPost(file, existingTitles) {
       variables: {
         input: {
           title: data.title,
-          contentMarkdown: content,
+          contentMarkdown: cleanContent,
           publicationId: PUBLICATION_ID,
           tags: formatTags(data.tags),
           coverImageOptions: data.cover_image
@@ -134,13 +162,13 @@ async function publishPost(file, existingTitles) {
 async function main() {
   console.log("🚀 Starting Hashnode sync...\n");
 
-  // 👉 CHANGE THIS if you only want 2022
+  // 👉 adjust if needed
   const files = await fg("blog/2022-*.md");
 
   console.log(`📂 Found ${files.length} files`);
 
   if (files.length === 0) {
-    console.log("❌ No files found. Check path.");
+    console.log("❌ No files found.");
     return;
   }
 
