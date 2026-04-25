@@ -22,6 +22,7 @@ Have you ever worked in an organization that either seems too lax on the process
 
 In the realm of organizational success, the distinction between leadership and management is not just semantics. It's foundational to how teams and individuals achieve their goals. While management is essential for ensuring tasks are completed, budgets are adhered to, and deadlines are met, leadership goes a step beyond, it cultivates an environment of trust, vision, and empowerment.
 
+<!-- truncate -->
 
 ## The Essence of Leadership: Building Trust
 

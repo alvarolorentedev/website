@@ -1,11 +1,11 @@
 ---
-title: 'The Real Bottleneck in Engineering Why AI Didnt Fix What Slows Teams Down'
-description: 'For years, we optimized engineering speed.'
+title: "The Real Bottleneck in Engineering Why AI Didnt Fix What Slows Teams Down"
+description: "For years, we optimized engineering speed."
 authors: alvarolorentedev
 tags:
-- substack
+  - substack
 draft: false
-series: ''
+series: Engineering After AI
 canonical_url: https://theengineeringtax.com/p/the-real-bottleneck-in-engineering
 cover_image: https://substack-post-media.s3.amazonaws.com/public/images/3b841a9f-4522-458d-9fa7-5c386769f628_1536x1024.png
 ---
@@ -26,7 +26,7 @@ That mismatch is not accidental.
 
 It’s a signal that we are still optimizing for a constraint that does not exist.
 
-* * *
+---
 
 ## Engineering is no longer the bottleneck
 
@@ -44,7 +44,7 @@ This contradiction points to a deeper reality:
 
 ![](https://substack-post-media.s3.amazonaws.com/public/images/3b841a9f-4522-458d-9fa7-5c386769f628_1536x1024.png)
 
-* * *
+---
 
 ## The real bottleneck: coordination and decisions
 
@@ -68,7 +68,7 @@ These activities are inherently slower, more ambiguous, and harder to optimize t
 
 This has always been and will continue to be a bottleneck, as it’s a system absorption problem and not a procedural optimization.
 
-* * *
+---
 
 ## AI didn’t remove complexity—it accelerated exposure to it
 
@@ -78,17 +78,17 @@ AI increases the rate at which teams can generate output. More ideas are explore
 
 And those layers have not accelerated because:
 
--   Customer feedback still takes time.
+- Customer feedback still takes time.
 
--   Understanding real impact still takes time.
+- Understanding real impact still takes time.
 
--   Aligning multiple stakeholders still takes time.
+- Aligning multiple stakeholders still takes time.
 
 So what emerges is a structural mismatch:
 
--   Execution operates at one speed.
+- Execution operates at one speed.
 
--   Decision-making and validation operate at another.
+- Decision-making and validation operate at another.
 
 The result is predictable.
 
@@ -98,7 +98,7 @@ We did not remove complexity. We increased the rate at which we collide with it.
 
 ![](https://substack-post-media.s3.amazonaws.com/public/images/3ceeb00e-a558-4900-807a-e4868780a4b4_1536x1024.png)
 
-* * *
+---
 
 ## Conclusion: The constraint is now cognitive, not technical
 

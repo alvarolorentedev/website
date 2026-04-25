@@ -16,6 +16,8 @@ series: ''
 
 I have observed quite a few articles lately that elaborate on issues with TDD. Nevertheless, they focused on the first letter but miss the focus of the other two letters.
 
+<!-- truncate -->
+
 ## Not A Testing Strategy
 
 If you take anything out of this article, please think about this quote:

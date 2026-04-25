@@ -1,11 +1,11 @@
 ---
-title: 'Key Strategies for Building High-Performance Teams in Tech'
-description: 'We all continuously hear about high-performance teams and the importance of becoming one. But there is actual no real definition of it. Is it?'
+title: "Key Strategies for Building High-Performance Teams in Tech"
+description: "We all continuously hear about high-performance teams and the importance of becoming one. But there is actual no real definition of it. Is it?"
 authors: alvarolorentedev
 tags:
-- substack
+  - substack
 draft: false
-series: ''
+series: Engineering Strategy 101
 canonical_url: https://theengineeringtax.com/p/key-strategies-for-building-high
 cover_image: https://substack-post-media.s3.amazonaws.com/public/images/3eb06d36-fe8c-449a-9220-ac52c0444446_926x272.png
 ---
@@ -14,11 +14,11 @@ We all continuously hear about high-performance teams and the importance of beco
 
 <!-- truncate -->
 
--   A team that releases many cards
+- A team that releases many cards
 
--   The one that delivers high-quality code
+- The one that delivers high-quality code
 
--   The one that has all the best engineers
+- The one that has all the best engineers
 
 The answer, at least for me, is none of the above.
 
@@ -62,17 +62,17 @@ On the top of Performing, we could say there is o**utperforming** is where **Hig
 
 ## Traits Of a High-Performance Team
 
--   **Trust**: This refers to the confidence among team members that each person will fulfill their responsibilities and maintain a commitment to the common goal.
+- **Trust**: This refers to the confidence among team members that each person will fulfill their responsibilities and maintain a commitment to the common goal.
 
--   **Mutual Support**: This involves members actively helping each other to succeed, promoting a culture of cooperation and interdependence.
+- **Mutual Support**: This involves members actively helping each other to succeed, promoting a culture of cooperation and interdependence.
 
--   **Drive**: This indicates the team's collective motivation and ambition to achieve their goals and continually improve their performance.
+- **Drive**: This indicates the team's collective motivation and ambition to achieve their goals and continually improve their performance.
 
--   **Edit Their Needs**: This implies the team's ability to self-assess and adjust their requirements and strategies based on the evolving circumstances.
+- **Edit Their Needs**: This implies the team's ability to self-assess and adjust their requirements and strategies based on the evolving circumstances.
 
--   **Open Communication**: This refers to the team's ability to communicate effectively, ensuring that everyone feels heard and understood. Open communication fosters transparency and encourages team members to share their ideas and feedback.
+- **Open Communication**: This refers to the team's ability to communicate effectively, ensuring that everyone feels heard and understood. Open communication fosters transparency and encourages team members to share their ideas and feedback.
 
--   **Do Not Depend on a Leader**: This means the team operates in a decentralized manner where every member takes initiative and responsibility, rather than relying on a single leader for direction and decisions.
+- **Do Not Depend on a Leader**: This means the team operates in a decentralized manner where every member takes initiative and responsibility, rather than relying on a single leader for direction and decisions.
 
 ## Example Tools To Improve Team Traits
 
@@ -108,11 +108,11 @@ The results are then discussed openly, helping to facilitate communication about
 
 ![](https://substack-post-media.s3.amazonaws.com/public/images/92f84dd4-959b-49ac-9c07-46e66608a44a_1039x379.png)
 
-* * *
+---
 
 ## **🗞️** Other articles you may like
 
-* * *
+---
 
 ## **📚 Picks of the Week**
 
@@ -144,18 +144,18 @@ Read more
 
 ](https://jadecodes.substack.com/p/when-agile-isnt-agile?utm_source=substack&utm_campaign=post_embed&utm_medium=web)
 
-* * *
+---
 
 ·✌️ That’s all folks
 
-I love hearing from readers, and I’m looking for feedback. _How am I doing with Leads Horizons? Is there anything you’d like to see more or less? Which aspects of the newsletter do you enjoy the most?_
+I love hearing from readers, and I’m looking for feedback. *How am I doing with Leads Horizons? Is there anything you’d like to see more or less? Which aspects of the newsletter do you enjoy the most?*
 
 Use the links below, or even better, hit reply and say hello. I’d love to hear from you!
 
--   [😍 Awesome](https://tally.so/r/nWNL5P?rating=Awesome&source=substack&medium=email&url=high-perf-team)
+- [😍 Awesome](https://tally.so/r/nWNL5P?rating=Awesome&source=substack&medium=email&url=high-perf-team)
 
--   [😐 Okay](https://tally.so/r/nWNL5P?rating=Okay&source=substack&medium=email&url=high-perf-team)
+- [😐 Okay](https://tally.so/r/nWNL5P?rating=Okay&source=substack&medium=email&url=high-perf-team)
 
--   [🤮 Bad](https://tally.so/r/nWNL5P?rating=Bad&source=substack&medium=email&url=high-perf-team)
+- [🤮 Bad](https://tally.so/r/nWNL5P?rating=Bad&source=substack&medium=email&url=high-perf-team)
 
 Please don't hesitate to connect with me on [LinkedIn](https://www.linkedin.com/in/alvarolorentedev/) and send a message. I always respond to every one!

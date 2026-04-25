@@ -16,6 +16,8 @@ series: Accelerate Continious Integration & Delivery Practices
 
 Our services need to run somewhere, so our users can access it. It's a very common practices to have multiple environments like dev, staging, and prod. Is this actually a good practices?
 
+<!-- truncate -->
+
 ## CI vs. CD vs. CD
 
 when people talk about continuous integration, delivery and deployment, they normally talk about it as a whole.

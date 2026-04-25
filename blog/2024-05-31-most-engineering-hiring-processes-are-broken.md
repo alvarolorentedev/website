@@ -1,11 +1,11 @@
 ---
-title: 'Most Engineering Hiring Processes Are Broken'
-description: 'Leading a team or a company necessitates having individuals who can assist in realizing your objectives. Undoubtedly, this involves establishing a hiring...'
+title: "Most Engineering Hiring Processes Are Broken"
+description: "Leading a team or a company necessitates having individuals who can assist in realizing your objectives. Undoubtedly, this involves establishing a hiring..."
 authors: alvarolorentedev
 tags:
-- substack
+  - substack
 draft: false
-series: ''
+series: Engineering Strategy 101
 canonical_url: https://theengineeringtax.com/p/most-engineering-hiring-process-are
 cover_image: https://substack-post-media.s3.amazonaws.com/public/images/f54e5d3e-2ace-4f7f-9912-dc9ccbdd4956_2832x3145.png
 ---
@@ -30,11 +30,11 @@ In competitive markets—such as the one I'm familiar with—the top candidates 
 
 **Over-engineering** can be pinpointed as the root cause of the issue. Here are the three main concerns that lead to this:
 
--   **Risk Avoidance Leads to Over-Complication:** Trying to avoid any slip-ups during the hiring process often results in a complicated and lengthy procedure. This method is more about reducing the risk of a bad hire, even if it sacrifices speed and efficiency.
+- **Risk Avoidance Leads to Over-Complication:** Trying to avoid any slip-ups during the hiring process often results in a complicated and lengthy procedure. This method is more about reducing the risk of a bad hire, even if it sacrifices speed and efficiency.
 
--   **Fear of Overlooking the Perfect Candidate:** The worry of not finding that potentially perfect candidate leads to an exhaustive process. Every candidate is meticulously screened at each stage, lengthening the hiring period.
+- **Fear of Overlooking the Perfect Candidate:** The worry of not finding that potentially perfect candidate leads to an exhaustive process. Every candidate is meticulously screened at each stage, lengthening the hiring period.
 
--   **Concern Over Wasting Employee Time:** The fear of spending current employee time on unsuccessful hiring processes is a worry. This concern stems from knowing that time is valuable, especially in fast-paced work environments. If the hiring process doesn't yield a successful hire, it's considered a misuse of employee time that could have been used for immediate needs and goals.
+- **Concern Over Wasting Employee Time:** The fear of spending current employee time on unsuccessful hiring processes is a worry. This concern stems from knowing that time is valuable, especially in fast-paced work environments. If the hiring process doesn't yield a successful hire, it's considered a misuse of employee time that could have been used for immediate needs and goals.
 
 However, lengthy processes are the embodiment of these fears. The rationale is straightforward: the top candidates are often the first to be snapped up. If your hiring process is sluggish due to numerous feedback loops, chances are you're missing out on top-tier talent.
 

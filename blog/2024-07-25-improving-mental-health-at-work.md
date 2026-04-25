@@ -1,13 +1,13 @@
 ---
-title: 'Improving Mental Health at Work'
-description: 'Last week, we discussed the importance of managing 100% utilization within the team to maintain their well-being. As individuals, we each react differently...'
+title: "Improving Mental Health at Work"
+description: "Last week, we discussed the importance of managing 100% utilization within the team to maintain their well-being. As individuals, we each react differently..."
 authors: alvarolorentedev
 tags:
-- substack
+  - substack
 draft: false
-series: ''
+series: Engineering Strategy 101
 canonical_url: https://theengineeringtax.com/p/improving-mental-health-at-work
-cover_image: 
+cover_image:
 ---
 
 Last week, we discussed the importance of managing 100% utilization within the team to maintain their well-being. As individuals, we each react differently to experiences, which can have long-term consequences.
@@ -46,39 +46,39 @@ Using these tools regularly can help you stay in tune with your mental health an
 
 As leaders, it's equally important to recognize signs of burnout and stress in others. Here are some indicators to watch out for:
 
--   **Decreased Productivity**: Noticeable decline in work output.
+- **Decreased Productivity**: Noticeable decline in work output.
 
--   **Increased Absenteeism**: Frequent sick days or unexplained absences.
+- **Increased Absenteeism**: Frequent sick days or unexplained absences.
 
--   **Changes in Behavior**: Irritability, mood swings, or withdrawal from team activities.
+- **Changes in Behavior**: Irritability, mood swings, or withdrawal from team activities.
 
--   **Physical Symptoms**: Complaints of headaches, fatigue, or other stress-related ailments.
+- **Physical Symptoms**: Complaints of headaches, fatigue, or other stress-related ailments.
 
--   **Lack of Engagement**: Disinterest in work or decreased enthusiasm for projects.
+- **Lack of Engagement**: Disinterest in work or decreased enthusiasm for projects.
 
 ## Factors That Affect Mental Health At Work
 
 Several factors can significantly affect mental health in the workplace, and it’s essential to recognize these to create a supportive environment for everyone on the team. Here are some of the key factors:
 
--   Workload and Stress: Excessive workload and high levels of stress are common contributors to poor mental health. When employees are consistently overwhelmed with tasks and responsibilities, it can lead to burnout, anxiety, and decreased productivity.
+- Workload and Stress: Excessive workload and high levels of stress are common contributors to poor mental health. When employees are consistently overwhelmed with tasks and responsibilities, it can lead to burnout, anxiety, and decreased productivity.
 
--   Work-Life Balance: A lack of work-life balance can negatively impact mental health. When work encroaches on personal time, it can lead to stress, fatigue, and strained relationships. It’s crucial for organizations to promote a healthy balance between work and personal life.
+- Work-Life Balance: A lack of work-life balance can negatively impact mental health. When work encroaches on personal time, it can lead to stress, fatigue, and strained relationships. It’s crucial for organizations to promote a healthy balance between work and personal life.
 
--   Job Security: Uncertainty about job security can cause significant stress and anxiety. Concerns about layoffs, contract renewals, or organizational changes can create an environment of fear and instability.
+- Job Security: Uncertainty about job security can cause significant stress and anxiety. Concerns about layoffs, contract renewals, or organizational changes can create an environment of fear and instability.
 
--   Workplace Relationships: The quality of relationships with colleagues and supervisors can greatly influence mental health. Positive, supportive interactions can enhance well-being, while toxic or unsupportive relationships can lead to stress and dissatisfaction.
+- Workplace Relationships: The quality of relationships with colleagues and supervisors can greatly influence mental health. Positive, supportive interactions can enhance well-being, while toxic or unsupportive relationships can lead to stress and dissatisfaction.
 
--   Organizational Culture: A company's culture plays a vital role in mental health. A culture that values mental well-being, provides support, and encourages open communication can help mitigate stress and improve overall morale.
+- Organizational Culture: A company's culture plays a vital role in mental health. A culture that values mental well-being, provides support, and encourages open communication can help mitigate stress and improve overall morale.
 
--   Recognition and Reward: Feeling undervalued or unrecognized for contributions can negatively impact mental health. Regular acknowledgment and reward for hard work and accomplishments can boost morale and motivation.
+- Recognition and Reward: Feeling undervalued or unrecognized for contributions can negatively impact mental health. Regular acknowledgment and reward for hard work and accomplishments can boost morale and motivation.
 
--   Physical Environment: The physical work environment, including factors like noise levels, lighting, and ergonomics, can affect mental well-being. A comfortable and conducive workspace can enhance productivity and reduce stress.
+- Physical Environment: The physical work environment, including factors like noise levels, lighting, and ergonomics, can affect mental well-being. A comfortable and conducive workspace can enhance productivity and reduce stress.
 
--   Change Management: How changes are managed within an organization can impact mental health. Poorly communicated or managed changes can create uncertainty and stress, while transparent and supportive change management can ease transitions.
+- Change Management: How changes are managed within an organization can impact mental health. Poorly communicated or managed changes can create uncertainty and stress, while transparent and supportive change management can ease transitions.
 
--   Personal Factors: Personal issues such as financial concerns, health problems, or family responsibilities can also impact mental health at work. It’s important for organizations to be aware of and sensitive to these external factors.
+- Personal Factors: Personal issues such as financial concerns, health problems, or family responsibilities can also impact mental health at work. It’s important for organizations to be aware of and sensitive to these external factors.
 
--   Team Dynamics: The dynamics within a team can greatly influence individual mental health. A collaborative, cohesive team can provide support and reduce stress, while a dysfunctional team can create additional pressure and conflict.
+- Team Dynamics: The dynamics within a team can greatly influence individual mental health. A collaborative, cohesive team can provide support and reduce stress, while a dysfunctional team can create additional pressure and conflict.
 
 ## Strategies to Improve Mental Health
 

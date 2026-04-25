@@ -11,6 +11,9 @@ cover_image: https://raw.githubusercontent.com/alvarolorentedev/website/main/sta
 series: OSX How To...
 ---
 
+
+<!-- truncate -->
+
 ## Why would I do this?
 
 D﻿ocker-desktop is a paid product, their licensing mode is by user, and it provides value not for the software side but for their cloud offering (registry, etc). For this, if the intent of you're a company is to use containers locally to facilitate software development,  the cost tends to be high.

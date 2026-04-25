@@ -22,6 +22,8 @@ When we talk about observability, we talk about:
 
 We don't want users or clients to be the ones noticing something is wrong. For this, there are multiple tools that fall under the observability category.
 
+<!-- truncate -->
+
 ## Tools
 
 ### Alarms

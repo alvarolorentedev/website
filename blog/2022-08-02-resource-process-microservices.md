@@ -10,7 +10,6 @@ tags:
 draft: true
 series: microservices a double-edged sword
 ---
-
 During the last decade micro-services have been taking traction in the development world. Nevertheless moving from a monolithic view to a more self-served set of pieces is not an easy mental migration.
 I have seen in my experience two different approaches with two very different outcomes. One is based on resources and the other one is based on process.
 The resource approach is based on the idea of Object Orientation. Meaning everything should be abstracted as an object that can be manipulated overtime by the consumers of that resource. In this approach the Data is on the drivers seat.
@@ -33,3 +32,5 @@ Independence
 Communication on this systems normally happen through queues and teams are in charge of specific process. Based on this idea, the indirection layer provided by this allows teams and service to be in control of their own environment and have a lower amount of external dependencies simplifying.
 Domain Understanding
 Business Organization
+
+<!-- truncate -->

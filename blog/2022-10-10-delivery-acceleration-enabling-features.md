@@ -16,6 +16,8 @@ series: Accelerate Continious Integration & Delivery Practices
 
 Now that we know where our code lives, we need to make sure our users get access to the features. For this, we need to get our code to the environment we want to deploy to, and control the rollout (if you are not a big bang release fan).
 
+<!-- truncate -->
+
 ## Blue/Green Deployment: Getting to prod with 0 downtime
 
 What is this?, The concept is simple, we have a set of machines (ex. blue) where we currently have our app running, and we want to deploy. The intent is to create a new set of machines (ex. green) where our new version of the code will run. We would like to validate as much as possible (ex. automated e2e tests) that this new version is up to par with the previous one before moving the traffic and destroy the previous version.

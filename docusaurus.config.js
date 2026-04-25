@@ -46,6 +46,8 @@ const config = {
       ({
         docs: false,
         blog: {
+          postsPerPage: 10,
+          blogSidebarCount: 'ALL',
           showReadingTime: true,
           editUrl: "https://github.com/alvarolorentedev/website/tree/main/",
           feedOptions: {
@@ -95,7 +97,7 @@ const config = {
           { to: "/services", label: "Services", position: "left" },
           { to: "/projects", label: "Projects", position: "left" },
           { to: "/talks", label: "Talks", position: "left" },
-          { to: "/blog", label: "Blog", position: "left" },
+          { to: "/blog", label: "Articles", position: "left" },
           { to: "/chat", label: "Virtual Me", position: "right" },
           {
             to: "https://theengineeringtax.com/",
@@ -125,7 +127,7 @@ const config = {
               },
               {
                 label: "X",
-                href: "https://twitter.com/alvarolorentede",
+                href: "https://x.com/lorentedev",
               },
             ],
           },

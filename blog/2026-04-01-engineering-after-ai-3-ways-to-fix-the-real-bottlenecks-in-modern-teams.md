@@ -1,11 +1,11 @@
 ---
-title: 'Engineering After AI 3 Ways to Fix the Real Bottlenecks in Modern Teams'
-description: 'Execution is no longer scarce. It has been compressed by years of tooling improvements and, more recently, by AI. The cost of producing software continues...'
+title: "Engineering After AI 3 Ways to Fix the Real Bottlenecks in Modern Teams"
+description: "Execution is no longer scarce. It has been compressed by years of tooling improvements and, more recently, by AI. The cost of producing software continues..."
 authors: alvarolorentedev
 tags:
-- substack
+  - substack
 draft: false
-series: ''
+series: Engineering After AI
 canonical_url: https://theengineeringtax.com/p/engineering-after-ai-3-ways-to-fix
 cover_image: https://substack-post-media.s3.amazonaws.com/public/images/f5dc4217-8412-4efb-94c4-3971034e8cf0_1536x1024.png
 ---
@@ -16,11 +16,11 @@ Execution is no longer scarce. It has been compressed by years of tooling improv
 
 What has not changed is everything around it.
 
--   Decisions are still slow.
+- Decisions are still slow.
 
--   Validation is still uncertain.
+- Validation is still uncertain.
 
--   Alignment is still expensive.
+- Alignment is still expensive.
 
 This creates a structural imbalance: the system can now produce more than it can meaningfully process.
 
@@ -28,7 +28,7 @@ At that point, improving speed stops being useful and just hinders the system.
 
 What matters is how the system decides what deserves to be scaled.
 
-* * *
+---
 
 ## 1\. Optimize for Learning Velocity, not Delivery Speed
 
@@ -56,7 +56,7 @@ In a world of cheap execution, the advantage is not who builds faster.
 
 It is who learns faster.
 
-* * *
+---
 
 ## 2\. Design for Flow Efficiency, not Resource Efficiency
 
@@ -86,7 +86,7 @@ Because when execution becomes fast, queues become the dominant constraint.
 
 And most organizations are full of invisible ones.
 
-* * *
+---
 
 ## 3\. Institutionalize the Ability to Say No
 
@@ -112,7 +112,7 @@ In a world where building is cheap, the constraint is no longer creation.
 
 It is how much you allow into the system—and how much you are willing to remove.
 
-* * *
+---
 
 ## Conclusion
 

@@ -16,6 +16,8 @@ cover_image: https://www.alvarolorente.dev/img/blog/run_it.jpg
 
 When we start our journey towards continuous integration & delivery, the first thing to take in count is the mentality. There are a few of them that will make or break our intent. Let's see the most important and also some practices.
 
+<!-- truncate -->
+
 ## Mentality
 
 ### You build it, you run it

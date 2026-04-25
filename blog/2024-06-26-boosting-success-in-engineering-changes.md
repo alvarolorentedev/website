@@ -1,11 +1,11 @@
 ---
-title: 'Boosting Success in Engineering Changes'
-description: 'Ever found yourself in engineering departments where tools and practices are adopted and discarded rapidly?'
+title: "Boosting Success in Engineering Changes"
+description: "Ever found yourself in engineering departments where tools and practices are adopted and discarded rapidly?"
 authors: alvarolorentedev
 tags:
-- substack
+  - substack
 draft: false
-series: ''
+series: Engineering Strategy 101
 canonical_url: https://theengineeringtax.com/p/boosting-success-in-engineering-changes
 cover_image: https://substack-post-media.s3.amazonaws.com/public/images/ca210222-8426-48f0-ae2a-721d973f1f87_1080x1080.jpeg
 ---
@@ -26,9 +26,9 @@ Whether we're discussing company-wide methodologies like OKRs or team-specific p
 
 Let's delve into the reasons behind these failures, and assess whether the methodology itself is at fault.
 
--   **Difficulty in Tracking Results**: When new methods are introduced, it's often challenging to see immediate results or advantages. This can lead to premature rejection of the new approach.
+- **Difficulty in Tracking Results**: When new methods are introduced, it's often challenging to see immediate results or advantages. This can lead to premature rejection of the new approach.
 
--   **Insufficient Engagement**: This covers situations where members aren't entirely on board with the new process. This could stem from inadequate understanding, disagreement with the methodology, or simple resistance to change.
+- **Insufficient Engagement**: This covers situations where members aren't entirely on board with the new process. This could stem from inadequate understanding, disagreement with the methodology, or simple resistance to change.
 
 While there are other reasons for failure, they typically fall under or relate closely to these main points.
 
@@ -42,11 +42,11 @@ As we've previously discussed, enhancing the success rate of engineering changes
 
 To foster patience within the engineering department, it's essential that the company culture not only values it, but actively encourages it. Here's how:
 
--   **Celebrate Patience**: Recognize and reward patience in your workspace. This could involve acknowledging those who demonstrate patience when faced with challenges, or associating rewards and promotions with the successful long-term execution of changes.
+- **Celebrate Patience**: Recognize and reward patience in your workspace. This could involve acknowledging those who demonstrate patience when faced with challenges, or associating rewards and promotions with the successful long-term execution of changes.
 
--   **Highlight the Role of Patience**: Keep reminding your people about the crucial role patience plays in long-term success. Share anecdotes or instances where patience has proven beneficial in the past.
+- **Highlight the Role of Patience**: Keep reminding your people about the crucial role patience plays in long-term success. Share anecdotes or instances where patience has proven beneficial in the past.
 
--   **Lead by Example**: Leadership should portray patience in their actions and decision-making. This means resisting the urge to follow the latest trends without adequate evaluation, and allowing new processes sufficient time to integrate and yield results.
+- **Lead by Example**: Leadership should portray patience in their actions and decision-making. This means resisting the urge to follow the latest trends without adequate evaluation, and allowing new processes sufficient time to integrate and yield results.
 
 ![](https://substack-post-media.s3.amazonaws.com/public/images/3c9c2dac-3feb-4769-a0c0-f684fd0b4732_1080x1080.jpeg)
 
@@ -56,11 +56,11 @@ To foster patience within the engineering department, it's essential that the co
 
 To effectively share knowledge throughout the engineering department, it's essential that our company culture actively supports and fosters it. This includes:
 
--   **Transparent communication**: It's crucial for everyone to understand why we're making changes and what we should anticipate. A thorough explanation of the process, timeline, potential challenges, and anticipated benefits can ensure we're all on the same page.
+- **Transparent communication**: It's crucial for everyone to understand why we're making changes and what we should anticipate. A thorough explanation of the process, timeline, potential challenges, and anticipated benefits can ensure we're all on the same page.
 
--   **Offering support and resources**: As we've discussed, lack of support can lead to frustration and potential failure. We must ensure our people have the necessary resources to successfully implement new methodologies.
+- **Offering support and resources**: As we've discussed, lack of support can lead to frustration and potential failure. We must ensure our people have the necessary resources to successfully implement new methodologies.
 
--   **Promoting open dialogue**: We should create spaces for our people to share their thoughts, concerns, and feelings about upcoming changes. This approach encourages a sense of ownership and commitment, which can minimize the risk of premature termination.
+- **Promoting open dialogue**: We should create spaces for our people to share their thoughts, concerns, and feelings about upcoming changes. This approach encourages a sense of ownership and commitment, which can minimize the risk of premature termination.
 
 ![](https://substack-post-media.s3.amazonaws.com/public/images/06e0b933-9408-4822-9d3c-acd6579f1379_1080x1080.jpeg)
 
@@ -70,11 +70,11 @@ Remember, embracing change is a journey, not a race. It's important to acknowled
 
 Patience, coupled with knowledge alignment, can significantly increase the success rate of implementing new methodologies in engineering departments. By fostering a culture that values patience and open communication, we can better adapt to changes, overcome challenges, and achieve our long-term goals.
 
-* * *
+---
 
 ## **🗞️** Other articles you may like
 
-* * *
+---
 
 ## **📚 Picks of the Week**
 
@@ -106,19 +106,19 @@ Read more
 
 ](https://datagibberish.com/p/ask-me-anything-june-2024?utm_source=substack&utm_campaign=post_embed&utm_medium=web)
 
-* * *
+---
 
 ·✌️ That’s all folks
 
-I love hearing from readers, and I’m looking for feedback. _How am I doing with Leads Horizons? Is there anything you’d like to see more or less? Which aspects of the newsletter do you enjoy the most?_
+I love hearing from readers, and I’m looking for feedback. *How am I doing with Leads Horizons? Is there anything you’d like to see more or less? Which aspects of the newsletter do you enjoy the most?*
 
 Use the links below, or even better, hit reply and say hello. I’d love to hear from you!
 
--   [😍 Awesome](https://tally.so/r/nWNL5P?rating=Awesome&source=substack&medium=email&url=eng-changes-success)
+- [😍 Awesome](https://tally.so/r/nWNL5P?rating=Awesome&source=substack&medium=email&url=eng-changes-success)
 
--   [😐 Okay](https://tally.so/r/nWNL5P?rating=Okay&source=substack&medium=email&url=eng-changes-success)
+- [😐 Okay](https://tally.so/r/nWNL5P?rating=Okay&source=substack&medium=email&url=eng-changes-success)
 
--   [🤮 Bad](https://tally.so/r/nWNL5P?rating=Bad&source=substack&medium=email&url=eng-changes-success)
+- [🤮 Bad](https://tally.so/r/nWNL5P?rating=Bad&source=substack&medium=email&url=eng-changes-success)
 
 Please don't hesitate to connect with me on [LinkedIn](https://www.linkedin.com/in/alvarolorentedev/) and send a message. I always respond to every one!
 

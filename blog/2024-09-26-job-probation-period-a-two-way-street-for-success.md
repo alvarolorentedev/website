@@ -1,11 +1,11 @@
 ---
-title: 'Job Probation Period A Two Way Street For Success'
-description: 'Dear readers, I am back. It has been a few “interesting” months in my life that have made me reflect a lot on some topics that before I thought were...'
+title: "Job Probation Period A Two Way Street For Success"
+description: "Dear readers, I am back. It has been a few “interesting” months in my life that have made me reflect a lot on some topics that before I thought were..."
 authors: alvarolorentedev
 tags:
-- substack
+  - substack
 draft: false
-series: ''
+series: Engineering Strategy 101
 canonical_url: https://theengineeringtax.com/p/job-probation-period-a-two-way-street
 cover_image: https://substack-post-media.s3.amazonaws.com/public/images/03da3cea-93f6-4d53-9fe0-0f4641af5c91_1080x1080.jpeg
 ---
@@ -28,35 +28,35 @@ With this in mind, the same as in interview, we need to remember is not a one-si
 
 From an **employer's standpoint**, probation periods offer several advantages:
 
--   **Skill Assessment:** Employers can evaluate a candidate's practical skills and how they apply their knowledge in real-world scenarios.
+- **Skill Assessment:** Employers can evaluate a candidate's practical skills and how they apply their knowledge in real-world scenarios.
 
--   **Cultural Fit:** It provides an opportunity to assess how well the new hire integrates with the existing team and company culture.
+- **Cultural Fit:** It provides an opportunity to assess how well the new hire integrates with the existing team and company culture.
 
--   **Performance Evaluation:** Employers can gauge the employee's productivity, work ethic, and ability to meet deadlines.
+- **Performance Evaluation:** Employers can gauge the employee's productivity, work ethic, and ability to meet deadlines.
 
--   **Risk Mitigation:** If the employee doesn't meet expectations, the company can part ways with minimal legal and financial implications.
+- **Risk Mitigation:** If the employee doesn't meet expectations, the company can part ways with minimal legal and financial implications.
 
 Equally important, but often overlooked, is the **employee's perspective** on probation periods:
 
--   **Company Culture Experience:** Employees can immerse themselves in the company culture and determine if it aligns with their values and work style.
+- **Company Culture Experience:** Employees can immerse themselves in the company culture and determine if it aligns with their values and work style.
 
--   **Job Satisfaction Assessment:** It allows individuals to evaluate if the role meets their expectations and career aspirations.
+- **Job Satisfaction Assessment:** It allows individuals to evaluate if the role meets their expectations and career aspirations.
 
--   **Team Dynamics:** Employees can assess how well they work with their colleagues and immediate supervisors.
+- **Team Dynamics:** Employees can assess how well they work with their colleagues and immediate supervisors.
 
--   **Work-Life Balance:** The probation period offers insight into the company's approach to work-life balance and flexibility
+- **Work-Life Balance:** The probation period offers insight into the company's approach to work-life balance and flexibility
 
 ## Maximizing the Probation Period
 
 To make the most of a job probation period, both parties should approach it with openness and clear communication:
 
--   **Set Clear Expectations:** Employers should outline specific goals and performance metrics for the probation period.
+- **Set Clear Expectations:** Employers should outline specific goals and performance metrics for the probation period.
 
--   **Regular Feedback:** Implement a system for frequent, two-way feedback to address concerns and acknowledge progress.
+- **Regular Feedback:** Implement a system for frequent, two-way feedback to address concerns and acknowledge progress.
 
--   **Encourage Questions:** Create an environment where the new hire feels comfortable asking questions and seeking clarification.
+- **Encourage Questions:** Create an environment where the new hire feels comfortable asking questions and seeking clarification.
 
--   **Provide Necessary Resources:** Ensure the employee has all the tools and information needed to perform their job effectively.
+- **Provide Necessary Resources:** Ensure the employee has all the tools and information needed to perform their job effectively.
 
 To achieve this, we need to use the correct tools for the job
 
@@ -64,19 +64,19 @@ To achieve this, we need to use the correct tools for the job
 
 An effective onboarding plan should contain:
 
--   **Comprehensive introduction:** Include an overview of the company's culture, policies, and procedures.
+- **Comprehensive introduction:** Include an overview of the company's culture, policies, and procedures.
 
--   **Role-specific training:** Provide training tailored to the new employee's specific job responsibilities.
+- **Role-specific training:** Provide training tailored to the new employee's specific job responsibilities.
 
--   **Introduction to team and colleagues:** Facilitate meetings with team members and key personnel.
+- **Introduction to team and colleagues:** Facilitate meetings with team members and key personnel.
 
--   **Resource provision:** Ensure the employee has all necessary tools and information to perform their job effectively.
+- **Resource provision:** Ensure the employee has all necessary tools and information to perform their job effectively.
 
--   **Assign a buddy**: pair the employee with a more experienced colleague who can provide informal guidance and support that can help navigate the day-to-day aspects of the job.
+- **Assign a buddy**: pair the employee with a more experienced colleague who can provide informal guidance and support that can help navigate the day-to-day aspects of the job.
 
--   **Assign a mentor**: pair the employee mentor is usually a more senior employee who can provide guidance, share industry insights, and help them grow in their role over a longer period.
+- **Assign a mentor**: pair the employee mentor is usually a more senior employee who can provide guidance, share industry insights, and help them grow in their role over a longer period.
 
--   **Regular feedback sessions:** as a manager, schedule frequent check-ins to address concerns and acknowledge progress.
+- **Regular feedback sessions:** as a manager, schedule frequent check-ins to address concerns and acknowledge progress.
 
 ![](https://substack-post-media.s3.amazonaws.com/public/images/81d4a0d9-3506-4da3-a8bd-0b8af0fcd72e_1080x1080.jpeg)
 
@@ -86,11 +86,11 @@ A well-structured onboarding plan helps new employees quickly integrate into the
 
 A 30-60-90 plan is a strategic framework used for onboarding new employees or setting goals for the first 90 days in a new role. It breaks down objectives and expectations into three distinct periods:
 
--   **30 days:** Focus on learning and understanding the role, company culture, and immediate responsibilities.
+- **30 days:** Focus on learning and understanding the role, company culture, and immediate responsibilities.
 
--   **60 days:** Begin contributing more actively, implementing initial strategies, and identifying areas for improvement.
+- **60 days:** Begin contributing more actively, implementing initial strategies, and identifying areas for improvement.
 
--   **90 days:** Fully integrate into the role, start driving results, and propose long-term strategies or improvements.
+- **90 days:** Fully integrate into the role, start driving results, and propose long-term strategies or improvements.
 
 ![](https://substack-post-media.s3.amazonaws.com/public/images/8b614285-73a1-4d18-bf6f-980f0152cc1d_1080x1080.jpeg)
 

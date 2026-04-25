@@ -12,6 +12,9 @@ series: commiting Like a Pro in NodeJs
 canonical_url: https://www.alvarolorente.dev/blog/2022/08/08/commiting-like-pro-part-1
 ---
 
+
+<!-- truncate -->
+
 ## What & Why Git hooks?
 
 Git hooks are scripts that Git executes locally before or after events such as commit, push, and receive.

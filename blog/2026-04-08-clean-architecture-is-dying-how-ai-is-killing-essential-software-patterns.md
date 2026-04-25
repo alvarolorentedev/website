@@ -1,11 +1,11 @@
 ---
-title: 'Clean Architecture Is Dying How AI Is Killing Essential Software Patterns'
-description: 'For decades, we repeated a simple idea: code is read more than it is written.'
+title: "Clean Architecture Is Dying How AI Is Killing Essential Software Patterns"
+description: "For decades, we repeated a simple idea: code is read more than it is written."
 authors: alvarolorentedev
 tags:
-- substack
+  - substack
 draft: false
-series: ''
+series: Engineering After AI
 canonical_url: https://theengineeringtax.com/p/clean-architecture-is-dying-how-ai
 cover_image: https://substack-post-media.s3.amazonaws.com/public/images/47cff2fb-67dd-4c98-9dea-b0cc08902076_1024x1024.png
 ---
@@ -34,7 +34,7 @@ And because of that, a large part of what we call “good engineering” has qui
 
 ![](https://substack-post-media.s3.amazonaws.com/public/images/47cff2fb-67dd-4c98-9dea-b0cc08902076_1024x1024.png)
 
-* * *
+---
 
 ## **The Cost Model Has Inverted**
 
@@ -48,7 +48,7 @@ We should no longer be asking, _“How do we make the code easier to maintain?�
 
 We spent decades optimizing the cost of writing code. We are entering a phase where the dominant cost is running it.
 
-* * *
+---
 
 ## **DDD, Hexagonal Architecture… Were Always About Fear**
 
@@ -68,7 +68,7 @@ Abstractions exist to preserve structure over time. They reduce the need to chan
 
 Regeneration does the opposite. It embraces change. It assumes that structure is temporary and can be recreated as needed.
 
-* * *
+---
 
 ## **We Now Care More About Product Quality, Not Code Quality**
 
@@ -84,7 +84,7 @@ We move from designing systems that are easy to understand to systems that are e
 >
 > It is the behavior of the system in production.
 
-* * *
+---
 
 ## **TypeScript, C#, and “Developer-Friendly” Languages Were a Local Optimum**
 
@@ -104,7 +104,7 @@ What starts to matter is not how easy code is to write but how it behaves when i
 
 We spent the last two decades optimizing the authoring experience, but we are entering a phase where the dominant cost is execution.
 
-* * *
+---
 
 ## **The Return of Low-Level Thinking**
 
@@ -122,7 +122,7 @@ We might return to low-level languages not because developers improved, but beca
 
 ![](https://substack-post-media.s3.amazonaws.com/public/images/ae259ae0-ef1f-4622-9907-8bb352f0fa03_1024x1024.png)
 
-* * *
+---
 
 ## **The Part Nobody Wants to Admit**
 
@@ -142,7 +142,7 @@ They became expensive.
 
 And most of the industry hasn’t noticed yet.
 
-* * *
+---
 
 ## **🗞️ Other articles you may like**
 
@@ -152,10 +152,10 @@ I love hearing from readers, and I’m looking for feedback. _How am I doing wit
 
 Use the links below, or even better, hit reply and say hello. I’d love to hear from you!
 
--   [😍 Awesome](https://tally.so/r/nWNL5P?rating=Awesome&source=substack&medium=email&url=ai-kill-software-patterns)
+- [😍 Awesome](https://tally.so/r/nWNL5P?rating=Awesome&source=substack&medium=email&url=ai-kill-software-patterns)
 
--   [😐 Okay](https://tally.so/r/nWNL5P?rating=Okay&source=substack&medium=email&url=ai-kill-software-patterns)
+- [😐 Okay](https://tally.so/r/nWNL5P?rating=Okay&source=substack&medium=email&url=ai-kill-software-patterns)
 
--   [🤮 Bad](https://tally.so/r/nWNL5P?rating=Bad&source=substack&medium=email&url=ai-kill-software-patterns)
+- [🤮 Bad](https://tally.so/r/nWNL5P?rating=Bad&source=substack&medium=email&url=ai-kill-software-patterns)
 
 Please don’t hesitate to connect with me on [LinkedIn](https://www.linkedin.com/in/alvarolorentedev/) and send a message. I always respond to everyone!

@@ -16,6 +16,8 @@ series: Accelerate Continious Integration & Delivery Practices
 
 Before we enable code for our clients, we need to test and validate it does what is expected. This could be an entire series of its own (please let me know if you want one), so I will keep it on a high level.
 
+<!-- truncate -->
+
 ## Testing
 
 I could probably spend hours sharing different types of testing strategies and where and why to use them.  

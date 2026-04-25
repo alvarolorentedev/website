@@ -16,6 +16,8 @@ series: Accelerate Continious Integration & Delivery Practices
 
 I have already written some [other post](https://www.alvarolorente.dev/blog/2022/08/08/stop-prs) on this topic. I will go straight to the point on comparing Git Flow (a [legacy strategy](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) that most companies use) and Trunk-Based Development.
 
+<!-- truncate -->
+
 ## Gitflow: The Bad & The Ugly
 
 Why do I call it the bad and the ugly? Because it does not allow you to achieve Continuous Deployment.  

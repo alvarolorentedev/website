@@ -13,6 +13,9 @@ canonical_url: https://www.alvarolorente.dev/blog/2022/08/09/commiting-like-pro-
 cover_image: https://commitizen-tools.github.io/commitizen/images/demo.gif
 ---
 
+
+<!-- truncate -->
+
 ## Why are messages important?
 
 Commit messages are part of the collaboration we do day to day inside a team, it works as a record of what has happened.

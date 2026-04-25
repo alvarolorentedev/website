@@ -1,11 +1,11 @@
 ---
-title: 'The Illusion of Speed Why AI Is Making Teams Fasterbut Not Better'
-description: 'Two weeks ago, I built an MVP for StrengthsOS in under 12 days. At the same time, I started rewriting Octolaunch from scratch. That’s not the interesting part.'
+title: "The Illusion of Speed Why AI Is Making Teams Fasterbut Not Better"
+description: "Two weeks ago, I built an MVP for StrengthsOS in under 12 days. At the same time, I started rewriting Octolaunch from scratch. That’s not the interesting part."
 authors: alvarolorentedev
 tags:
-- substack
+  - substack
 draft: false
-series: ''
+series: Engineering After AI
 canonical_url: https://theengineeringtax.com/p/the-illusion-of-speed-why-ai-is-making
 cover_image: https://substack-post-media.s3.amazonaws.com/public/images/7ced8e12-6d3c-4e5e-8e87-7e441bfeb383_480x432.png
 ---
@@ -24,7 +24,7 @@ And if you look at most engineering teams right now, the signals all point in th
 
 So why does it feel like nothing is actually improving?
 
-* * *
+---
 
 ## Output is exploding; outcomes are not
 
@@ -44,7 +44,7 @@ At the individual level, everything feels faster. At the system level, nothing r
 
 That is the paradox.
 
-* * *
+---
 
 ## AI optimized execution, not decisions
 
@@ -68,7 +68,7 @@ It simply makes it easier to execute whatever decision has already been made.
 
 ![](https://substack-post-media.s3.amazonaws.com/public/images/35a44842-d452-4de5-b132-b08e04a1dd15_681x588.png)
 
-* * *
+---
 
 ## You can now scale bad decisions
 
@@ -88,7 +88,7 @@ What used to be a sequence of build → learn → adjust is quietly turning into
 
 More output doesn’t mean more impact. It just means we are moving faster on assumptions we haven’t yet earned the right to trust.
 
-* * *
+---
 
 ## Conclusion: The bottleneck has moved
 
@@ -104,6 +104,6 @@ That is now the limiting factor.
 
 And most teams are still optimizing for the layer that stopped being the constraint.
 
-* * *
+---
 
 In the next issue, I’ll break down where the real bottleneck is hiding—and why most organizations are not designed to handle it.

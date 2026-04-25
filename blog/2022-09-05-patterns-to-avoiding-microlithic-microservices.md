@@ -18,6 +18,8 @@ On the previous installment of this series, we discussed the pitfalls that could
 
 Given that you have followed the recommendations on designing your domains correctly. Today we are going to elaborate on patterns to remove that synchronous communication in between 'microservices'. This will help our services to become more resilient.
 
+<!-- truncate -->
+
 ## The Patterns
 
 ### Circuit Breakers

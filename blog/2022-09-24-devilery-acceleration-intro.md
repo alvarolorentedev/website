@@ -16,6 +16,8 @@ cover_image: https://www.alvarolorente.dev/img/blog/key_metrics.png
 
 This is a series I am really looking forward to writing. I have been doing this presentation for the last 3 years in multiple places.
 
+<!-- truncate -->
+
 ## Am I Crazy?
 
 The answer is no, most of the thing you will see on this series comes from practices derived from Extreme Programming, that show how to build quality and value into products. So bear with me for some time.

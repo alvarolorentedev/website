@@ -2,20 +2,23 @@
 title: Psychological safety in software development
 authors: alvarolorentedev
 draft: false
-description: 'What are some success factors of high-performing teams and organizations?
-  One undoubtedly is the ability to share and exchange without fear or shame '
+description:
+  "What are some success factors of high-performing teams and organizations?
+  One undoubtedly is the ability to share and exchange without fear or shame "
 tags:
-- programming
-- productivity
-- motivation
+  - programming
+  - productivity
+  - motivation
 canonical_url: https://www.alvarolorente.dev/blog/2023-01-26-psycological-safety-in-software-developmente
 cover_image: https://raw.githubusercontent.com/alvarolorentedev/website/main/static/img/blog/unnamed-1.jpg
-series: 'What makes high-performing teams '
+series: What makes high-performing teams
 ---
 
 # TL:DR;
 
 psychological safety is essential for the success of software development teams. By fostering open communication and encouraging a culture of learning and innovation, teams can work more efficiently, effectively, and creatively. By promoting psychological safety, managers and leaders can help their team members to reach their full potential and take the team to the next level.
+
+<!-- truncate -->
 
 ## Long Version
 

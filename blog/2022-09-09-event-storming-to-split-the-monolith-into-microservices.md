@@ -16,6 +16,8 @@ cover_image: https://www.alvarolorente.dev/img/blog/event-storming.png
 
 On our previous installments, we discussed the smells that can happen when splitting microservices, and the strategies that exist to make them as independent as possible. But how do we define boundaries? How do we define the process that our microservice is in charge off?
 
+<!-- truncate -->
+
 ## Event Storming
 
 Event storming is a technique that is part of [DDD](https://en.wikipedia.org/wiki/Domain-driven_design). But, what is Event storming?, the definition on [Wikipedia](https://en.wikipedia.org/wiki/Event_storming "wikipedia") is:

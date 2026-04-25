@@ -13,6 +13,9 @@ canonical_url: https://www.alvarolorente.dev/blog/2022/08/24/power-automate-auto
 cover_image: https://github.com/alvarolorentedev/diagrams/blob/main/automate.drawio.png?raw=true
 ---
 
+
+<!-- truncate -->
+
 ## Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KhrRVrCmtIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

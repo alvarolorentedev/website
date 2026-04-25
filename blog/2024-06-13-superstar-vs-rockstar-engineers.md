@@ -1,13 +1,13 @@
 ---
-title: 'Superstar vs Rockstar Engineers'
-description: 'Have you noticed a broad spectrum of aspirations among your team members?'
+title: "Superstar vs Rockstar Engineers"
+description: "Have you noticed a broad spectrum of aspirations among your team members?"
 authors: alvarolorentedev
 tags:
-- substack
+  - substack
 draft: false
-series: ''
+series: Engineering Strategy 101
 canonical_url: https://theengineeringtax.com/p/superstar-vs-rockstar-engineers
-cover_image: 
+cover_image:
 ---
 
 Have you noticed a broad spectrum of aspirations among your team members?
@@ -26,17 +26,17 @@ Superstar Engineers are those who strive for more than just the ordinary, who ar
 
 Some traits you can find in the work of these engineers:
 
--   They continuously pursue growth and development
+- They continuously pursue growth and development
 
--   They’re not content with the status quo
+- They’re not content with the status quo
 
--   They’re willing to take risks to innovate
+- They’re willing to take risks to innovate
 
--   They’re frequently the driving force behind breakthroughs in technologies, processes, practices, or products
+- They’re frequently the driving force behind breakthroughs in technologies, processes, practices, or products
 
--   They’re motivated by a passion for innovation and growth
+- They’re motivated by a passion for innovation and growth
 
--   They propel the team forward, ensuring it stays relevant and competitive
+- They propel the team forward, ensuring it stays relevant and competitive
 
 ## Rockstar Engineers
 
@@ -44,21 +44,21 @@ Rockstar Engineers are the backbone of the team, providing the dependability tha
 
 Some traits you can find in the work of these engineers:
 
--   They provide stability and consistency within the team.
+- They provide stability and consistency within the team.
 
--   They're domain experts, with a deep understanding of particular systems or processes
+- They're domain experts, with a deep understanding of particular systems or processes
 
--   They ensure the smooth running of systems and processes
+- They ensure the smooth running of systems and processes
 
--   They manage and enhance existing systems
+- They manage and enhance existing systems
 
--   They're highly reliable, often serving as the go-to person for issues within their domain
+- They're highly reliable, often serving as the go-to person for issues within their domain
 
--   They're incredibly dependable, often the first person you'd call for problems in their area
+- They're incredibly dependable, often the first person you'd call for problems in their area
 
--   They value quality and take genuine pride in their work
+- They value quality and take genuine pride in their work
 
--   While they may not be the most visible, their contribution to the team and the business is absolutely critical
+- While they may not be the most visible, their contribution to the team and the business is absolutely critical
 
 ## Types of Engineers and engineering strategy
 

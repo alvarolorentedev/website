@@ -1,11 +1,11 @@
 ---
-title: 'Most Software Engineering -ilities Are Becoming Irrelevant in the Age of AI'
-description: 'For decades, engineering has been shaped around a set of principles that we rarely question. Maintainability, testability, modularity, and reusability have...'
+title: "Most Software Engineering -ilities Are Becoming Irrelevant in the Age of AI"
+description: "For decades, engineering has been shaped around a set of principles that we rarely question. Maintainability, testability, modularity, and reusability have..."
 authors: alvarolorentedev
 tags:
-- substack
+  - substack
 draft: false
-series: ''
+series: Engineering After AI
 canonical_url: https://theengineeringtax.com/p/most-software-engineering-ilities
 cover_image: https://substack-post-media.s3.amazonaws.com/public/images/366d545f-8173-4418-83fe-e94602f9286a_1536x1024.png
 ---
@@ -28,13 +28,13 @@ In previous articles, I explored how AI is not removing complexity, but shifting
 
 If you haven’t read them, this builds directly on:
 
--   _[Engineering is no longer the bottleneck](https://theengineeringtax.com/p/the-real-bottleneck-in-engineering)_
+- _[Engineering is no longer the bottleneck](https://theengineeringtax.com/p/the-real-bottleneck-in-engineering)_
 
--   _[The illusion of speed in AI-driven teams](https://theengineeringtax.com/p/the-illusion-of-speed-why-ai-is-making)_
+- _[The illusion of speed in AI-driven teams](https://theengineeringtax.com/p/the-illusion-of-speed-why-ai-is-making)_
 
 Because once execution stops being the limiting factor, many of the qualities we have historically optimized for don’t just lose importance. They become the wrong optimization target.
 
-* * *
+---
 
 ## Most “-ilities” were never ideals
 
@@ -50,7 +50,7 @@ These were not universal truths about good engineering. They were adaptations to
 
 ![](https://substack-post-media.s3.amazonaws.com/public/images/1e794bcd-52b8-4bc7-a3d1-91d436f55020_1536x1024.png)
 
-* * *
+---
 
 ## That cost structure has changed
 
@@ -66,7 +66,7 @@ One of the most overlooked consequences of this shift is that we are still optim
 
 When rebuilding becomes cheaper than maintaining, maintainability stops being the primary concern.
 
-* * *
+---
 
 ## The first cracks appear in practice
 
@@ -82,7 +82,7 @@ However, as requirements evolve faster and timelines compress in the age of AI, 
 
 The assumption that systems will be incrementally evolved over long periods of time is becoming less reliable, and in some cases, a fallacy.
 
-* * *
+---
 
 ## The “-ilities” that AI is killing
 
@@ -100,7 +100,7 @@ Testability, while still relevant, is also shifting. The ability to generate tes
 
 What all of these have in common is that they optimize for a world where execution was expensive. As that constraint weakens, so does their centrality.
 
-* * *
+---
 
 ## The -ilities that remain
 
@@ -108,17 +108,17 @@ If we shift the focus from code to systems, a different set of concerns emerges.
 
 ![](https://substack-post-media.s3.amazonaws.com/public/images/42dcc6c6-98f4-4490-b1a1-3eb434f67d20_1536x1024.png)
 
--   Observability becomes critical because systems evolve faster than individuals can track. Understanding behavior in production becomes more valuable than understanding implementation details. When change accelerates, visibility becomes the only stable reference point.
+- Observability becomes critical because systems evolve faster than individuals can track. Understanding behavior in production becomes more valuable than understanding implementation details. When change accelerates, visibility becomes the only stable reference point.
 
--   Reliability remains essential because increased change frequency introduces more opportunities for failure. Faster delivery does not reduce risk; it amplifies it. Systems need to withstand continuous modification without degrading.
+- Reliability remains essential because increased change frequency introduces more opportunities for failure. Faster delivery does not reduce risk; it amplifies it. Systems need to withstand continuous modification without degrading.
 
--   Security expands in scope as AI-generated systems introduce new forms of risk, including supply chain vulnerabilities, generated flaws, and unintended behaviors. The surface area increases even if the effort per change decreases.
+- Security expands in scope as AI-generated systems introduce new forms of risk, including supply chain vulnerabilities, generated flaws, and unintended behaviors. The surface area increases even if the effort per change decreases.
 
--   Scalability also becomes more, not less, important. As the cost of building decreases, the number of systems, features, and interactions increases. Load is no longer just a function of users, but of system complexity and internal interactions. Systems must scale not only in traffic, but in the rate of change they can handle.
+- Scalability also becomes more, not less, important. As the cost of building decreases, the number of systems, features, and interactions increases. Load is no longer just a function of users, but of system complexity and internal interactions. Systems must scale not only in traffic, but in the rate of change they can handle.
 
--   Evolvability becomes a more accurate framing than maintainability. The question is no longer whether a system can be maintained efficiently, but whether it can adapt continuously without collapsing under its own complexity.
+- Evolvability becomes a more accurate framing than maintainability. The question is no longer whether a system can be maintained efficiently, but whether it can adapt continuously without collapsing under its own complexity.
 
-* * *
+---
 
 ## The uncomfortable conclusion
 
@@ -136,7 +136,7 @@ They are properties of how organizations operate under increasing speed and comp
 
 ## **🗞️ Other articles you may like**
 
-* * *
+---
 
 ## ✌️ That’s all folks
 
@@ -144,10 +144,10 @@ I love hearing from readers, and I’m looking for feedback. _How am I doing wit
 
 Use the links below, or even better, hit reply and say hello. I’d love to hear from you!
 
--   [😍 Awesome](https://tally.so/r/nWNL5P?rating=Awesome&source=substack&medium=email&url=ai-ilities)
+- [😍 Awesome](https://tally.so/r/nWNL5P?rating=Awesome&source=substack&medium=email&url=ai-ilities)
 
--   [😐 Okay](https://tally.so/r/nWNL5P?rating=Okay&source=substack&medium=email&url=ai-ilities)
+- [😐 Okay](https://tally.so/r/nWNL5P?rating=Okay&source=substack&medium=email&url=ai-ilities)
 
--   [🤮 Bad](https://tally.so/r/nWNL5P?rating=Bad&source=substack&medium=email&url=ai-ilities)
+- [🤮 Bad](https://tally.so/r/nWNL5P?rating=Bad&source=substack&medium=email&url=ai-ilities)
 
 Please don’t hesitate to connect with me on [LinkedIn](https://www.linkedin.com/in/alvarolorentedev/) and send a message. I always respond to everyone!

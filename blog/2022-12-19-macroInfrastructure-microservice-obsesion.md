@@ -14,6 +14,9 @@ canonical_url: https://www.alvarolorente.dev/blog/2022/12/19/macroInfrastructure
 cover_image: https://www.alvarolorente.dev/img/blog/captura-de-pantalla-2022-12-19-a-las-17-17-49.png
 ---
 
+
+<!-- truncate -->
+
 ## The Context
 
 Cloud and infrastructure as code have revolutionized our industry. They allowed us to be able to procure infrastructure in a simple, adaptable way.  

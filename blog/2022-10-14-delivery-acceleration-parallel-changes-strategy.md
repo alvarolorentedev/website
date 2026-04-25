@@ -16,6 +16,8 @@ series: Accelerate Continious Integration & Delivery Practices
 
 As we develop a product over time, changes need to be made as we need to accommodate new functionality. As most of our systems don't run isolated, and we have clients that used them (ex. public API), We have to keep compatibility at least on a temporary basis. How do we achieve this?
 
+<!-- truncate -->
+
 ## Versions
 
 A common practice is to have different versions for the multiple clients. While simple, it also requires significant effort to maintain as whenever an issue or bug is spotted, multiple places are affected, meaning there are more possibility of side effects.  

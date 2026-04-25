@@ -1,11 +1,11 @@
 ---
-title: 'Rethinking Technical Tasks Define All Tasks As User Value'
-description: 'Have you ever considered the various types of tasks within a team? Why do we often separate tasks into ''technical'' and ''product'' categories? Is this...'
+title: "Rethinking Technical Tasks Define All Tasks As User Value"
+description: "Have you ever considered the various types of tasks within a team? Why do we often separate tasks into 'technical' and 'product' categories? Is this..."
 authors: alvarolorentedev
 tags:
-- substack
+  - substack
 draft: false
-series: ''
+series: Engineering Strategy 101
 canonical_url: https://theengineeringtax.com/p/rethinking-technical-tasks-define
 cover_image: https://substack-post-media.s3.amazonaws.com/public/images/c0414364-e7a8-40cc-96bc-5efa20d80151_1080x1080.jpeg
 ---
@@ -32,9 +32,9 @@ If we approach our work with the previous quote in mind, any endeavor a team und
 
 where:
 
--   **Value**: The benefit or worth that a task or project brings to the organization, often measured in terms of revenue.
+- **Value**: The benefit or worth that a task or project brings to the organization, often measured in terms of revenue.
 
--   **Cost**: The amount of resources, including time, money, and effort, required to complete a task or project.
+- **Cost**: The amount of resources, including time, money, and effort, required to complete a task or project.
 
 It's normally simpler to calculate the expected value of functional tasks because their impact on user experience and business metrics is more direct and measurable. However, even technical tasks, when evaluated through this lens, can reveal significant contributions to the product's overall value.
 
@@ -48,17 +48,17 @@ The benefit we will achieve from this approach is a more cohesive and efficient 
 
 **Task**: Implement a new user login feature.
 
--   **Value**: This feature is expected to increase user sign-ups by 5%, leading to an estimated increase in revenue of $5,000 per month.
+- **Value**: This feature is expected to increase user sign-ups by 5%, leading to an estimated increase in revenue of $5,000 per month.
 
--   **Cost**: The development team estimates that it will take a week to complete this task (around 40 hours). Assuming an average hourly rate of $50, the total cost is $2,000.
+- **Cost**: The development team estimates that it will take a week to complete this task (around 40 hours). Assuming an average hourly rate of $50, the total cost is $2,000.
 
 ### Non-Functional Task: Performance Improvements
 
 **Task**: Optimize the application's performance to reduce load times and enhance user experience.
 
--   **Value**: Faster load times are expected to improve user retention by 15%, leading to an estimated increase in paid users and an additional revenue of $7,000 per month.
+- **Value**: Faster load times are expected to improve user retention by 15%, leading to an estimated increase in paid users and an additional revenue of $7,000 per month.
 
--   **Cost**: The development team estimates that it will take 50 hours to complete this task. Assuming an average hourly rate of $50, the total cost is $2,500.
+- **Cost**: The development team estimates that it will take 50 hours to complete this task. Assuming an average hourly rate of $50, the total cost is $2,500.
 
 With these examples in mind, it makes more sense to start with performance improvements and not working on the functional task.
 
