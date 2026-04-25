@@ -4,7 +4,10 @@ title: "Clean Architecture Is Dying How AI Is Killing Essential Software Pattern
 description: "For decades, we repeated a simple idea: code is read more than it is written."
 authors: alvarolorentedev
 tags:
-  - substack
+  - ai
+  - software
+  - systemdesign
+  - programming
 draft: false
 series: Engineering After AI
 canonical_url: https://theengineeringtax.com/p/clean-architecture-is-dying-how-ai

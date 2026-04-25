@@ -4,7 +4,10 @@ title: "The Real Bottleneck in Engineering Why AI Didnt Fix What Slows Teams Dow
 description: "For years, we optimized engineering speed."
 authors: alvarolorentedev
 tags:
-  - substack
+  - ai
+  - devops
+  - productivity
+  - software
 draft: false
 series: Engineering After AI
 canonical_url: https://theengineeringtax.com/p/the-real-bottleneck-in-engineering

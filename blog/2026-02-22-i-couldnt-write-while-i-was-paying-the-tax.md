@@ -4,7 +4,10 @@ title: 'I Couldnt Write While I Was Paying the Tax'
 description: 'For almost a year, I didn’t publish anything. Not because I didn’t have opinions. Not because I stopped caring. But because I was struggling.'
 authors: alvarolorentedev
 tags:
-- substack
+- career
+- productivity
+- software
+- developer
 draft: false
 series: ''
 canonical_url: https://theengineeringtax.com/p/i-couldnt-write-while-i-was-paying

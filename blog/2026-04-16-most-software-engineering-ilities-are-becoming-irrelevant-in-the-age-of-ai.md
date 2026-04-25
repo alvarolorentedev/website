@@ -4,7 +4,10 @@ title: "Most Software Engineering -ilities Are Becoming Irrelevant in the Age of
 description: "For decades, engineering has been shaped around a set of principles that we rarely question. Maintainability, testability, modularity, and reusability have..."
 authors: alvarolorentedev
 tags:
-  - substack
+  - ai
+  - software
+  - systemdesign
+  - programming
 draft: false
 series: Engineering After AI
 canonical_url: https://theengineeringtax.com/p/most-software-engineering-ilities

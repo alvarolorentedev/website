@@ -4,7 +4,9 @@ title: 'The Moment Process Starts Eating Your Day'
 description: 'As organizations scale, governance expands. Reporting structures multiply, compliance requirements mature, alignment rituals increase, and cross-functional...'
 authors: alvarolorentedev
 tags:
-- substack
+- productivity
+- software
+- career
 draft: false
 series: ''
 canonical_url: https://theengineeringtax.com/p/the-moment-process-starts-eating

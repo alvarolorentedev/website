@@ -4,7 +4,10 @@ title: 'When You Realize Engineering Is Everyones Dependency'
 description: 'In technology-driven organizations, engineering is not merely a delivery function — it is the execution engine of the business. Strategic ambition, product...'
 authors: alvarolorentedev
 tags:
-- substack
+- software
+- devops
+- career
+- systemdesign
 draft: false
 series: ''
 canonical_url: https://theengineeringtax.com/p/when-you-realize-engineering-is-everyones
