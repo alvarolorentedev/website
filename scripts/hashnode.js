@@ -17,22 +17,34 @@ if (!TOKEN || !PUBLICATION_ID || !HOST) {
 
 // 🧹 Clean Docusaurus → Hashnode incompatible content
 function sanitizeContent(content) {
-  return content
-    // remove truncate markers
-    .replace(/<!--\s*truncate\s*-->/g, "")
+  let cleaned = content;
 
-    // convert youtube iframes to links
-    .replace(
-      /<iframe.*?src="https:\/\/www\.youtube\.com\/embed\/(.*?)".*?<\/iframe>/g,
-      "https://www.youtube.com/watch?v=$1"
-    )
+  // remove truncate
+  cleaned = cleaned.replace(/<!--\s*truncate\s*-->/g, "");
 
-    // remove ALL remaining HTML tags
-    .replace(/<[^>]+>/g, "")
+  // remove images (THIS IS CRITICAL)
+  cleaned = cleaned.replace(/!\[.*?\]\(.*?\)/g, "");
 
-    // normalize spacing
-    .replace(/\n{3,}/g, "\n\n")
-    .trim();
+  // remove iframes completely
+  cleaned = cleaned.replace(/<iframe[\s\S]*?<\/iframe>/g, "");
+
+  // remove html
+  cleaned = cleaned.replace(/<[^>]+>/g, "");
+
+  // fix escaped quotes
+  cleaned = cleaned.replace(/\\"/g, '"');
+
+  // normalize spacing
+  cleaned = cleaned.replace(/\n{3,}/g, "\n\n");
+
+  // 🚨 LIMIT SIZE (VERY IMPORTANT)
+  const MAX_LENGTH = 40000; // safe threshold
+  if (cleaned.length > MAX_LENGTH) {
+    console.log("⚠️ Trimming content (too long)");
+    cleaned = cleaned.slice(0, MAX_LENGTH);
+  }
+
+  return cleaned.trim();
 }
 
 // 🧠 Normalize tags
