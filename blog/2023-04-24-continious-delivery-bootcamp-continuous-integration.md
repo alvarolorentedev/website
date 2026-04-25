@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'Continious Delivery Bootcamp: Continuous Integration'
 authors: alvarolorentedev
 tags:

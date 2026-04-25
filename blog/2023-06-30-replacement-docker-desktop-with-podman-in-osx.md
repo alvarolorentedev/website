@@ -1,4 +1,5 @@
 ---
+published: true
 title: Replace Docker Desktop with Podman in OSX
 authors: alvarolorentedev
 tags:

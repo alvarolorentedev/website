@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Transforming Systems Operations Teams into a Unified Platform Team"
 description: "Over the last months, I've witnessed firsthand the transformation of my team from a basic operation provider to an internal service provider."
 authors: alvarolorentedev

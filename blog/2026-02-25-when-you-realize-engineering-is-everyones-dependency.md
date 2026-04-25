@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'When You Realize Engineering Is Everyones Dependency'
 description: 'In technology-driven organizations, engineering is not merely a delivery function — it is the execution engine of the business. Strategic ambition, product...'
 authors: alvarolorentedev

@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'Automate Anything: Power Automate + Trello + IFTTT'
 description: how to automate tedius tasks with low code platforms
 authors: alvarolorentedev

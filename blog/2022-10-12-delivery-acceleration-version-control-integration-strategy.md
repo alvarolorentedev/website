@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'Delivery Acceleration: Version Control Integration Strategy'
 authors: alvarolorentedev
 draft: false

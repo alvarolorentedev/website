@@ -1,4 +1,5 @@
 ---
+published: true
 title: "The Real Bottleneck in Engineering Why AI Didnt Fix What Slows Teams Down"
 description: "For years, we optimized engineering speed."
 authors: alvarolorentedev

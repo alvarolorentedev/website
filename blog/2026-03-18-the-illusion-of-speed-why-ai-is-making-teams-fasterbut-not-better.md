@@ -1,4 +1,5 @@
 ---
+published: true
 title: "The Illusion of Speed Why AI Is Making Teams Fasterbut Not Better"
 description: "Two weeks ago, I built an MVP for StrengthsOS in under 12 days. At the same time, I started rewriting Octolaunch from scratch. That’s not the interesting part."
 authors: alvarolorentedev

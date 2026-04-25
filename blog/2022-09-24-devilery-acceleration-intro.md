@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'Delivery Acceleration: Intro'
 draft: false
 description: Why do teams perform differently and what are the tools & practices some

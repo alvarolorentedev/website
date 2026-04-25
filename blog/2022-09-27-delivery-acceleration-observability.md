@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'Delivery Acceleration: Observability'
 draft: false
 description: When runing services in production the most important thing is to understand

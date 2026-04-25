@@ -1,4 +1,5 @@
 ---
+published: true
 title: "The future of teams: Crossfuctional & T-Shaped"
 draft: false
 description:

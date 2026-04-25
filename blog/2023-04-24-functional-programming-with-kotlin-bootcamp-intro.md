@@ -1,4 +1,5 @@
 ---
+published: true
 title: Functional Programming With Kotlin Bootcamp - Intro
 authors: alvarolorentedev
 tags:

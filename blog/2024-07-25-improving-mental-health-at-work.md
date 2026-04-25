@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Improving Mental Health at Work"
 description: "Last week, we discussed the importance of managing 100% utilization within the team to maintain their well-being. As individuals, we each react differently..."
 authors: alvarolorentedev

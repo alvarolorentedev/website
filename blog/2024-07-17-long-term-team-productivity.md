@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'Long-Term Team Productivity'
 description: 'It has been almost a year since McKinsey released their developer productivity approach. While I fully disagree with their ideas, it highlights the ongoing...'
 authors: alvarolorentedev

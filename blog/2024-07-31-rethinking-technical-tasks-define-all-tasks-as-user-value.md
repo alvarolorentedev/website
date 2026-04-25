@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Rethinking Technical Tasks Define All Tasks As User Value"
 description: "Have you ever considered the various types of tasks within a team? Why do we often separate tasks into 'technical' and 'product' categories? Is this..."
 authors: alvarolorentedev

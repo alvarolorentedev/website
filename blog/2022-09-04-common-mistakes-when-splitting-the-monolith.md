@@ -1,4 +1,5 @@
 ---
+published: true
 title: Common mistakes when splitting the monolith
 draft: false
 description: A set of the most common mistakes when splitting your monolith into microservices

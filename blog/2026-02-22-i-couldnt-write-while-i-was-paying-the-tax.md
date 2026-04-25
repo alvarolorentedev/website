@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'I Couldnt Write While I Was Paying the Tax'
 description: 'For almost a year, I didn’t publish anything. Not because I didn’t have opinions. Not because I stopped caring. But because I was struggling.'
 authors: alvarolorentedev

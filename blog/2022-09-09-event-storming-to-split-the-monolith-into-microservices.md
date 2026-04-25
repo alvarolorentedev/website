@@ -1,4 +1,5 @@
 ---
+published: true
 title: Event Storming to split Monolith into Microservices
 draft: false
 description: how can we define what is the scope of a service, event storming is here

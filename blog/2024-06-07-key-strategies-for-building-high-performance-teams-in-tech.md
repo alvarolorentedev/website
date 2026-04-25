@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Key Strategies for Building High-Performance Teams in Tech"
 description: "We all continuously hear about high-performance teams and the importance of becoming one. But there is actual no real definition of it. Is it?"
 authors: alvarolorentedev

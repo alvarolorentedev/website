@@ -1,4 +1,5 @@
 ---
+published: true
 title: TDD is not called TDT for a reason
 authors: alvarolorentedev
 draft: false

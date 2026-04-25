@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'Delivery Acceleration: Deployment Environments'
 draft: false
 description: Where should we run our services? are there hidden consts on certain

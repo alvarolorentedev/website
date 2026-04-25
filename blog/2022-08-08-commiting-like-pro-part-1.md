@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'Commiting Like a Pro in NodeJs: The hooks'
 description: Using git hooks to make sure your commits do what you expect
 authors: alvarolorentedev

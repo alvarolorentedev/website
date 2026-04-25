@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'Continious Delivery Bootcamp: Test Driven Development'
 authors: alvarolorentedev
 tags:

@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'Delivery Acceleration: DevOps Mentality & Practices'
 draft: false
 description: When we run services in production, mentality can make or break our intent

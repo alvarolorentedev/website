@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'Commiting Like a Pro in NodeJs: The Message'
 description: Using tools to create descriptive commits
 authors: alvarolorentedev

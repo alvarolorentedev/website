@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'Delivery Acceleration: Parallel Changes Strategy'
 authors: alvarolorentedev
 draft: false

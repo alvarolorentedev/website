@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Most Software Engineering -ilities Are Becoming Irrelevant in the Age of AI"
 description: "For decades, engineering has been shaped around a set of principles that we rarely question. Maintainability, testability, modularity, and reusability have..."
 authors: alvarolorentedev

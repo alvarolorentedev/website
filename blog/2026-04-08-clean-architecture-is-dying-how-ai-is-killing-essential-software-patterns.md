@@ -1,4 +1,5 @@
 ---
+published: true
 title: "Clean Architecture Is Dying How AI Is Killing Essential Software Patterns"
 description: "For decades, we repeated a simple idea: code is read more than it is written."
 authors: alvarolorentedev

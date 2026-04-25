@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'Delivery Acceleration: Testing & Validation'
 draft: false
 description: is testing enough to make sure our code works?

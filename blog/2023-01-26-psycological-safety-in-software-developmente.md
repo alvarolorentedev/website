@@ -1,4 +1,5 @@
 ---
+published: true
 title: Psychological safety in software development
 authors: alvarolorentedev
 draft: false

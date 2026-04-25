@@ -1,4 +1,5 @@
 ---
+published: true
 title: "The Role of Transparency in Leadership"
 description: "As someone who has spent years navigating the complexities of engineering leadership, I can tell you that transparency is one of the most critical elements..."
 authors: alvarolorentedev

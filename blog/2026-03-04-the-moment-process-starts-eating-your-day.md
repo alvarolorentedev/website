@@ -1,4 +1,5 @@
 ---
+published: true
 title: 'The Moment Process Starts Eating Your Day'
 description: 'As organizations scale, governance expands. Reporting structures multiply, compliance requirements mature, alignment rituals increase, and cross-functional...'
 authors: alvarolorentedev
