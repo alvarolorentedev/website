@@ -111,7 +111,10 @@
 </li>
 </ul>
 <p>Please don’t hesitate to connect with me on <a href="https://www.linkedin.com/in/alvarolorentedev/" target="_blank" rel="noopener noreferrer" class="">LinkedIn</a> and send a message. I always respond to everyone!</p>]]></content:encoded>
-            <category>substack</category>
+            <category>ai</category>
+            <category>software</category>
+            <category>systemdesign</category>
+            <category>programming</category>
         </item>
         <item>
             <title><![CDATA[Clean Architecture Is Dying How AI Is Killing Essential Software Patterns]]></title>
@@ -203,7 +206,10 @@
 </li>
 </ul>
 <p>Please don’t hesitate to connect with me on <a href="https://www.linkedin.com/in/alvarolorentedev/" target="_blank" rel="noopener noreferrer" class="">LinkedIn</a> and send a message. I always respond to everyone!</p>]]></content:encoded>
-            <category>substack</category>
+            <category>ai</category>
+            <category>software</category>
+            <category>systemdesign</category>
+            <category>programming</category>
         </item>
         <item>
             <title><![CDATA[Engineering After AI 3 Ways to Fix the Real Bottlenecks in Modern Teams]]></title>
@@ -276,7 +282,10 @@
 <p>Organizations that continue to optimize for output will produce more.</p>
 <p>Organizations that adapt will produce less—but with far greater clarity and impact.</p>
 <p>Because once building becomes cheap, the real discipline is not in what you create. It is in what you choose not to carry forward.</p>]]></content:encoded>
-            <category>substack</category>
+            <category>ai</category>
+            <category>productivity</category>
+            <category>career</category>
+            <category>software</category>
         </item>
         <item>
             <title><![CDATA[The Real Bottleneck in Engineering Why AI Didnt Fix What Slows Teams Down]]></title>
@@ -352,7 +361,10 @@
 <p>They are still optimized for a world where execution was expensive and slow. A world where the primary challenge was building the thing.</p>
 <p>That is no longer the challenge.</p>
 <p>Now, the challenge is knowing whether the thing we are building should exist at all—and proving it before we scale it.</p>]]></content:encoded>
-            <category>substack</category>
+            <category>ai</category>
+            <category>devops</category>
+            <category>productivity</category>
+            <category>software</category>
         </item>
         <item>
             <title><![CDATA[The Illusion of Speed Why AI Is Making Teams Fasterbut Not Better]]></title>
@@ -408,7 +420,10 @@
 <p>And most teams are still optimizing for the layer that stopped being the constraint.</p>
 <hr>
 <p>In the next issue, I’ll break down where the real bottleneck is hiding—and why most organizations are not designed to handle it.</p>]]></content:encoded>
-            <category>substack</category>
+            <category>ai</category>
+            <category>productivity</category>
+            <category>software</category>
+            <category>devops</category>
         </item>
         <item>
             <title><![CDATA[The Moment Process Starts Eating Your Day]]></title>
@@ -529,7 +544,9 @@
 <p>When process displaces strategy, long-term engineering capability erodes.</p>
 <p>The responsibility of engineering leadership is not to resist governance but to prevent it from overwhelming the system it was designed to support.</p>
 <p>Sustainable organizations do not eliminate process. They design it intentionally and defend the time required to build the future.</p>]]></content:encoded>
-            <category>substack</category>
+            <category>productivity</category>
+            <category>software</category>
+            <category>career</category>
         </item>
         <item>
             <title><![CDATA[When You Realize Engineering Is Everyones Dependency]]></title>
@@ -627,7 +644,10 @@
 <p>Sustainable leverage requires defined interfaces.</p>
 <p>Engineering enables execution across domains, but accountability must remain with their respective functions. When ownership boundaries blur, coordination load concentrates, context switching increases, and system performance degrades.</p>
 <p>Engineering is a core operating layer of a company, and its effectiveness depends not only on technical excellence but also on governance design that balances central integration with distributed accountability.</p>]]></content:encoded>
-            <category>substack</category>
+            <category>software</category>
+            <category>devops</category>
+            <category>career</category>
+            <category>systemdesign</category>
         </item>
         <item>
             <title><![CDATA[I Couldnt Write While I Was Paying the Tax]]></title>
@@ -684,7 +704,10 @@
 <p>The question is, are you aware of it? And are you getting a return?</p>
 <p>I’m writing again — not because I figured everything out. But because I’ve lived enough of it to speak honestly.</p>
 <p>Welcome to The Engineering Tax.</p>]]></content:encoded>
-            <category>substack</category>
+            <category>career</category>
+            <category>productivity</category>
+            <category>software</category>
+            <category>developer</category>
         </item>
         <item>
             <title><![CDATA[Are We Providing Feedback or Something Else]]></title>
