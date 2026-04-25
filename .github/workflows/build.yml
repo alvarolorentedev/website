@@ -39,9 +39,13 @@ jobs:
           api-key: ${{ secrets.DEVTO_TOKEN }}
           directory: ./blog
           ignore: 201**.md,2022-**.md,2023-**.md,2024-**.md,2025-**.md
+      - name: Move to sync posts
+        run: |
+          mkdir tosync
+          find blog -name '2022-*.md' -exec cp {} tosync/ \;
       - name: Hashnode publish
         uses: raunakgurud09/hashnode-publish@v2
         with:
           host: "https://theengineeringtax.hashnode.dev"
-          file: "blog/2022-*.md"
+          file: "tosync/**/*.md"
           hashnode_key: ${{ secrets.HASHNODE_TOKEN }}
