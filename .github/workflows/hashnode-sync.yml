@@ -20,3 +20,4 @@ jobs:
         env:
           HASHNODE_TOKEN: ${{ secrets.HASHNODE_TOKEN }}
           HASHNODE_PUBLICATION_ID: ${{ secrets.HASHNODE_PUBLICATION_ID }}
+          HASHNODE_HOST: ${{ secrets.HASHNODE_HOST }}
