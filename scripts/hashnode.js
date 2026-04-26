@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const matter = require("gray-matter");
-const fetch = require("node-fetch"); // install node-fetch@2
+const fetch = require("node-fetch"); // npm install node-fetch@2
 
 const HASHNODE_API = "https://gql.hashnode.com";
 const TOKEN = process.env.HASHNODE_TOKEN;
@@ -20,38 +20,31 @@ function slugify(text) {
     .replace(/^-+|-+$/g, "");
 }
 
-// ✅ STRUCTURE-PRESERVING SANITIZER
+// ✅ Preserve markdown structure (fix your rendering issue)
 function sanitizeContent(content) {
   return content
-    // remove MDX artifacts only
-    .replace(/<!--.*?-->/gs, "")
-    .replace(/^import\s+.*$/gm, "")
+    .replace(/<!--.*?-->/gs, "") // remove truncate
+    .replace(/^import\s+.*$/gm, "") // remove MDX imports
     .replace(/^export\s+.*$/gm, "")
 
-    // remove iframes ONLY
+    // remove only problematic HTML
     .replace(/<iframe[\s\S]*?<\/iframe>/g, "")
 
-    // normalize horizontal rules
+    // normalize markdown structure
     .replace(/\n?---\n?/g, "\n\n---\n\n")
-
-    // ensure spacing after headings
     .replace(/(#+ .+)\n(?!\n)/g, "$1\n\n")
-
-    // ensure spacing after blockquotes
     .replace(/\n?>\s*/g, "\n\n> ")
-
-    // normalize excessive newlines
     .replace(/\n{3,}/g, "\n\n")
 
     .trim();
 }
 
-// ✅ ONLY FIX GRAPHQL BREAKERS (NOT MARKDOWN)
+// ✅ Only fix GraphQL-breaking chars
 function normalizeForGraphQL(content) {
   return content
-    .replace(/\\+"/g, '"')      // fix escaped quotes
-    .replace(/\\\\/g, "\\")     // fix slashes
-    .replace(/[\u0000-\u001F]/g, "") // remove control chars
+    .replace(/\\+"/g, '"')
+    .replace(/\\\\/g, "\\")
+    .replace(/[\u0000-\u001F]/g, "")
     .trim();
 }
 
@@ -73,16 +66,17 @@ async function graphqlRequest(query, variables) {
 }
 
 // ----------------------
-// IDEMPOTENCY
+// FETCH EXISTING POSTS (slug → id)
 // ----------------------
 
-async function getExistingSlugs() {
+async function getExistingPosts() {
   const query = `
     query GetPosts($publicationId: ObjectId!) {
       publication(id: $publicationId) {
         posts(first: 50) {
           edges {
             node {
+              id
               slug
             }
           }
@@ -96,7 +90,8 @@ async function getExistingSlugs() {
   });
 
   const edges = res?.data?.publication?.posts?.edges || [];
-  return new Set(edges.map(e => e.node.slug));
+
+  return new Map(edges.map(e => [e.node.slug, e.node.id]));
 }
 
 // ----------------------
@@ -110,7 +105,7 @@ async function run() {
   console.log(`📂 Found ${files.length} files`);
 
   console.log("🔍 Fetching existing posts...");
-  const existing = await getExistingSlugs();
+  const existing = await getExistingPosts();
   console.log(`📚 Found ${existing.size} existing posts`);
 
   for (const file of files) {
@@ -122,20 +117,14 @@ async function run() {
     const title = data.title || file;
     const slug = slugify(title);
 
-    if (existing.has(slug)) {
-      console.log(`⏭️ Skipping: ${slug}`);
-      continue;
-    }
-
     console.log(`➡️ Processing: ${file}`);
     console.log(`📝 Title: ${title}`);
 
     let clean = sanitizeContent(content);
     clean = normalizeForGraphQL(clean);
 
-    // safety guard
     if (!clean || clean.length < 50) {
-      console.log("⚠️ Skipping (empty/invalid content)");
+      console.log("⚠️ Skipping (empty/invalid)");
       continue;
     }
 
@@ -144,34 +133,60 @@ async function run() {
       slug: slugify(tag),
     }));
 
-    const mutation = `
-      mutation Publish($input: PublishPostInput!) {
-        publishPost(input: $input) {
-          post {
-            id
-            slug
+    const isUpdate = existing.has(slug);
+
+    const mutation = isUpdate
+      ? `
+        mutation Update($input: UpdatePostInput!) {
+          updatePost(input: $input) {
+            post {
+              id
+              slug
+            }
           }
         }
-      }
-    `;
+      `
+      : `
+        mutation Publish($input: PublishPostInput!) {
+          publishPost(input: $input) {
+            post {
+              id
+              slug
+            }
+          }
+        }
+      `;
 
-    const variables = {
-      input: {
-        title,
-        slug,
-        contentMarkdown: clean,
-        publicationId: PUBLICATION_ID,
-        tags,
-      },
-    };
+    const variables = isUpdate
+      ? {
+          input: {
+            id: existing.get(slug), // 🔥 key for updates
+            title,
+            contentMarkdown: clean,
+            tags: tags.length ? tags : undefined,
+          },
+        }
+      : {
+          input: {
+            title,
+            slug,
+            contentMarkdown: clean,
+            publicationId: PUBLICATION_ID,
+            tags,
+          },
+        };
 
     try {
       const res = await graphqlRequest(mutation, variables);
 
       if (res.errors) {
-        console.error("❌ Publish failed:", res.errors);
+        console.error("❌ Failed:", res.errors);
       } else {
-        console.log(`✅ Published: ${slug}`);
+        console.log(
+          isUpdate
+            ? `🔁 Updated: ${slug}`
+            : `✅ Published: ${slug}`
+        );
       }
     } catch (err) {
       console.error("💥 Request error:", err.message);
