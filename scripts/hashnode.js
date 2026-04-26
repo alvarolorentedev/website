@@ -1,7 +1,11 @@
 const fs = require("fs");
 const path = require("path");
 const matter = require("gray-matter");
-const fetch = require("node-fetch"); // npm install node-fetch@2
+const fetch = require("node-fetch");
+
+const { unified } = require("unified");
+const remarkParse = require("remark-parse");
+const remarkStringify = require("remark-stringify");
 
 const HASHNODE_API = "https://gql.hashnode.com";
 const TOKEN = process.env.HASHNODE_TOKEN;
@@ -20,26 +24,30 @@ function slugify(text) {
     .replace(/^-+|-+$/g, "");
 }
 
-// ✅ Preserve markdown structure (fix your rendering issue)
+// 🚀 REAL FIX: markdown → AST → markdown
+function processMarkdown(content) {
+  return unified()
+    .use(remarkParse)
+    .use(remarkStringify, {
+      bullet: "-",
+      fences: true,
+      listItemIndent: "one",
+    })
+    .processSync(content)
+    .toString();
+}
+
+// minimal cleaning only
 function sanitizeContent(content) {
   return content
-    .replace(/<!--.*?-->/gs, "") // remove truncate
-    .replace(/^import\s+.*$/gm, "") // remove MDX imports
+    .replace(/<!--.*?-->/gs, "") // remove docusaurus truncate
+    .replace(/^import\s+.*$/gm, "")
     .replace(/^export\s+.*$/gm, "")
-
-    // remove only problematic HTML
-    .replace(/<iframe[\s\S]*?<\/iframe>/g, "")
-
-    // normalize markdown structure
-    .replace(/\n?---\n?/g, "\n\n---\n\n")
-    .replace(/(#+ .+)\n(?!\n)/g, "$1\n\n")
-    .replace(/\n?>\s*/g, "\n\n> ")
-    .replace(/\n{3,}/g, "\n\n")
-
+    .replace(/<iframe[\s\S]*?<\/iframe>/g, "") // remove embeds only
     .trim();
 }
 
-// ✅ Only fix GraphQL-breaking chars
+// only fix GraphQL-breaking chars
 function normalizeForGraphQL(content) {
   return content
     .replace(/\\+"/g, '"')
@@ -66,7 +74,7 @@ async function graphqlRequest(query, variables) {
 }
 
 // ----------------------
-// FETCH EXISTING POSTS (slug → id)
+// FETCH EXISTING POSTS
 // ----------------------
 
 async function getExistingPosts() {
@@ -120,7 +128,9 @@ async function run() {
     console.log(`➡️ Processing: ${file}`);
     console.log(`📝 Title: ${title}`);
 
+    // 🔥 pipeline
     let clean = sanitizeContent(content);
+    clean = processMarkdown(clean);      // <-- KEY FIX
     clean = normalizeForGraphQL(clean);
 
     if (!clean || clean.length < 50) {
@@ -160,7 +170,7 @@ async function run() {
     const variables = isUpdate
       ? {
           input: {
-            id: existing.get(slug), // 🔥 key for updates
+            id: existing.get(slug),
             title,
             contentMarkdown: clean,
             tags: tags.length ? tags : undefined,

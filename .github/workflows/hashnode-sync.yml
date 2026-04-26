@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Install deps
-        run: npm install gray-matter fast-glob node-fetch@2
+        run: npm install gray-matter fast-glob node-fetch@2 remark remark-parse remark-stringify
 
       - name: Publish
         run: node scripts/hashnode.js
