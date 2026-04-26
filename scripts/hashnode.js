@@ -1,9 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const matter = require("gray-matter");
-
-// 🔥 HARD FIX: always use node-fetch v2 style
-const fetch = require("node-fetch"); // IMPORTANT: install node-fetch@2
+const fetch = require("node-fetch"); // install node-fetch@2
 
 const HASHNODE_API = "https://gql.hashnode.com";
 const TOKEN = process.env.HASHNODE_TOKEN;
@@ -22,26 +20,37 @@ function slugify(text) {
     .replace(/^-+|-+$/g, "");
 }
 
+// ✅ STRUCTURE-PRESERVING SANITIZER
 function sanitizeContent(content) {
   return content
-    // remove MDX junk
+    // remove MDX artifacts only
     .replace(/<!--.*?-->/gs, "")
-    .replace(/<iframe[\s\S]*?<\/iframe>/g, "")
     .replace(/^import\s+.*$/gm, "")
+    .replace(/^export\s+.*$/gm, "")
 
-    // remove html
-    .replace(/<[^>]+>/g, "")
+    // remove iframes ONLY
+    .replace(/<iframe[\s\S]*?<\/iframe>/g, "")
 
-    // fix images (keep markdown)
-    .replace(/!\[([^\]]*)\]\(([^)]+)\)/g, "![$1]($2)")
+    // normalize horizontal rules
+    .replace(/\n?---\n?/g, "\n\n---\n\n")
+
+    // ensure spacing after headings
+    .replace(/(#+ .+)\n(?!\n)/g, "$1\n\n")
+
+    // ensure spacing after blockquotes
+    .replace(/\n?>\s*/g, "\n\n> ")
+
+    // normalize excessive newlines
+    .replace(/\n{3,}/g, "\n\n")
 
     .trim();
 }
 
+// ✅ ONLY FIX GRAPHQL BREAKERS (NOT MARKDOWN)
 function normalizeForGraphQL(content) {
   return content
-    .replace(/\\+"/g, '"') // fix escaped quotes
-    .replace(/\\\\/g, "\\") // fix slashes
+    .replace(/\\+"/g, '"')      // fix escaped quotes
+    .replace(/\\\\/g, "\\")     // fix slashes
     .replace(/[\u0000-\u001F]/g, "") // remove control chars
     .trim();
 }
@@ -57,10 +66,7 @@ async function graphqlRequest(query, variables) {
       "Content-Type": "application/json",
       Authorization: TOKEN,
     },
-    body: JSON.stringify({
-      query,
-      variables,
-    }),
+    body: JSON.stringify({ query, variables }),
   });
 
   return res.json();
@@ -127,7 +133,7 @@ async function run() {
     let clean = sanitizeContent(content);
     clean = normalizeForGraphQL(clean);
 
-    // 🚨 safety guard
+    // safety guard
     if (!clean || clean.length < 50) {
       console.log("⚠️ Skipping (empty/invalid content)");
       continue;
@@ -161,8 +167,6 @@ async function run() {
 
     try {
       const res = await graphqlRequest(mutation, variables);
-
-      console.log("📡 Response:", JSON.stringify(res, null, 2));
 
       if (res.errors) {
         console.error("❌ Publish failed:", res.errors);
