@@ -24,7 +24,7 @@ function slugify(text) {
     .replace(/^-+|-+$/g, "");
 }
 
-// 🚀 REAL FIX: markdown → AST → markdown
+// ✅ FIXED: stable markdown formatting
 function processMarkdown(content) {
   return unified()
     .use(remarkParse)
@@ -32,6 +32,9 @@ function processMarkdown(content) {
       bullet: "-",
       fences: true,
       listItemIndent: "one",
+      rule: "-",           // fix horizontal rules
+      ruleSpaces: false,   // avoid spacing bugs
+      tightDefinitions: true,
     })
     .processSync(content)
     .toString();
@@ -40,10 +43,10 @@ function processMarkdown(content) {
 // minimal cleaning only
 function sanitizeContent(content) {
   return content
-    .replace(/<!--.*?-->/gs, "") // remove docusaurus truncate
+    .replace(/<!--.*?-->/gs, "")
     .replace(/^import\s+.*$/gm, "")
     .replace(/^export\s+.*$/gm, "")
-    .replace(/<iframe[\s\S]*?<\/iframe>/g, "") // remove embeds only
+    .replace(/<iframe[\s\S]*?<\/iframe>/g, "")
     .trim();
 }
 
@@ -86,6 +89,7 @@ async function getExistingPosts() {
             node {
               id
               slug
+              title
             }
           }
         }
@@ -99,7 +103,11 @@ async function getExistingPosts() {
 
   const edges = res?.data?.publication?.posts?.edges || [];
 
-  return new Map(edges.map(e => [e.node.slug, e.node.id]));
+  return edges.map(e => ({
+    id: e.node.id,
+    slug: e.node.slug,
+    title: (e.node.title || "").toLowerCase().trim(),
+  }));
 }
 
 // ----------------------
@@ -114,7 +122,7 @@ async function run() {
 
   console.log("🔍 Fetching existing posts...");
   const existing = await getExistingPosts();
-  console.log(`📚 Found ${existing.size} existing posts`);
+  console.log(`📚 Found ${existing.length} existing posts`);
 
   for (const file of files) {
     const fullPath = path.join(BLOG_DIR, file);
@@ -128,9 +136,18 @@ async function run() {
     console.log(`➡️ Processing: ${file}`);
     console.log(`📝 Title: ${title}`);
 
-    // 🔥 pipeline
+    // ----------------------
+    // CONTENT PIPELINE
+    // ----------------------
+
     let clean = sanitizeContent(content);
-    clean = processMarkdown(clean);      // <-- KEY FIX
+    clean = processMarkdown(clean);
+
+    // ✅ FIX: enforce spacing between sections
+    clean = clean
+      .replace(/---##/g, "---\n\n##")
+      .replace(/([^\n])##/g, "$1\n\n##");
+
     clean = normalizeForGraphQL(clean);
 
     if (!clean || clean.length < 50) {
@@ -138,12 +155,31 @@ async function run() {
       continue;
     }
 
-    const tags = (data.tags || []).slice(0, 4).map(tag => ({
-      name: tag,
-      slug: slugify(tag),
-    }));
+    // ----------------------
+    // TAGS (safe)
+    // ----------------------
 
-    const isUpdate = existing.has(slug);
+    const tags = (data.tags || [])
+      .slice(0, 4)
+      .map(tag => ({
+        name: String(tag),
+        slug: slugify(tag),
+      }))
+      .filter(t => t.name && t.slug);
+
+    // ----------------------
+    // DUPLICATE FIX
+    // ----------------------
+
+    const existingPost = existing.find(
+      p => p.slug === slug || p.title === title.toLowerCase().trim()
+    );
+
+    const isUpdate = !!existingPost;
+
+    // ----------------------
+    // MUTATION
+    // ----------------------
 
     const mutation = isUpdate
       ? `
@@ -170,10 +206,10 @@ async function run() {
     const variables = isUpdate
       ? {
           input: {
-            id: existing.get(slug),
+            id: existingPost.id,
             title,
             contentMarkdown: clean,
-            tags: tags.length ? tags : undefined,
+            tags,
           },
         }
       : {
@@ -190,7 +226,7 @@ async function run() {
       const res = await graphqlRequest(mutation, variables);
 
       if (res.errors) {
-        console.error("❌ Failed:", res.errors);
+        console.error("❌ Failed:", JSON.stringify(res.errors, null, 2));
       } else {
         console.log(
           isUpdate
