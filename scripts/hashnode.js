@@ -4,8 +4,8 @@ const matter = require("gray-matter");
 const fetch = require("node-fetch");
 
 const { unified } = require("unified");
-const remarkParse = require("remark-parse");
-const remarkStringify = require("remark-stringify");
+const remarkParse = require("remark-parse").default;
+const remarkStringify = require("remark-stringify").default;
 
 const HASHNODE_API = "https://gql.hashnode.com";
 const TOKEN = process.env.HASHNODE_TOKEN;
