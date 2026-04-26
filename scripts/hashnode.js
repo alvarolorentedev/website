@@ -40,6 +40,37 @@ function processMarkdown(content) {
     .toString();
 }
 
+function fixNewlines(content) {
+  return content
+    // -----------------------------
+    // HEADINGS MUST START ON NEW LINE
+    // -----------------------------
+    .replace(/([^\n])\s*(#{1,6}\s)/g, "$1\n\n$2")
+
+    // -----------------------------
+    // ENSURE SPACE AFTER HEADINGS
+    // -----------------------------
+    .replace(/(#{1,6}\s[^\n]+)([^\n])/g, "$1\n\n$2")
+
+    // -----------------------------
+    // FIX SENTENCES GLUED TOGETHER
+    // (your real issue)
+    // -----------------------------
+    .replace(/([a-z0-9])([A-Z])/g, "$1 $2")
+
+    // -----------------------------
+    // ENSURE PARAGRAPH BREAKS
+    // -----------------------------
+    .replace(/([.!?])\s*(?=[A-Z])/g, "$1\n\n")
+
+    // -----------------------------
+    // NORMALIZE MULTIPLE NEWLINES
+    // -----------------------------
+    .replace(/\n{3,}/g, "\n\n")
+
+    .trim();
+}
+
 // minimal cleaning only
 function sanitizeContent(content) {
   return content
@@ -47,6 +78,8 @@ function sanitizeContent(content) {
     .replace(/^import\s+.*$/gm, "")
     .replace(/^export\s+.*$/gm, "")
     .replace(/<iframe[\s\S]*?<\/iframe>/g, "")
+    .replace(/^\s*---\s*$/gm, "\n\n")
+    .replace(/---+/g, "\n\n")
     .trim();
 }
 
@@ -140,15 +173,10 @@ async function run() {
     // CONTENT PIPELINE
     // ----------------------
 
-    let clean = sanitizeContent(content);
-    clean = processMarkdown(clean);
-
-    // ✅ FIX: enforce spacing between sections
-    clean = clean
-      .replace(/---##/g, "---\n\n##")
-      .replace(/([^\n])##/g, "$1\n\n##");
-
-    clean = normalizeForGraphQL(clean);
+    let clean = sanitizeContent(content);  // remove junk + separators
+    clean = fixNewlines(clean);            // 🔥 THIS is what you were missing
+    clean = processMarkdown(clean);        // normalize AST
+    clean = normalizeForGraphQL(clean);    // safe transport
 
     if (!clean || clean.length < 50) {
       console.log("⚠️ Skipping (empty/invalid)");
