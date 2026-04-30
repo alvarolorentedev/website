@@ -4,11 +4,71 @@
         <title>Alvaro Lorente | Fractional CTO, Engineering Strategy &amp; Architecture Blog</title>
         <link>https://alvarolorente.dev/blog</link>
         <description>Alvaro Lorente | Fractional CTO, Engineering Strategy &amp; Architecture Blog</description>
-        <lastBuildDate>Thu, 16 Apr 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 29 Apr 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2026 Alvaro Lorente</copyright>
+        <item>
+            <title><![CDATA[QA Engineering Won the War Why AI Is Shifting Engineering From Building to Validation]]></title>
+            <link>https://alvarolorente.dev/blog/2026/04/29/qa-engineering-won-the-war-why-ai-is-shifting-engineering-from-building-to-validation</link>
+            <guid>https://alvarolorente.dev/blog/2026/04/29/qa-engineering-won-the-war-why-ai-is-shifting-engineering-from-building-to-validation</guid>
+            <pubDate>Wed, 29 Apr 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[For most of our industry’s history, the people with the most authority were the people closest to the act of building.]]></description>
+            <content:encoded><![CDATA[<p>For most of our industry’s history, the people with the most authority were the people closest to the act of building.</p>
+<p>They were the ones who could design the abstraction, explain the trade-off, and write the code that made the system move. We built an entire professional identity around that model. Craft mattered. Elegance mattered. Readability mattered. The engineer was not just the person who shipped the thing. The engineer was the person who could defend every moving part of it.</p>
+<p>That model made sense in a world where software was expensive to produce. When code was scarce, authorship was leverage.</p>
+<p>AI changes that equation.</p>
+<p>We can now generate plausible implementations faster than we can reason through every line of them with the same depth we used to. Not always good implementations. Not always safe ones. Not always maintainable ones. But plausible ones. Useful ones. Good enough to force a different question.</p>
+<p>The hard question is no longer only, “Can we build this?”</p>
+<p>It is, “Can we trust what was built?”</p>
+<p>That shift fits the broader operating pattern in the research as well: modern engineering value already depends less on isolated acts of coding and more on systems of coordination, decision-making, guardrails, and quality across product, design, security, and operations.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-moves-the-bottleneck-from-building-to-validation">AI moves the bottleneck from building to validation<a href="https://alvarolorente.dev/blog/2026/04/29/qa-engineering-won-the-war-why-ai-is-shifting-engineering-from-building-to-validation#ai-moves-the-bottleneck-from-building-to-validation" class="hash-link" aria-label="Direct link to AI moves the bottleneck from building to validation" title="Direct link to AI moves the bottleneck from building to validation" translate="no">​</a></h2>
+<p>That is why I think one of the strangest truths of the AI era is this: QA engineering won the war.</p>
+<p>Not because the QA title suddenly became glamorous. Not because testing is new. And not because builders stopped mattering. They did not. But in a world where generation gets cheaper, validation becomes the scarce capability.</p>
+<p>Once code is easier to produce, the leverage moves to the people who can evaluate it. The people who can define what “good” means. The people who can spot failure modes before they become incidents. The people who can tell the difference between an output that looks convincing and one that is actually safe, correct, and useful.</p>
+<p>This is where many teams will get trapped. They will see AI increase output and assume the next move is simply more output. More features. More tickets. More code. But if generation scales faster than validation, you do not get a better engineering organization.</p>
+<p>You get more review debt.</p>
+<p>You get more plausible nonsense entering the system. More rework disguised as speed. More software that looked good in the editor and collapsed the moment it touched production reality.</p>
+<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/210de0f0-df30-46b6-8433-8b1fc9feccf3_1024x1024.png" alt="" class="img_ev3q"></p>
+<p>The bottleneck does not disappear.</p>
+<p>It moves.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="qa-was-never-a-phase-it-was-the-real-leverage">QA was never a phase. It was the real leverage.<a href="https://alvarolorente.dev/blog/2026/04/29/qa-engineering-won-the-war-why-ai-is-shifting-engineering-from-building-to-validation#qa-was-never-a-phase-it-was-the-real-leverage" class="hash-link" aria-label="Direct link to QA was never a phase. It was the real leverage." title="Direct link to QA was never a phase. It was the real leverage." translate="no">​</a></h2>
+<p>For years, most organizations treated validation as downstream work. Product decided. Design designed. Engineering built. QA checked at the end.</p>
+<p>That made QA look secondary, even though it was often the last place reality got a vote.</p>
+<p>What we used to call QA was never just a final checkpoint. It was the part of the system that asked the hardest questions. Does this actually work under real conditions? What happens on the edges? What assumptions are hidden here? Where does this break? What are we missing because the happy path happens to look clean?</p>
+<p>That mindset was never less important than building. It was just lower status.</p>
+<p>But in a world where machines can generate working-looking code at scale, that status hierarchy starts to collapse. Validation stops being cleanup work. It becomes the work most tightly connected to value.</p>
+<p>Test design matters more. Observability matters more. Release confidence matters more. Failure analysis matters more. The ability to challenge an output becomes more valuable than the ability to admire it.</p>
+<p>So when I say QA engineers won the war, I do not mean the org chart did.</p>
+<p>I mean the mindset did.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-new-engineering-model-is-judgment-guardrails-and-domain-knowledge">The new engineering model is judgment, guardrails, and domain knowledge<a href="https://alvarolorente.dev/blog/2026/04/29/qa-engineering-won-the-war-why-ai-is-shifting-engineering-from-building-to-validation#the-new-engineering-model-is-judgment-guardrails-and-domain-knowledge" class="hash-link" aria-label="Direct link to The new engineering model is judgment, guardrails, and domain knowledge" title="Direct link to The new engineering model is judgment, guardrails, and domain knowledge" translate="no">​</a></h2>
+<p>This is the real shift.</p>
+<p>The future engineer looks less like a pure craftsperson and more like a judge.</p>
+<p>Not a bureaucrat. Not a ticket approver. A judge.</p>
+<p>Someone who can evaluate competing outputs under uncertainty. Someone who can decide what is good enough to proceed, what needs tighter constraints, and what should be rejected entirely. Someone who understands that the job is no longer just constructing the mechanism by hand, but designing an environment in which good mechanisms can be trusted and bad ones are caught early.</p>
+<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/bb2708a8-485a-4edf-bcc5-1156a5776e0f_1024x1024.png" alt="" class="img_ev3q"></p>
+<p>That is why the winning engineering model will not be more gates. It will be better guardrails.</p>
+<p>The organizations that adapt will not respond to AI by piling on manual approvals forever. They will reduce handoffs, clarify ownership, automate policy where they can, and make the safe path the easy path. They will rely less on heroics and more on systems of validation that scale. That direction is already supported in the research: the operating models that hold up best are the ones that replace slow approval-heavy coordination with clearer decision rights, designed interfaces, and guardrails.</p>
+<p>And this is also why domain knowledge becomes more valuable, not less.</p>
+<p>AI will make generic implementation cheaper. It will make scaffolding easier. It will reduce the value of a lot of syntax-level labor. But it does not make context cheaper. It does not make business truth cheaper. It does not make accountability cheaper.</p>
+<p>The hardest question in engineering was never only whether something could be implemented. It was whether that implementation reflected the real constraints around it: customers, regulation, security posture, operational limits, economic trade-offs, and failure costs.</p>
+<p>When generation becomes abundant, contextual judgment compounds.</p>
+<p>The engineer who understands the domain can interrogate machine output with force. One person asks, “Does this compile?” The other asks, “Does this survive contact with the business?”</p>
+<p>Only one of those questions creates durable value.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="qa-engineering-won-the-war">QA engineering won the war<a href="https://alvarolorente.dev/blog/2026/04/29/qa-engineering-won-the-war-why-ai-is-shifting-engineering-from-building-to-validation#qa-engineering-won-the-war" class="hash-link" aria-label="Direct link to QA engineering won the war" title="Direct link to QA engineering won the war" translate="no">​</a></h2>
+<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/ba5afe17-19d6-442f-a92e-832cadde3492_1024x1024.png" alt="" class="img_ev3q"></p>
+<p>So yes, I believe that sentence.</p>
+<p>QA engineering won the war.</p>
+<p>Not because titles changed. Not because every company suddenly respects testing. Not because validation became fashionable.</p>
+<p>They won because the center of leverage moved.</p>
+<p>In the age of AI, building is cheaper.</p>
+<p>Validation is not.</p>
+<p>And the people, practices, and mindsets closest to validation are now sitting closest to real engineering advantage.</p>
+<p>That is not a side effect of AI.</p>
+<p>That is the new job description.</p>]]></content:encoded>
+            <category>substack</category>
+        </item>
         <item>
             <title><![CDATA[Most Software Engineering -ilities Are Becoming Irrelevant in the Age of AI]]></title>
             <link>https://alvarolorente.dev/blog/2026/04/16/most-software-engineering-ilities-are-becoming-irrelevant-in-the-age-of-ai</link>
@@ -1635,57 +1695,6 @@
 </li>
 </ul>
 <p>Please don't hesitate to connect with me on <a href="https://www.linkedin.com/in/alvarolorentedev/" target="_blank" rel="noopener noreferrer" class="">LinkedIn</a> and send a message. I always respond to every one!</p>]]></content:encoded>
-            <category>substack</category>
-        </item>
-        <item>
-            <title><![CDATA[Most Engineering Hiring Processes Are Broken]]></title>
-            <link>https://alvarolorente.dev/blog/2024/05/31/most-engineering-hiring-processes-are-broken</link>
-            <guid>https://alvarolorente.dev/blog/2024/05/31/most-engineering-hiring-processes-are-broken</guid>
-            <pubDate>Fri, 31 May 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Leading a team or a company necessitates having individuals who can assist in realizing your objectives. Undoubtedly, this involves establishing a hiring...]]></description>
-            <content:encoded><![CDATA[<p>Leading a team or a company necessitates having individuals who can assist in realizing your objectives. Undoubtedly, this involves establishing a hiring process. Have you considered how hiring for software projects may consume extensive time and effort?</p>
-<p>Leads Horizons is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-average-hiring-process">The Average Hiring Process<a href="https://alvarolorente.dev/blog/2024/05/31/most-engineering-hiring-processes-are-broken#the-average-hiring-process" class="hash-link" aria-label="Direct link to The Average Hiring Process" title="Direct link to The Average Hiring Process" translate="no">​</a></h2>
-<p>Whenever I step into a company, my gaze is often drawn to their recruitment procedures. Typically, the process aligns with or forms a subset of this schematic.</p>
-<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/f54e5d3e-2ace-4f7f-9912-dc9ccbdd4956_2832x3145.png" alt="" class="img_ev3q"></p>
-<p>Most companies employ these steps as filters, aiming to discover the “ideal candidate” with the least possible commitment. This turns the hiring process into a lengthy, high-effort endeavor that can span multiple months. As you can see, from application to hire, we're looking at an average of 32 days and a time investment of 15.5 hours.</p>
-<p>In competitive markets—such as the one I'm familiar with—the top candidates are often hired within a maximum of two weeks after applying for a job. How can this be?</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-issue-at-hand">The Issue at hand<a href="https://alvarolorente.dev/blog/2024/05/31/most-engineering-hiring-processes-are-broken#the-issue-at-hand" class="hash-link" aria-label="Direct link to The Issue at hand" title="Direct link to The Issue at hand" translate="no">​</a></h2>
-<p><strong>Over-engineering</strong> can be pinpointed as the root cause of the issue. Here are the three main concerns that lead to this:</p>
-<ul>
-<li class="">
-<p><strong>Risk Avoidance Leads to Over-Complication:</strong> Trying to avoid any slip-ups during the hiring process often results in a complicated and lengthy procedure. This method is more about reducing the risk of a bad hire, even if it sacrifices speed and efficiency.</p>
-</li>
-<li class="">
-<p><strong>Fear of Overlooking the Perfect Candidate:</strong> The worry of not finding that potentially perfect candidate leads to an exhaustive process. Every candidate is meticulously screened at each stage, lengthening the hiring period.</p>
-</li>
-<li class="">
-<p><strong>Concern Over Wasting Employee Time:</strong> The fear of spending current employee time on unsuccessful hiring processes is a worry. This concern stems from knowing that time is valuable, especially in fast-paced work environments. If the hiring process doesn't yield a successful hire, it's considered a misuse of employee time that could have been used for immediate needs and goals.</p>
-</li>
-</ul>
-<p>However, lengthy processes are the embodiment of these fears. The rationale is straightforward: the top candidates are often the first to be snapped up. If your hiring process is sluggish due to numerous feedback loops, chances are you're missing out on top-tier talent.</p>
-<p>Remember, most companies aren't engaged in rocket science, which means you probably don't need a rocket scientist on your team. What you do need are team players who can collaborate effectively and add value to your product.</p>
-<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/5a1946ab-da2f-4580-9991-c292d60366cd_700x439.jpeg" alt="" class="img_ev3q"></p>
-<p>Source: <a href="https://devrant.com/rants/2848905/interview-vs-job" target="_blank" rel="noopener noreferrer" class="">https://devrant.com/rants/2848905/interview-vs-job</a></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="solving-the-problem">Solving the problem<a href="https://alvarolorente.dev/blog/2024/05/31/most-engineering-hiring-processes-are-broken#solving-the-problem" class="hash-link" aria-label="Direct link to Solving the problem" title="Direct link to Solving the problem" translate="no">​</a></h2>
-<p>To attract and secure top-tier talent in a fast and efficient manner, it is imperative to streamline and reform our hiring process.</p>
-<p>The objective is to create a process that is not only efficient in its operations, but also effective in securing the best possible talent for our teams. This approach must consider the existing challenges in the hiring process and devise solutions that counter these issues, while optimizing for speed and quality of hires.</p>
-<p>To facilitate such transformation in the hiring process, we need to undertake the following steps:</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="simplify-evaluation-process">Simplify Evaluation Process<a href="https://alvarolorente.dev/blog/2024/05/31/most-engineering-hiring-processes-are-broken#simplify-evaluation-process" class="hash-link" aria-label="Direct link to Simplify Evaluation Process" title="Direct link to Simplify Evaluation Process" translate="no">​</a></h3>
-<p>The prevailing approach in many companies operates like a wishlist, confirming that candidates meet an extensive set of expectations. However, these wishlist often become an endless array of checkboxes that candidates must tick off.</p>
-<p>A more efficient solution would be to invert this evaluation method, implementing a flagging system to identify what is unacceptable in a candidate. This method streamlines the process, as it's a true or false evaluation where we all have the same expectation. Instead of having a checklist of 100 items that can have different readings by the evaluator to be covered in 2 to 4 technically focused interviews, we're able to identify any red flags in just one or two interviews.</p>
-<p>Let's see examples that I have seen in real life:</p>
-<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/5639ae90-967a-4933-8d36-17291b953a4b_718x599.png" alt="" class="img_ev3q"></p>
-<p>Here is how the simplified process looks like:</p>
-<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/eb250c1e-3723-4494-a708-136526ce4bf5_2792x2531.png" alt="" class="img_ev3q"></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="reduce-the-feedback-loops">Reduce The Feedback Loops<a href="https://alvarolorente.dev/blog/2024/05/31/most-engineering-hiring-processes-are-broken#reduce-the-feedback-loops" class="hash-link" aria-label="Direct link to Reduce The Feedback Loops" title="Direct link to Reduce The Feedback Loops" translate="no">​</a></h3>
-<p>In line with product development, minimizing feedback loops can enhance agility.</p>
-<p>Inserting filters into the process simply creates delay in decision-making, as feedback must be revisited before proceeding. These waiting periods regularly lead to candidates disengaging from the process.</p>
-<p>Moreover, these filters may inadvertently prevent a potential candidate from showcasing their full potential in later stages of the process, frequently leading to premature dismissal of suitable candidates for the position.</p>
-<p>Eliminating filters from feedback loops can accelerate the process and lessen the burden on our existing employees. By removing reporting for future steps and not discarding candidates early, candidate success rate will increase, resulting in fewer interviews in the long run.</p>
-<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/def1ac22-e1dc-45d7-b1fa-8a34d365b135_2814x2172.png" alt="" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="final-words">Final Words<a href="https://alvarolorente.dev/blog/2024/05/31/most-engineering-hiring-processes-are-broken#final-words" class="hash-link" aria-label="Direct link to Final Words" title="Direct link to Final Words" translate="no">​</a></h2>
-<p>In conclusion, the key to a successful hiring process lies in simplicity and efficiency. By focusing on eliminating unnecessary steps and reducing feedback loops, companies can accelerate their hiring process and attract and retain the best talent in the market, while they invest less of their current talent.</p>]]></content:encoded>
             <category>substack</category>
         </item>
     </channel>
