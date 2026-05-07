@@ -4,11 +4,59 @@
         <title>Alvaro Lorente | Fractional CTO, Engineering Strategy &amp; Architecture Blog</title>
         <link>https://alvarolorente.dev/blog</link>
         <description>Alvaro Lorente | Fractional CTO, Engineering Strategy &amp; Architecture Blog</description>
-        <lastBuildDate>Wed, 29 Apr 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 05 May 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2026 Alvaro Lorente</copyright>
+        <item>
+            <title><![CDATA[Our Engineering Metrics Are About to Get Even More Misleading in the Age of AI]]></title>
+            <link>https://alvarolorente.dev/blog/2026/05/05/our-engineering-metrics-are-about-to-get-even-more-misleading-in-the-age-of-ai</link>
+            <guid>https://alvarolorente.dev/blog/2026/05/05/our-engineering-metrics-are-about-to-get-even-more-misleading-in-the-age-of-ai</guid>
+            <pubDate>Tue, 05 May 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[The more AI increases visible activity, the less visible activity tells us about real engineering performance.]]></description>
+            <content:encoded><![CDATA[<p>T<strong>he more AI increases visible activity, the less visible activity tells us about real engineering performance.</strong></p>
+<p>For years, engineering organizations have had a quiet habit: we measured what was easiest to count, then convinced ourselves it was what mattered.</p>
+<p>Tickets closed. Story points completed. Pull requests merged. Deployments made. Features shipped.</p>
+<p>None of these signals were completely useless. But many of them were weak proxies for value. They gave leaders the comfort of visibility without the discipline of understanding. They made dashboards look precise while leaving the real questions unanswered.</p>
+<p>Did the work reduce risk? Did it improve reliability? Did it create customer value? Did it lower cognitive load for the team? Did it save us from future rework, or simply postpone it?</p>
+<p>This was already a problem before AI. It did not create that weakness. It exposed it.</p>
+<p>Because once code, tests, documentation, refactors, and implementation options become dramatically easier to generate, visible activity stops being scarce. And once visible activity stops being scarce, visible activity stops being persuasive.</p>
+<p>That is the shift many engineering leaders are about to miss.</p>
+<p>The old scoreboard still measures motion. But AI changes the meaning of motion. A team can now generate more output than ever before and still create more instability, more review burden, more hidden rework, and more downstream coordination cost. DORA remains useful precisely because it never treated throughput alone as the story; it pairs flow with stability, recovery, and rework.</p>
+<p>So the problem is no longer just that some metrics are incomplete.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="your-dashboard-is-probably-measuring-the-wrong-layer">Your dashboard is probably measuring the wrong layer<a href="https://alvarolorente.dev/blog/2026/05/05/our-engineering-metrics-are-about-to-get-even-more-misleading-in-the-age-of-ai#your-dashboard-is-probably-measuring-the-wrong-layer" class="hash-link" aria-label="Direct link to Your dashboard is probably measuring the wrong layer" title="Direct link to Your dashboard is probably measuring the wrong layer" translate="no">​</a></h2>
+<p>Most engineering dashboards still focus on the production layer of software delivery.</p>
+<p>They measure how much work was opened, merged, deployed, closed, or shipped. They measure movement. They measure the existence of artifacts. They measure the part of the system AI happens to accelerate most visibly.</p>
+<p>But that is no longer where the real bottleneck lives.</p>
+<p>The real bottleneck keeps moving toward validation, judgment, integration, correction, coordination, and confidence. It moves into the layer where teams have to decide whether generated work is correct, safe, coherent, maintainable enough, and worth the operational cost it introduces downstream.</p>
+<p>And that layer is barely visible in most dashboards.</p>
+<p>This is why a team can now look dramatically faster at the production layer while becoming slower at the system layer. The dashboard shows acceleration. The organization experiences friction.</p>
+<p>That friction is not abstract. Research on collaboration overload found that collaborative activities can consume around 80% of time in many companies, often concentrated in a small fraction of people. Microsoft 365 telemetry has also shown workers being interrupted roughly every two minutes by meetings, email, or notifications. In that environment, generating more artifacts does not automatically improve delivery. It can simply create more things to review, more decisions to validate, and more noise for the system to absorb.</p>
+<p>That is why AI-era dashboards are so risky. They often reward the layer that became cheaper while ignoring the layer that became more expensive.</p>
+<p>A team can look more productive because it opened more PRs, shipped more changes, or closed more work. Meanwhile, the hidden cost shows up somewhere else: review latency, rollback pressure, approval wait time, clarification loops, unplanned follow-up work, or operational cleanup. If you only watch the visible layer, you miss whether the system is actually converting activity into trusted outcomes.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-engineering-leaders-and-teams-should-measure-now">What engineering leaders and teams should measure now<a href="https://alvarolorente.dev/blog/2026/05/05/our-engineering-metrics-are-about-to-get-even-more-misleading-in-the-age-of-ai#what-engineering-leaders-and-teams-should-measure-now" class="hash-link" aria-label="Direct link to What engineering leaders and teams should measure now" title="Direct link to What engineering leaders and teams should measure now" translate="no">​</a></h2>
+<p>The answer is not to throw metrics away.</p>
+<p>The answer is to stop asking one class of metrics to do a job it cannot do.</p>
+<p>Throughput still matters. Lead time matters. Deployment frequency matters. Change volume can still tell you something. But those numbers should now be treated as clues, not verdicts. On their own, they no longer tell you enough about engineering performance. SPACE already warned against reducing productivity to a single number, and DORA already gave us a better model by pairing flow with stability and rework.</p>
+<p>What matters now is balancing production metrics with the metrics that reveal whether the organization actually metabolized the work well.</p>
+<p>First, measure validation and correction. Rework rate. Rollback rate. Escaped defects. Review latency. Approval wait time. Unplanned post-release work. These are no longer secondary signals. In the age of AI, they are the cost of turning generated output into trusted output.</p>
+<p>Second, measure coordination cost. Queue time between stages. Meeting load tied to delivery. Interrupt-driven work. Cross-team dependency delay. Repeated escalation loops. Clarification churn. These are not administrative side effects. They are part of system performance. Research on process debt in agile teams found that factors such as process unsuitability and role debt were significant predictors of lower job satisfaction, with the model explaining roughly one-third of the variance in job satisfaction across 191 participants in two organizations.</p>
+<p>Third, pull outcomes back to the center. Adoption. Retention. Reliability. Time-to-value. Revenue impact. Cost-to-serve. These are much harder to inflate with AI-generated activity. They force the conversation back to whether engineering changed anything meaningful at all. A mature dashboard should make it difficult to confuse reporting theater with customer impact.</p>
+<p>That is why a two-layer dashboard makes sense.</p>
+<p>One layer should be public and simple: a small set of delivery and outcome measures, the kind leaders can use to discuss performance without drowning everyone in instrumentation.</p>
+<p>The second layer should be diagnostic: meeting load, queue times, unplanned work share, rework, interruptions, and the other sources of friction that explain why the system feels slower than the surface metrics suggest. That layer is not for performance theater. It is for learning.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-uncomfortable-reality--how-to-survive-it">The Uncomfortable Reality &amp; How-To Survive It<a href="https://alvarolorente.dev/blog/2026/05/05/our-engineering-metrics-are-about-to-get-even-more-misleading-in-the-age-of-ai#the-uncomfortable-reality--how-to-survive-it" class="hash-link" aria-label="Direct link to The Uncomfortable Reality &amp; How-To Survive It" title="Direct link to The Uncomfortable Reality &amp; How-To Survive It" translate="no">​</a></h2>
+<p>In the age of AI, the easiest thing to scale is visible activity.</p>
+<p>That is exactly why visible activity is becoming a dangerous thing to manage by.</p>
+<p>Teams will look faster. Dashboards will look healthier. Leadership updates will sound more convincing. And underneath all of that, the system may be carrying more rework, more coordination drag, more review burden, and less real confidence than ever.</p>
+<p>That is the trap.</p>
+<p>Not that AI will make mediocre teams look productive.</p>
+<p>That leadership will reward the appearance of progress while the real bottlenecks move somewhere else.</p>
+<p>The organizations that win will not be the ones that generate the most.</p>
+<p>They will be the ones disciplined enough to see past the noise, measure what still matters, and refuse to confuse activity with performance.</p>]]></content:encoded>
+            <category>substack</category>
+        </item>
         <item>
             <title><![CDATA[QA Engineering Won the War Why AI Is Shifting Engineering From Building to Validation]]></title>
             <link>https://alvarolorente.dev/blog/2026/04/29/qa-engineering-won-the-war-why-ai-is-shifting-engineering-from-building-to-validation</link>
@@ -1561,140 +1609,6 @@
 <p>This is often a challenge as engineering ladders tend to favor Superstars, who are generally more motivated to climb the ladder. These ladders often dictate an employee's financial compensation. Leading to Superstars accelerating their remuneration faster than Rockstars, who may hit a pay ceiling. For this, it's important to tie compensation not to a specific role, but to the unique value an individual contributes to the company or team.</p>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="closing-thoughts">Closing thoughts<a href="https://alvarolorente.dev/blog/2024/06/13/superstar-vs-rockstar-engineers#closing-thoughts" class="hash-link" aria-label="Direct link to Closing thoughts" title="Direct link to Closing thoughts" translate="no">​</a></h2>
 <p>Recognizing this duality and managing it effectively is one of the key roles of leadership in the tech industry. By acknowledging and valuing the unique contributions of both Superstars and Rockstars, leaders can foster a diverse, balanced, and highly productive team. This duality is not a hindrance, but a strength that can be harnessed to drive a team or company's success.</p>]]></content:encoded>
-            <category>substack</category>
-        </item>
-        <item>
-            <title><![CDATA[Key Strategies for Building High-Performance Teams in Tech]]></title>
-            <link>https://alvarolorente.dev/blog/2024/06/07/key-strategies-for-building-high-performance-teams-in-tech</link>
-            <guid>https://alvarolorente.dev/blog/2024/06/07/key-strategies-for-building-high-performance-teams-in-tech</guid>
-            <pubDate>Fri, 07 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[We all continuously hear about high-performance teams and the importance of becoming one. But there is actual no real definition of it. Is it?]]></description>
-            <content:encoded><![CDATA[<p>We all continuously hear about high-performance teams and the importance of becoming one. But there is actual no real definition of it. Is it?</p>
-<ul>
-<li class="">
-<p>A team that releases many cards</p>
-</li>
-<li class="">
-<p>The one that delivers high-quality code</p>
-</li>
-<li class="">
-<p>The one that has all the best engineers</p>
-</li>
-</ul>
-<p>The answer, at least for me, is none of the above.</p>
-<p>Leads Horizons is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="what-is-a-team">What is a Team?<a href="https://alvarolorente.dev/blog/2024/06/07/key-strategies-for-building-high-performance-teams-in-tech#what-is-a-team" class="hash-link" aria-label="Direct link to What is a Team?" title="Direct link to What is a Team?" translate="no">​</a></h2>
-<p>A definition by Professor Leigh Thompson of the Kellogg School of Management:</p>
-<blockquote>
-<p>A team is a group of people who are interdependent with respect to information, resources, knowledge and skills and who seek to combine their efforts to achieve a common goal.</p>
-</blockquote>
-<p>A group itself does not represent a team, for a group to become a team, there is a need for a common goal. As a group evolves into a team, it needs to go through several transformations.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="evolution-from-group-to-team">Evolution From Group to Team<a href="https://alvarolorente.dev/blog/2024/06/07/key-strategies-for-building-high-performance-teams-in-tech#evolution-from-group-to-team" class="hash-link" aria-label="Direct link to Evolution From Group to Team" title="Direct link to Evolution From Group to Team" translate="no">​</a></h2>
-<p>Teams typically go through various stages of development. These stages represent the journey from a group of strangers to a united group with common goals.</p>
-<p>Tuckman's model describes the four stages of team development as:</p>
-<ol>
-<li class="">
-<p><strong>Forming</strong>: This is the initial stage where team members meet for the first time. Everyone is polite and positive, and there are high expectations but little understanding of the tasks ahead.</p>
-</li>
-<li class="">
-<p><strong>Storming</strong>: As team members start to work together, differences of opinion may lead to conflict. This stage is marked by resistance, competition, and conflict as individual personalities emerge.</p>
-</li>
-<li class="">
-<p><strong>Norming</strong>: Gradually, the team moves into the norming stage where they start to resolve their differences, appreciate colleagues' strengths, and respect the leader's authority. The team begins to develop cohesion and unity.</p>
-</li>
-<li class="">
-<p><strong>Performing</strong>: This is the stage where the team is fully functional and works towards achieving the team's goals. There is a strong bond between team members, and everyone works collaboratively and efficiently.</p>
-</li>
-</ol>
-<p>On the top of Performing, we could say there is o<strong>utperforming</strong> is where <strong>High-Performance</strong> teams live. This final stage is reached when the team consistently exceeds expectations and delivers exceptional results. The team is highly collaborative, innovative, and operates with a shared vision and purpose.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="transitioning-from-one-team-stage-to-another">Transitioning from One Team Stage to Another<a href="https://alvarolorente.dev/blog/2024/06/07/key-strategies-for-building-high-performance-teams-in-tech#transitioning-from-one-team-stage-to-another" class="hash-link" aria-label="Direct link to Transitioning from One Team Stage to Another" title="Direct link to Transitioning from One Team Stage to Another" translate="no">​</a></h2>
-<ol>
-<li class="">
-<p><strong>Forming to Storming</strong>: The transition from forming to storming requires team members to start working together and engaging in discussions and decision-making. It's important for each member to feel comfortable expressing their opinions and ideas, even if they differ from others. This phase often triggers conflicts due to diverse views, but it is a crucial part of the team's evolution, as it allows members to understand and appreciate each other's perspectives.</p>
-</li>
-<li class="">
-<p><strong>Storming to Norming</strong>: The shift from storming to norming is marked by the resolution of conflicts and the establishment of processes and norms. This stage requires effective conflict management and open communication. Besides, the team should focus on recognizing and appreciating the strengths of each member and fostering a collaborative environment. The team begins to feel a sense of unity, and a collaborative culture starts to develop.</p>
-</li>
-<li class="">
-<p><strong>Norming to Performing</strong>: Moving from norming to performing entails the team becoming more focused on achieving shared goals. The team has now established effective working relationships and understood each other's working styles. At this stage, it's important to stay focused on the team's objectives and ensure everyone is working collaboratively towards them. The team becomes more autonomous, with members taking on responsibilities and roles that align with their strengths.</p>
-</li>
-<li class="">
-<p><strong>Performing to Outperforming (High-Performance)</strong>: The leap from performing to outperforming is achieved by exceeding expectations consistently. It's vital to maintain the momentum, continuously innovate, and strive for improvement. Commitment to the team's shared vision and purpose, trust among team members, and open communication are crucial factors in this stage. The team should also be flexible in adapting to changes and challenges and should be driven to continually improve their performance.</p>
-</li>
-</ol>
-<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/3eb06d36-fe8c-449a-9220-ac52c0444446_926x272.png" alt="" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="traits-of-a-high-performance-team">Traits Of a High-Performance Team<a href="https://alvarolorente.dev/blog/2024/06/07/key-strategies-for-building-high-performance-teams-in-tech#traits-of-a-high-performance-team" class="hash-link" aria-label="Direct link to Traits Of a High-Performance Team" title="Direct link to Traits Of a High-Performance Team" translate="no">​</a></h2>
-<ul>
-<li class="">
-<p><strong>Trust</strong>: This refers to the confidence among team members that each person will fulfill their responsibilities and maintain a commitment to the common goal.</p>
-</li>
-<li class="">
-<p><strong>Mutual Support</strong>: This involves members actively helping each other to succeed, promoting a culture of cooperation and interdependence.</p>
-</li>
-<li class="">
-<p><strong>Drive</strong>: This indicates the team's collective motivation and ambition to achieve their goals and continually improve their performance.</p>
-</li>
-<li class="">
-<p><strong>Edit Their Needs</strong>: This implies the team's ability to self-assess and adjust their requirements and strategies based on the evolving circumstances.</p>
-</li>
-<li class="">
-<p><strong>Open Communication</strong>: This refers to the team's ability to communicate effectively, ensuring that everyone feels heard and understood. Open communication fosters transparency and encourages team members to share their ideas and feedback.</p>
-</li>
-<li class="">
-<p><strong>Do Not Depend on a Leader</strong>: This means the team operates in a decentralized manner where every member takes initiative and responsibility, rather than relying on a single leader for direction and decisions.</p>
-</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="example-tools-to-improve-team-traits">Example Tools To Improve Team Traits<a href="https://alvarolorente.dev/blog/2024/06/07/key-strategies-for-building-high-performance-teams-in-tech#example-tools-to-improve-team-traits" class="hash-link" aria-label="Direct link to Example Tools To Improve Team Traits" title="Direct link to Example Tools To Improve Team Traits" translate="no">​</a></h2>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-to-know-the-human-behind-team-personal-presentations">Getting to Know the Human Behind: Team Personal Presentations<a href="https://alvarolorente.dev/blog/2024/06/07/key-strategies-for-building-high-performance-teams-in-tech#getting-to-know-the-human-behind-team-personal-presentations" class="hash-link" aria-label="Direct link to Getting to Know the Human Behind: Team Personal Presentations" title="Direct link to Getting to Know the Human Behind: Team Personal Presentations" translate="no">​</a></h3>
-<p>Team Personal Presentations is an exercise where each team member creates a short presentation about themselves to share with the rest of the team. This can include information about their background, interests, strengths, weaknesses, and even fun facts. The goal is to allow team members to get to know each other on a deeper level, beyond just their professional roles.</p>
-<p>This exercise can help to build stronger relationships within the team, foster empathy and understanding, and improve team cohesion. It gives team members an insight into who their colleagues really are, which can lead to greater trust, better communication, and a more effective working environment.</p>
-<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/c40be4d5-9878-4a15-8e13-e223b1d9a186_960x540.png" alt="" class="img_ev3q"></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-to-know-how-we-exchange-communication-preferences">Getting to Know How We Exchange: Communication Preferences<a href="https://alvarolorente.dev/blog/2024/06/07/key-strategies-for-building-high-performance-teams-in-tech#getting-to-know-how-we-exchange-communication-preferences" class="hash-link" aria-label="Direct link to Getting to Know How We Exchange: Communication Preferences" title="Direct link to Getting to Know How We Exchange: Communication Preferences" translate="no">​</a></h3>
-<p>Communication Preferences is an activity that helps team members understand each other's preferred methods of communication. This can include when and how they like to receive information, how they handle conflict, and how they give and receive feedback. Understanding these preferences can greatly improve team collaboration and prevent misunderstandings.</p>
-<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/92122bea-2039-475f-b60e-9046e27854dc_1708x1374.png" alt="" class="img_ev3q"></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-to-know-what-we-care-about-moving-motivators">Getting to Know What We Care About: Moving motivators<a href="https://alvarolorente.dev/blog/2024/06/07/key-strategies-for-building-high-performance-teams-in-tech#getting-to-know-what-we-care-about-moving-motivators" class="hash-link" aria-label="Direct link to Getting to Know What We Care About: Moving motivators" title="Direct link to Getting to Know What We Care About: Moving motivators" translate="no">​</a></h3>
-<p>The Moving Motivators exercise is a tool from Management 3.0 that helps in understanding the intrinsic motivations of individuals within a team. It involves a deck of ten cards, each representing a key motivator such as acceptance, curiosity, freedom, or power.</p>
-<p>The participant orders these cards in order of personal importance. Then, they consider a recent change in their work or life and move the cards up or down based on whether this change has positively or negatively impacted each motivator. This provides valuable insights into what drives a person and how changes affect their motivation, which is crucial for effective team management and leadership.</p>
-<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/b8824859-1e9b-4f8f-8b51-fd17281a2ae2_2108x846.png" alt="" class="img_ev3q"></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="getting-to-know-what-area-to-improve-next-team-health-check">Getting to Know What Area to Improve Next: Team Health Check<a href="https://alvarolorente.dev/blog/2024/06/07/key-strategies-for-building-high-performance-teams-in-tech#getting-to-know-what-area-to-improve-next-team-health-check" class="hash-link" aria-label="Direct link to Getting to Know What Area to Improve Next: Team Health Check" title="Direct link to Getting to Know What Area to Improve Next: Team Health Check" translate="no">​</a></h3>
-<p>The Team Health Check is an exercise developed by Spotify to assess the health of their teams.</p>
-<p>Teams collectively assess how they are doing on several aspects, such as collaboration, value delivery, mission, fun, learning, and leadership. Each team member votes on each aspect using a traffic light system (green for good, yellow for okay, red for not good).</p>
-<p>The results are then discussed openly, helping to facilitate communication about challenges, improvements, and actions to be taken. The exercise is not about blaming or pointing fingers but about understanding and improving team dynamics and performance.</p>
-<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/92f84dd4-959b-49ac-9c07-46e66608a44a_1039x379.png" alt="" class="img_ev3q"></p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-other-articles-you-may-like"><strong>🗞️</strong> Other articles you may like<a href="https://alvarolorente.dev/blog/2024/06/07/key-strategies-for-building-high-performance-teams-in-tech#%EF%B8%8F-other-articles-you-may-like" class="hash-link" aria-label="Direct link to ️-other-articles-you-may-like" title="Direct link to ️-other-articles-you-may-like" translate="no">​</a></h2>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="picks-of-the-week"><strong>📚&nbsp;Picks of the Week</strong><a href="https://alvarolorente.dev/blog/2024/06/07/key-strategies-for-building-high-performance-teams-in-tech#picks-of-the-week" class="hash-link" aria-label="Direct link to picks-of-the-week" title="Direct link to picks-of-the-week" translate="no">​</a></h2>
-<p>[</p>
-<p><img decoding="async" loading="lazy" src="https://substackcdn.com/image/fetch/$s_!va4S!,w_56,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe58ebc2f-5af7-4c21-a4e8-f8cdda0392fe_1000x1000.png" alt="" class="img_ev3q">Perspectiveship</p>
-<p>Hanlon's Razor - Mental Model</p>
-<p>As an Engineering Manager I heard many times: This developer just wants to bury us in legacy code forever. The other team picked the wrong library with no backwards compatibility so we are all struggling now. This engineer caused a production break late Friday afternoon, so forced us to stay longer to fix it…</p>
-<p>Read more</p>
-<p>2 years ago · 22 likes · 6 comments · Michał Poczwardowski</p>
-<p>](<a href="https://read.perspectiveship.com/p/hanlons-razor?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web" target="_blank" rel="noopener noreferrer" class="">https://read.perspectiveship.com/p/hanlons-razor?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web</a>)</p>
-<p>[</p>
-<p><img decoding="async" loading="lazy" src="https://substackcdn.com/image/fetch/$s_!T71V!,w_56,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fa121fa47-e415-48b2-b282-32583cbcc1d6_720x720.png" alt="" class="img_ev3q">Tech Unfiltered</p>
-<p>When Agile, isn't agile</p>
-<p>Today what' we’re going to be talking about is when agile, isn’t agile. If you’ve been in the industry a while, you’ll have probably heard phrases like Tech Unfiltered is a reader-supported publicatio…</p>
-<p>Read more</p>
-<p>2 years ago · 12 likes · 5 comments · Jade Wilson</p>
-<p>](<a href="https://jadecodes.substack.com/p/when-agile-isnt-agile?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web" target="_blank" rel="noopener noreferrer" class="">https://jadecodes.substack.com/p/when-agile-isnt-agile?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web</a>)</p>
-<hr>
-<p>·✌️ That’s all folks</p>
-<p>I love hearing from readers, and I’m looking for feedback.&nbsp;<em>How am I doing with Leads Horizons? Is there anything you’d like to see more or less? Which aspects of the newsletter do you enjoy the most?</em></p>
-<p>Use the links below, or even better, hit reply and say hello. I’d love to hear from you!</p>
-<ul>
-<li class="">
-<p><a href="https://tally.so/r/nWNL5P?rating=Awesome&amp;source=substack&amp;medium=email&amp;url=high-perf-team" target="_blank" rel="noopener noreferrer" class="">😍 Awesome</a></p>
-</li>
-<li class="">
-<p><a href="https://tally.so/r/nWNL5P?rating=Okay&amp;source=substack&amp;medium=email&amp;url=high-perf-team" target="_blank" rel="noopener noreferrer" class="">😐 Okay</a></p>
-</li>
-<li class="">
-<p><a href="https://tally.so/r/nWNL5P?rating=Bad&amp;source=substack&amp;medium=email&amp;url=high-perf-team" target="_blank" rel="noopener noreferrer" class="">🤮 Bad</a></p>
-</li>
-</ul>
-<p>Please don't hesitate to connect with me on <a href="https://www.linkedin.com/in/alvarolorentedev/" target="_blank" rel="noopener noreferrer" class="">LinkedIn</a> and send a message. I always respond to every one!</p>]]></content:encoded>
             <category>substack</category>
         </item>
     </channel>
