@@ -4,11 +4,77 @@
         <title>Alvaro Lorente | Fractional CTO, Engineering Strategy &amp; Architecture Blog</title>
         <link>https://alvarolorente.dev/blog</link>
         <description>Alvaro Lorente | Fractional CTO, Engineering Strategy &amp; Architecture Blog</description>
-        <lastBuildDate>Tue, 05 May 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 13 May 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
         <copyright>Copyright © 2026 Alvaro Lorente</copyright>
+        <item>
+            <title><![CDATA[The Hardest Part of AI Is Letting Go of Our Ego]]></title>
+            <link>https://alvarolorente.dev/blog/2026/05/13/the-hardest-part-of-ai-is-letting-go-of-our-ego</link>
+            <guid>https://alvarolorente.dev/blog/2026/05/13/the-hardest-part-of-ai-is-letting-go-of-our-ego</guid>
+            <pubDate>Wed, 13 May 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[There has always been a quiet tax in engineering organizations. Not in infrastructure. Not in tooling. Not even in process.]]></description>
+            <content:encoded><![CDATA[<p>There has always been a quiet tax in engineering organizations. Not in infrastructure. Not in tooling. Not even in process.</p>
+<p>A human tax.</p>
+<p>Ego.</p>
+<p>For years, we tolerated it because it often looked useful. It looked like judgment. It looked like the healthy skepticism of people who had seen systems fail, architectures collapse, and teams burn under bad decisions. And sometimes it was exactly that.</p>
+<p>But ego in engineering has always had a way of disguising itself as wisdom. It shows up when ideas are rejected too quickly, when unfamiliar approaches are treated as inferior by default, and when being right becomes more important than finding what is right.</p>
+<p>That problem is not new.</p>
+<p>What is new is that AI is making it impossible to ignore.</p>
+<p>Because for the first time, we are not just dealing with junior engineers, new frameworks, or different opinions. We are dealing with systems that can generate viable solutions faster than we can reason through them. That changes the cost of ego completely.</p>
+<p>The hardest part of AI is not the technology.</p>
+<p>It is what it exposes in us.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="experience-was-always-a-double-edged-sword">Experience Was Always a Double-Edged Sword<a href="https://alvarolorente.dev/blog/2026/05/13/the-hardest-part-of-ai-is-letting-go-of-our-ego#experience-was-always-a-double-edged-sword" class="hash-link" aria-label="Direct link to Experience Was Always a Double-Edged Sword" title="Direct link to Experience Was Always a Double-Edged Sword" translate="no">​</a></h2>
+<p>Experience is valuable, but it is not truth.</p>
+<p>It is training.</p>
+<p>What we call experience is really just a brain shaped by repetition, feedback, failure, and survival. We do not solve most engineering problems from first principles every time. We recognize patterns. We follow familiar paths. We reuse what has worked before. That is what makes experienced engineers effective in the first place.</p>
+<p>But the same mechanism that makes us effective also makes us rigid.</p>
+<p>A brain trained on years of similar constraints becomes efficient by exploring less. It learns what usually works, what usually fails, and what is usually not worth trying. That creates speed. It also creates bias. We become better at navigating the world that trained us, but worse at noticing when the world itself has changed.</p>
+<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/e1e80dda-3c40-4229-9afc-aee063fcf851_1024x1024.png" alt="" class="img_ev3q"></p>
+<p>This is where ego enters the system.</p>
+<p>Because once experience hardens, we stop treating our mental models as useful approximations and start treating them as authority. We grow attached to legibility, familiarity, and control. We trust what we can explain. We distrust what does not fit our internal map. That is why ego in engineering so often looks like rigor. It is often just our need for control disguised as judgment.</p>
+<p>That is why experience is always a double-edged sword. It gives us judgment, but it also narrows the range of things we are willing to take seriously. It sharpens intuition, but it can also turn intuition into an unchallenged default.</p>
+<p>For a long time, that trade-off was acceptable. Engineering was mostly deterministic. The more experience we had, the more our mental models aligned with reality. Familiarity was a reasonable proxy for correctness.</p>
+<p>That is the assumption AI starts to break.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="the-moment-the-rules-changed">The Moment the Rules Changed<a href="https://alvarolorente.dev/blog/2026/05/13/the-hardest-part-of-ai-is-letting-go-of-our-ego#the-moment-the-rules-changed" class="hash-link" aria-label="Direct link to The Moment the Rules Changed" title="Direct link to The Moment the Rules Changed" translate="no">​</a></h2>
+<p>AI did not just give us a new tool.</p>
+<p>It changed the conditions under which experience remains useful.</p>
+<p>For the first time, we are consistently working with systems that generate viable solutions faster than we can reason through them, operate beyond our intuitive understanding, and are not constrained by the same mental models that trained us.</p>
+<p>And yet our reaction is still deeply human.</p>
+<p>We look at the output and ask: <strong>is this how I would do it?</strong></p>
+<p>That used to be a reasonable proxy for quality.</p>
+<p>It is not anymore.</p>
+<p>The question is no longer whether the solution matches our reasoning. The question is whether it works in the context that matters. In other words, our work is shifting from producing the answer to judging the answer. In many ways, engineering has already been drifting in that direction as coordination, trade-offs, and decision-making under ambiguity take more weight than pure execution.</p>
+<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/9f12b0f6-bfaf-40e7-b0fd-c845074c2c8a_1024x1024.png" alt="" class="img_ev3q"></p>
+<p>That is a much bigger change than most engineers want to admit.</p>
+<p>Because AI is not just challenging how we build. It is challenging the identity we built around being the person who knows.</p>
+<p>In a probabilistic world, experience does not disappear. But it loses its status as final authority. It becomes one input among others.</p>
+<p>And very often, it becomes bias.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="we-are-not-competing-with-the-machine">We Are Not Competing With the Machine<a href="https://alvarolorente.dev/blog/2026/05/13/the-hardest-part-of-ai-is-letting-go-of-our-ego#we-are-not-competing-with-the-machine" class="hash-link" aria-label="Direct link to We Are Not Competing With the Machine" title="Direct link to We Are Not Competing With the Machine" translate="no">​</a></h2>
+<p>The uncomfortable truth is that we are not as different from the machine as we like to believe.</p>
+<p>Our brains are also trained systems. They learn from data, reinforce patterns, and reuse what has worked before. The difference is not that one of us learns and the other does not.</p>
+<p>The difference is scale, speed, tools and attachment.</p>
+<p>The machine has broader exposure, faster iteration, and no ego attached to its last answer. We have context, judgment, and an understanding of constraints the machine still lacks. These are not competing strengths. They are complementary ones.</p>
+<p>That is why the future of engineering is not about beating the machine. It is about pairing with it.</p>
+<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/59b6c4e4-9a0a-42cc-8550-ba50ddc09756_1024x1024.png" alt="" class="img_ev3q"></p>
+<p>The leverage is not in proving we are smarter. It is in knowing where we are stronger. The machine is better at exploring, generating, and iterating without hesitation. We are better at framing the problem, understanding the environment, and judging what matters.</p>
+<p>The teams that win will be the ones that stop treating AI like a rival and start treating it like a second brain. Not a replacement for judgment, but an amplifier of it. Not a source of truth, but a system that expands the range of what we can test, challenge, and validate.</p>
+<p>That is the adaptation.</p>
+<p>Not surrender.</p>
+<p>Not blind trust.</p>
+<p>Just a more honest understanding of where our value now lives.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="final-thought">Final Thought<a href="https://alvarolorente.dev/blog/2026/05/13/the-hardest-part-of-ai-is-letting-go-of-our-ego#final-thought" class="hash-link" aria-label="Direct link to Final Thought" title="Direct link to Final Thought" translate="no">​</a></h2>
+<p>The hardest part of AI is not the technology.</p>
+<p>It is changing our mental model and letting go of the identity we built around being the one who knows.</p>
+<p>For years, the industry struggled with the ego of senior engineers dismissing juniors.</p>
+<p>Now all of us are that senior engineer.</p>
+<p>And the thing we are dismissing is not a junior. It is a machine that, in many cases, explores faster than we do, generates more than we do, and reaches viable answers before we do.</p>
+<p>The question is not whether engineers still matter.</p>
+<p>We do.</p>
+<p>The question is whether we can let go of our ego long enough to work with something that keeps forcing us to admit that being experienced is no longer the same thing as being right.</p>]]></content:encoded>
+            <category>substack</category>
+        </item>
         <item>
             <title><![CDATA[Our Engineering Metrics Are About to Get Even More Misleading in the Age of AI]]></title>
             <link>https://alvarolorente.dev/blog/2026/05/05/our-engineering-metrics-are-about-to-get-even-more-misleading-in-the-age-of-ai</link>
@@ -1534,81 +1600,6 @@
 </ul>
 <p>Please don't hesitate to connect with me on <a href="https://www.linkedin.com/in/alvarolorentedev/" target="_blank" rel="noopener noreferrer" class="">LinkedIn</a> and send a message. I always respond to every one!</p>
 <p>Leads Horizons is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.</p>]]></content:encoded>
-            <category>substack</category>
-        </item>
-        <item>
-            <title><![CDATA[Superstar vs Rockstar Engineers]]></title>
-            <link>https://alvarolorente.dev/blog/2024/06/13/superstar-vs-rockstar-engineers</link>
-            <guid>https://alvarolorente.dev/blog/2024/06/13/superstar-vs-rockstar-engineers</guid>
-            <pubDate>Thu, 13 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Have you noticed a broad spectrum of aspirations among your team members?]]></description>
-            <content:encoded><![CDATA[<p>Have you noticed a broad spectrum of aspirations among your team members?</p>
-<p>Some individuals are eager to tackle new challenges and progress rapidly, while others prefer maintaining the status quo. Do you find one approach more valuable than the other, and if so, why?</p>
-<p>Drawing inspiration from the book Radical Candor, this article will discuss the categorization of engineers into Superstars and Rockstars. We'll examine their unique traits, contributions, and roles within the development process.</p>
-<p>Leads Horizons is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="superstar-engineers">Superstar Engineers<a href="https://alvarolorente.dev/blog/2024/06/13/superstar-vs-rockstar-engineers#superstar-engineers" class="hash-link" aria-label="Direct link to Superstar Engineers" title="Direct link to Superstar Engineers" translate="no">​</a></h2>
-<p>Superstar Engineers are those who strive for more than just the ordinary, who are ready to take calculated risks for innovation. Within the technology sector, they act as catalysts for change and disruption.</p>
-<p>Some traits you can find in the work of these engineers:</p>
-<ul>
-<li class="">
-<p>They continuously pursue growth and development</p>
-</li>
-<li class="">
-<p>They’re not content with the status quo</p>
-</li>
-<li class="">
-<p>They’re willing to take risks to innovate</p>
-</li>
-<li class="">
-<p>They’re frequently the driving force behind breakthroughs in technologies, processes, practices, or products</p>
-</li>
-<li class="">
-<p>They’re motivated by a passion for innovation and growth</p>
-</li>
-<li class="">
-<p>They propel the team forward, ensuring it stays relevant and competitive</p>
-</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="rockstar-engineers">Rockstar Engineers<a href="https://alvarolorente.dev/blog/2024/06/13/superstar-vs-rockstar-engineers#rockstar-engineers" class="hash-link" aria-label="Direct link to Rockstar Engineers" title="Direct link to Rockstar Engineers" translate="no">​</a></h2>
-<p>Rockstar Engineers are the backbone of the team, providing the dependability that keeps everything running smoothly. Without their steady influence, the boundary-pushing work of Superstars would be far less effective.</p>
-<p>Some traits you can find in the work of these engineers:</p>
-<ul>
-<li class="">
-<p>They provide stability and consistency within the team.</p>
-</li>
-<li class="">
-<p>They're domain experts, with a deep understanding of particular systems or processes</p>
-</li>
-<li class="">
-<p>They ensure the smooth running of systems and processes</p>
-</li>
-<li class="">
-<p>They manage and enhance existing systems</p>
-</li>
-<li class="">
-<p>They're highly reliable, often serving as the go-to person for issues within their domain</p>
-</li>
-<li class="">
-<p>They're incredibly dependable, often the first person you'd call for problems in their area</p>
-</li>
-<li class="">
-<p>They value quality and take genuine pride in their work</p>
-</li>
-<li class="">
-<p>While they may not be the most visible, their contribution to the team and the business is absolutely critical</p>
-</li>
-</ul>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="types-of-engineers-and-engineering-strategy">Types of Engineers and engineering strategy<a href="https://alvarolorente.dev/blog/2024/06/13/superstar-vs-rockstar-engineers#types-of-engineers-and-engineering-strategy" class="hash-link" aria-label="Direct link to Types of Engineers and engineering strategy" title="Direct link to Types of Engineers and engineering strategy" translate="no">​</a></h2>
-<p>Having discussed different types of engineers, let's now explore how this impacts various aspects of our company or team.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="team--company-composition">Team &amp; Company Composition<a href="https://alvarolorente.dev/blog/2024/06/13/superstar-vs-rockstar-engineers#team--company-composition" class="hash-link" aria-label="Direct link to Team &amp; Company Composition" title="Direct link to Team &amp; Company Composition" translate="no">​</a></h3>
-<p>It's crucial to strike a balance between these two types of engineers inside a team or company. The optimal engineering strategy blends Superstars and Rockstars, ensuring the team has both the stability to manage current tasks and the innovative spirit required to stay competitive.</p>
-<p>An overabundance of Superstars may lead to instability due to frequent changes, causing the team to remain in a perpetual state of upheaval.</p>
-<p>On the other hand, an excess of Rockstars might lead to stagnation, preventing the team from adapting to necessary changes and reducing productivity.</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="remuneration--growth">Remuneration &amp; Growth<a href="https://alvarolorente.dev/blog/2024/06/13/superstar-vs-rockstar-engineers#remuneration--growth" class="hash-link" aria-label="Direct link to Remuneration &amp; Growth" title="Direct link to Remuneration &amp; Growth" translate="no">​</a></h3>
-<p>Equally important than having the correct profiles is ensuring that both are valued equally.</p>
-<p>This is often a challenge as engineering ladders tend to favor Superstars, who are generally more motivated to climb the ladder. These ladders often dictate an employee's financial compensation. Leading to Superstars accelerating their remuneration faster than Rockstars, who may hit a pay ceiling. For this, it's important to tie compensation not to a specific role, but to the unique value an individual contributes to the company or team.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="closing-thoughts">Closing thoughts<a href="https://alvarolorente.dev/blog/2024/06/13/superstar-vs-rockstar-engineers#closing-thoughts" class="hash-link" aria-label="Direct link to Closing thoughts" title="Direct link to Closing thoughts" translate="no">​</a></h2>
-<p>Recognizing this duality and managing it effectively is one of the key roles of leadership in the tech industry. By acknowledging and valuing the unique contributions of both Superstars and Rockstars, leaders can foster a diverse, balanced, and highly productive team. This duality is not a hindrance, but a strength that can be harnessed to drive a team or company's success.</p>]]></content:encoded>
             <category>substack</category>
         </item>
     </channel>
