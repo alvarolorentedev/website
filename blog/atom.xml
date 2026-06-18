@@ -2,12 +2,96 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://alvarolorente.dev/blog</id>
     <title>Alvaro Lorente | Fractional CTO, Engineering Strategy &amp; Architecture Blog</title>
-    <updated>2026-05-13T00:00:00.000Z</updated>
+    <updated>2026-06-15T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://alvarolorente.dev/blog"/>
     <subtitle>Alvaro Lorente | Fractional CTO, Engineering Strategy &amp; Architecture Blog</subtitle>
     <icon>https://alvarolorente.dev/img/favicon.ico</icon>
     <rights>Copyright © 2026 Alvaro Lorente</rights>
+    <entry>
+        <title type="html"><![CDATA[AI Didnt Kill ROI It Killed the Excuse]]></title>
+        <id>https://alvarolorente.dev/blog/2026/06/15/ai-didnt-kill-roi-it-killed-the-excuse</id>
+        <link href="https://alvarolorente.dev/blog/2026/06/15/ai-didnt-kill-roi-it-killed-the-excuse"/>
+        <updated>2026-06-15T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Every time a CFO asks where the ROI from AI is, I think we are answering the wrong version of the question.]]></summary>
+        <content type="html"><![CDATA[<p>Every time a CFO asks where the ROI from AI is, I think we are answering the wrong version of the question.</p>
+<p>The usual answer is that AI is not delivering enough value yet. That companies are spending money on tools, licenses, pilots, infrastructure, training, and consultants, but the financial return is not obvious. And honestly, that concern is fair. AI is becoming a real cost line. At some point, the story has to survive a spreadsheet.</p>
+<p>But I think the uncomfortable part is deeper.</p>
+<p>The problem is not only that AI ROI is hard to prove.</p>
+<p>The problem is that product ROI was already hard to prove.</p>
+<p>Most companies ship constantly. New features, integrations, dashboards, settings, onboarding changes, internal tools, compliance work, migrations, experiments, sales requests, customer-specific asks. Every week, the product changes. The roadmap moves. The release notes grow. The dashboards show activity. Then the business keeps growing, and we tell ourselves a convenient story: the product development machine created that growth.</p>
+<p>Sometimes it did.</p>
+<p>But often, I think we are much less sure than we pretend.</p>
+<p>A company can grow because the product is better. But it can also grow because the category is expanding, the sales team has strong relationships, customers have switching costs, procurement already approved the vendor, the brand feels safe, customer success protected renewals, pricing changed, a competitor stumbled, or the company has simply accumulated enough inertia that growth continues even when nobody can point to the exact product change that caused it.</p>
+<p>This does not mean product work has no value. It means the value signal is delayed, distributed, and messy.</p>
+<p>And AI is making that impossible to ignore.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="we-already-create-more-than-we-need">We Already Create More Than We Need<a href="https://alvarolorente.dev/blog/2026/06/15/ai-didnt-kill-roi-it-killed-the-excuse#we-already-create-more-than-we-need" class="hash-link" aria-label="Direct link to We Already Create More Than We Need" title="Direct link to We Already Create More Than We Need" translate="no">​</a></h2>
+<p>My suspicion is that many companies already create more product development work than they need.</p>
+<p>Not because people are lazy. Usually the opposite. People are working very hard. They are responding to customers, sales pressure, executive ideas, competitor comparisons, roadmap commitments, compliance requirements, internal escalations, platform needs, and the permanent pressure to show progress.</p>
+<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/dea3e6e4-3a2e-46ab-9214-3261599d0ea0_1254x1254.png" alt="" class="img_ev3q"></p>
+<p>But the system is biased toward creation.</p>
+<p>It is easier to add than to remove. Easier to build than to say no. Easier to ship the small request than to challenge whether it should exist. Easier to satisfy the stakeholder than to explain why their idea is not strategically important. Easier to show a roadmap full of activity than a roadmap full of hard decisions.</p>
+<p>Over time, the product becomes a museum of accumulated commitments.</p>
+<p>Some of those commitments create value. Some protect value. Some reduce friction. Some help sales. Some are necessary but invisible. But many exist because, at some point, they were plausible, urgent, political, requested, or cheap enough to build.</p>
+<p>This is why feature adoption benchmarks are so uncomfortable. Pendo’s research found that only a small percentage of features drive most usage. The exact number will not map perfectly to every product, but the pattern is familiar to anyone who has spent enough time inside a mature product. A small part of the product carries most of the usage. A long tail exists because someone once asked for it, someone once sold it, someone once feared removing it, or someone once needed the roadmap to look alive.</p>
+<p>That was already true before AI.</p>
+<p>Now imagine making the feature factory faster.</p>
+<p>Without changing the decision system.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="growth-is-not-a-clean-product-signal">Growth Is Not a Clean Product Signal<a href="https://alvarolorente.dev/blog/2026/06/15/ai-didnt-kill-roi-it-killed-the-excuse#growth-is-not-a-clean-product-signal" class="hash-link" aria-label="Direct link to Growth Is Not a Clean Product Signal" title="Direct link to Growth Is Not a Clean Product Signal" translate="no">​</a></h2>
+<p>This is the part I think CFOs and product organizations both get wrong in different ways.</p>
+<p>CFOs may look at growth and assume it is connected to product development output. Product and engineering teams may look at growth and assume the same thing, because it validates the work. The business grew, therefore the roadmap mattered. Revenue expanded, therefore the features were worth it. Customers renewed, therefore the product investments were right.</p>
+<p>But growth is not that clean.</p>
+<p>Especially in B2B, revenue is a delayed signal. Buyers do not move in a straight line from feature to purchase. They build consensus. They revisit problems. They compare vendors. They wait for budget. They negotiate risk. They seek internal validation. They may buy because the product improved, but they may also buy because the organization already trusts the vendor, the implementation team is strong, the champion has political capital, or the cost of switching is too high.</p>
+<p>The same is true for existing customers. Renewals and expansions often come from accumulated trust, customer success work, procurement inertia, switching costs, usage habits, implementation depth, and relationship capital. Product matters, but not always in the linear way our roadmaps imply.</p>
+<p>So when the business grows, the product development machine avoids scrutiny.</p>
+<p>We assume the machine is working because the company is moving.</p>
+<p>But maybe the company is moving because of inertia, not because every new output created value.</p>
+<p>That is the painful distinction.</p>
+<p>The company may be growing with the product, but not because of all the product work.</p>
+<p>Some work creates value. Some protects value. Some is invisible but necessary. Some is waste. Some is pure feature-factory exhaust.</p>
+<p>And because the company is still growing, nobody is forced to ask which is which.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ai-makes-the-old-problem-impossible-to-ignore">AI Makes the Old Problem Impossible to Ignore<a href="https://alvarolorente.dev/blog/2026/06/15/ai-didnt-kill-roi-it-killed-the-excuse#ai-makes-the-old-problem-impossible-to-ignore" class="hash-link" aria-label="Direct link to AI Makes the Old Problem Impossible to Ignore" title="Direct link to AI Makes the Old Problem Impossible to Ignore" translate="no">​</a></h2>
+<p>AI changes this because it removes one of the last constraints: the cost of producing things.</p>
+<p>Before AI, effort acted as a filter. A feature required engineering time. A document required attention. A prototype required someone to build it. A test suite required effort. A support article required writing. A sales asset required time. This did not make the system good at prioritization, but at least production was expensive enough to create some friction.</p>
+<p>AI weakens that friction.</p>
+<p>Now every weak idea can have a spec. Every spec can have a prototype. Every prototype can generate code. Every code change can generate tests. Every meeting can generate a summary. Every summary can generate follow-up tasks. Every customer request can generate a polished justification. Every internal opinion can become a strategy document.</p>
+<p>The company starts producing more because it can.</p>
+<p>And this is where AI ROI gets confusing.</p>
+<p>AI may reduce the local cost of production. It may help a person write faster, summarize faster, code faster, analyze faster, respond faster. There is evidence of productivity gains in bounded contexts. But local acceleration is not the same as system value.</p>
+<p>If AI helps engineering write more code, someone still has to review it. If it helps product generate more ideas, someone still has to kill most of them. If it helps support answer faster, someone still has to detect the product pattern underneath. If it helps leadership generate more analysis, someone still has to make a decision. If it helps every department create more artifacts, the organization still has to validate, prioritize, maintain, explain, sell, support, and own those artifacts.</p>
+<p>That is the trap.</p>
+<p>AI can make output cheaper while making the company heavier.</p>
+<p>Because cheap to create is not cheap to own.</p>
+<p>Every feature still has a carrying cost: documentation, QA, security, support, maintenance, cognitive load, sales enablement, customer confusion, product surface area, and strategic distraction. AI can reduce creation cost, but it does not remove ownership cost.</p>
+<p>This is where slop enters the company.</p>
+<p>Not only as ugly AI content. As unnecessary work that looks professional enough to survive. A polished product brief with no real trade-off. A roadmap analysis with no decision. A generated PR that creates review burden. A strategy document that sounds smart but changes nothing. A customer summary that is fluent but misses the actual pain.</p>
+<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/8ff8167b-559e-4d24-9f27-9f8b9f941588_1254x1254.png" alt="" class="img_ev3q"></p>
+<p>AI did not create the old bias toward output.</p>
+<p>It made it faster, cheaper, and harder to excuse.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="our-departments-are-already-oversized">Our Departments Are Already Oversized<a href="https://alvarolorente.dev/blog/2026/06/15/ai-didnt-kill-roi-it-killed-the-excuse#our-departments-are-already-oversized" class="hash-link" aria-label="Direct link to Our Departments Are Already Oversized" title="Direct link to Our Departments Are Already Oversized" translate="no">​</a></h2>
+<p>This is the uncomfortable conclusion.</p>
+<p>Many departments are already too big for the amount of value they can actually validate.</p>
+<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/89e230f0-84bd-4f4d-8dfb-ce95a1147b49_1254x1254.png" alt="" class="img_ev3q"></p>
+<p>Not too big because people are lazy. Too big because they were designed for an older world where producing work was expensive. More people meant more features, more documents, more tickets, more campaigns, more analysis, more delivery.</p>
+<p>AI breaks that logic.</p>
+<p>If output becomes cheap, output is no longer the scarce thing.</p>
+<p>Validation is.</p>
+<p>The real question is not whether AI can help us generate more. Of course it can. That is the least interesting part.</p>
+<p>The real question is whether we can finally admit that we were already generating too much.</p>
+<p>AI makes the waste impossible to hide.</p>
+<p>The companies that win with AI will not be the ones that produce the most. They will be the ones that need less production because they validate value better.</p>
+<p>Smaller departments.</p>
+<p>Sharper decisions.</p>
+<p>Fewer features.</p>
+<p>Less theater.</p>
+<p>More value.</p>
+<p>That is the ROI.</p>]]></content>
+        <author>
+            <name>Alvaro Jose</name>
+            <uri>https://github.com/alvarolorentedev</uri>
+        </author>
+        <category label="substack" term="substack"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[The Hardest Part of AI Is Letting Go of Our Ego]]></title>
         <id>https://alvarolorente.dev/blog/2026/05/13/the-hardest-part-of-ai-is-letting-go-of-our-ego</id>
@@ -1573,108 +1657,6 @@
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="final-thoughts">Final Thoughts<a href="https://alvarolorente.dev/blog/2024/07/17/long-term-team-productivity#final-thoughts" class="hash-link" aria-label="Direct link to Final Thoughts" title="Direct link to Final Thoughts" translate="no">​</a></h2>
 <p>It's easy to fall into the trap of continuous sprinting and overutilization at work, so recognizing the importance of balance is crucial. Allowing time for cooldown periods, fostering creativity, and ensuring a healthy work environment are essential for long-term success.</p>
 <p>Sustainable productivity is about creating an environment where teams can thrive, innovate, and deliver high-quality work consistently. By being strategic and mindful, we can achieve a more productive and satisfied team ready to tackle any challenge.</p>]]></content>
-        <author>
-            <name>Alvaro Jose</name>
-            <uri>https://github.com/alvarolorentedev</uri>
-        </author>
-        <category label="substack" term="substack"/>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Boosting Success in Engineering Changes]]></title>
-        <id>https://alvarolorente.dev/blog/2024/06/26/boosting-success-in-engineering-changes</id>
-        <link href="https://alvarolorente.dev/blog/2024/06/26/boosting-success-in-engineering-changes"/>
-        <updated>2024-06-26T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Ever found yourself in engineering departments where tools and practices are adopted and discarded rapidly?]]></summary>
-        <content type="html"><![CDATA[<p>Ever found yourself in engineering departments where tools and practices are adopted and discarded rapidly?</p>
-<p>One example that might resonate are companies that try to implement their goals through OKRs. Typically, the first year doesn't yield substantial value, leading to a gradual disregard in the second year. Before the close of year two, a new acronym supersedes the existing goal definition, setting off yet another cycle.</p>
-<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/ca210222-8426-48f0-ae2a-721d973f1f87_1080x1080.jpeg" alt="" class="img_ev3q"></p>
-<p>Leads Horizons is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="understanding-why-new-methodology-implementations-often-fall-short">Understanding Why New Methodology Implementations Often Fall Short<a href="https://alvarolorente.dev/blog/2024/06/26/boosting-success-in-engineering-changes#understanding-why-new-methodology-implementations-often-fall-short" class="hash-link" aria-label="Direct link to Understanding Why New Methodology Implementations Often Fall Short" title="Direct link to Understanding Why New Methodology Implementations Often Fall Short" translate="no">​</a></h2>
-<p>Whether we're discussing company-wide methodologies like OKRs or team-specific practices like pair programming, it's common to see implementations fall short. Often, methodologies bear the brunt of the blame due to misalignment.</p>
-<p>Let's delve into the reasons behind these failures, and assess whether the methodology itself is at fault.</p>
-<ul>
-<li class="">
-<p><strong>Difficulty in Tracking Results</strong>: When new methods are introduced, it's often challenging to see immediate results or advantages. This can lead to premature rejection of the new approach.</p>
-</li>
-<li class="">
-<p><strong>Insufficient Engagement</strong>: This covers situations where members aren't entirely on board with the new process. This could stem from inadequate understanding, disagreement with the methodology, or simple resistance to change.</p>
-</li>
-</ul>
-<p>While there are other reasons for failure, they typically fall under or relate closely to these main points.</p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="boosting-success-rates-via-engineering-culture">Boosting Success Rates via Engineering Culture<a href="https://alvarolorente.dev/blog/2024/06/26/boosting-success-in-engineering-changes#boosting-success-rates-via-engineering-culture" class="hash-link" aria-label="Direct link to Boosting Success Rates via Engineering Culture" title="Direct link to Boosting Success Rates via Engineering Culture" translate="no">​</a></h2>
-<p>As we've previously discussed, enhancing the success rate of engineering changes hinges on shifts in the following cultural aspects:</p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="patience">Patience<a href="https://alvarolorente.dev/blog/2024/06/26/boosting-success-in-engineering-changes#patience" class="hash-link" aria-label="Direct link to Patience" title="Direct link to Patience" translate="no">​</a></h3>
-<blockquote>
-<p>Results take time</p>
-</blockquote>
-<p>To foster patience within the engineering department, it's essential that the company culture not only values it, but actively encourages it. Here's how:</p>
-<ul>
-<li class="">
-<p><strong>Celebrate Patience</strong>: Recognize and reward patience in your workspace. This could involve acknowledging those who demonstrate patience when faced with challenges, or associating rewards and promotions with the successful long-term execution of changes.</p>
-</li>
-<li class="">
-<p><strong>Highlight the Role of Patience</strong>: Keep reminding your people about the crucial role patience plays in long-term success. Share anecdotes or instances where patience has proven beneficial in the past.</p>
-</li>
-<li class="">
-<p><strong>Lead by Example</strong>: Leadership should portray patience in their actions and decision-making. This means resisting the urge to follow the latest trends without adequate evaluation, and allowing new processes sufficient time to integrate and yield results.</p>
-</li>
-</ul>
-<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/3c9c2dac-3feb-4769-a0c0-f684fd0b4732_1080x1080.jpeg" alt="" class="img_ev3q"></p>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="aligning-knowledge">Aligning Knowledge<a href="https://alvarolorente.dev/blog/2024/06/26/boosting-success-in-engineering-changes#aligning-knowledge" class="hash-link" aria-label="Direct link to Aligning Knowledge" title="Direct link to Aligning Knowledge" translate="no">​</a></h3>
-<blockquote>
-<p>Teamwork makes the dream work.</p>
-</blockquote>
-<p>To effectively share knowledge throughout the engineering department, it's essential that our company culture actively supports and fosters it. This includes:</p>
-<ul>
-<li class="">
-<p><strong>Transparent communication</strong>: It's crucial for everyone to understand why we're making changes and what we should anticipate. A thorough explanation of the process, timeline, potential challenges, and anticipated benefits can ensure we're all on the same page.</p>
-</li>
-<li class="">
-<p><strong>Offering support and resources</strong>: As we've discussed, lack of support can lead to frustration and potential failure. We must ensure our people have the necessary resources to successfully implement new methodologies.</p>
-</li>
-<li class="">
-<p><strong>Promoting open dialogue</strong>: We should create spaces for our people to share their thoughts, concerns, and feelings about upcoming changes. This approach encourages a sense of ownership and commitment, which can minimize the risk of premature termination.</p>
-</li>
-</ul>
-<p><img decoding="async" loading="lazy" src="https://substack-post-media.s3.amazonaws.com/public/images/06e0b933-9408-4822-9d3c-acd6579f1379_1080x1080.jpeg" alt="" class="img_ev3q"></p>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="final-thoughts">Final thoughts<a href="https://alvarolorente.dev/blog/2024/06/26/boosting-success-in-engineering-changes#final-thoughts" class="hash-link" aria-label="Direct link to Final thoughts" title="Direct link to Final thoughts" translate="no">​</a></h2>
-<p>Remember, embracing change is a journey, not a race. It's important to acknowledge that while the process may be fraught with challenges, the benefits of perseverance often outweigh the initial discomfort or resistance.</p>
-<p>Patience, coupled with knowledge alignment, can significantly increase the success rate of implementing new methodologies in engineering departments. By fostering a culture that values patience and open communication, we can better adapt to changes, overcome challenges, and achieve our long-term goals.</p>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="️-other-articles-you-may-like"><strong>🗞️</strong> Other articles you may like<a href="https://alvarolorente.dev/blog/2024/06/26/boosting-success-in-engineering-changes#%EF%B8%8F-other-articles-you-may-like" class="hash-link" aria-label="Direct link to ️-other-articles-you-may-like" title="Direct link to ️-other-articles-you-may-like" translate="no">​</a></h2>
-<hr>
-<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="picks-of-the-week"><strong>📚&nbsp;Picks of the Week</strong><a href="https://alvarolorente.dev/blog/2024/06/26/boosting-success-in-engineering-changes#picks-of-the-week" class="hash-link" aria-label="Direct link to picks-of-the-week" title="Direct link to picks-of-the-week" translate="no">​</a></h2>
-<p>[</p>
-<p><img decoding="async" loading="lazy" src="https://substackcdn.com/image/fetch/$s_!va4S!,w_56,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe58ebc2f-5af7-4c21-a4e8-f8cdda0392fe_1000x1000.png" alt="" class="img_ev3q">Perspectiveship</p>
-<p>Occam's Razor - Mental Model</p>
-<p>During my Electronics labs at university, one group could not get the oscilloscope to work so they asked for help. The professor went over to them and said "electrical devices work best when connected to power" — and he was right, they had not turned on the power…</p>
-<p>Read more</p>
-<p>2 years ago · 13 likes · 8 comments · Michał Poczwardowski</p>
-<p>](<a href="https://read.perspectiveship.com/p/occams-razor?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web" target="_blank" rel="noopener noreferrer" class="">https://read.perspectiveship.com/p/occams-razor?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web</a>)</p>
-<p>[</p>
-<p><img decoding="async" loading="lazy" src="https://substackcdn.com/image/fetch/$s_!ERyX!,w_56,c_limit,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F69f2b31c-bed1-4854-b2c2-76a5eb18d49d_500x500.png" alt="" class="img_ev3q">Data Gibberish</p>
-<p>Ask Me Anything, June 2024</p>
-<p>This is the first issue of the special monthly Ask Me Anything edition of Data Gibberish. This month, I picked 5 questions you asked: 🔍 How much data is enough, and how do you ensure data quality? 🤖 What are your thoughts on sanitising training data for LLMs…</p>
-<p>Read more</p>
-<p>2 years ago · 12 likes · Yordan Ivanov</p>
-<p>](<a href="https://datagibberish.com/p/ask-me-anything-june-2024?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web" target="_blank" rel="noopener noreferrer" class="">https://datagibberish.com/p/ask-me-anything-june-2024?utm_source=substack&amp;utm_campaign=post_embed&amp;utm_medium=web</a>)</p>
-<hr>
-<p>·✌️ That’s all folks</p>
-<p>I love hearing from readers, and I’m looking for feedback.&nbsp;<em>How am I doing with Leads Horizons? Is there anything you’d like to see more or less? Which aspects of the newsletter do you enjoy the most?</em></p>
-<p>Use the links below, or even better, hit reply and say hello. I’d love to hear from you!</p>
-<ul>
-<li class="">
-<p><a href="https://tally.so/r/nWNL5P?rating=Awesome&amp;source=substack&amp;medium=email&amp;url=eng-changes-success" target="_blank" rel="noopener noreferrer" class="">😍 Awesome</a></p>
-</li>
-<li class="">
-<p><a href="https://tally.so/r/nWNL5P?rating=Okay&amp;source=substack&amp;medium=email&amp;url=eng-changes-success" target="_blank" rel="noopener noreferrer" class="">😐 Okay</a></p>
-</li>
-<li class="">
-<p><a href="https://tally.so/r/nWNL5P?rating=Bad&amp;source=substack&amp;medium=email&amp;url=eng-changes-success" target="_blank" rel="noopener noreferrer" class="">🤮 Bad</a></p>
-</li>
-</ul>
-<p>Please don't hesitate to connect with me on <a href="https://www.linkedin.com/in/alvarolorentedev/" target="_blank" rel="noopener noreferrer" class="">LinkedIn</a> and send a message. I always respond to every one!</p>
-<p>Leads Horizons is a reader-supported publication. To receive new posts and support my work, consider becoming a free or paid subscriber.</p>]]></content>
         <author>
             <name>Alvaro Jose</name>
             <uri>https://github.com/alvarolorentedev</uri>
